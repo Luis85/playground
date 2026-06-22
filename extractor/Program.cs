@@ -1,8 +1,13 @@
 using System.Reflection;
 using System.Text.Json;
+using System.Text.Json.Serialization;
 using System.Text.RegularExpressions;
 using System.Xml.Linq;
 using Microsoft.AspNetCore.Components;
+
+// Serialize enum defaults as their member names (e.g. "Primary") rather than the
+// underlying integer, so consumers see meaningful default values.
+var defaultOptions = new JsonSerializerOptions { Converters = { new JsonStringEnumConverter() } };
 
 var outputPath = args.Length > 0 ? args[0] : Path.Combine("..", "component-knowledge.json");
 
@@ -94,7 +99,7 @@ foreach (var type in assembly.GetExportedTypes().Where(IsComponent).OrderBy(t =>
                 try
                 {
                     var liveProp = concrete.GetProperty(prop.Name, BindingFlags.Public | BindingFlags.Instance);
-                    def = JsonSerializer.Serialize(liveProp?.GetValue(instance));
+                    def = JsonSerializer.Serialize(liveProp?.GetValue(instance), defaultOptions);
                 }
                 catch { def = null; }
             }

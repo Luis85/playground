@@ -20,7 +20,10 @@ const kb: KnowledgeBase = {
       name: "RadzenDropDown",
       summary: "",
       typeParameters: ["TValue"],
-      parameters: [{ name: "Data", type: "IEnumerable", default: null, description: "" }],
+      parameters: [
+        { name: "Value", type: "object", default: null, description: "" },
+        { name: "Data", type: "IEnumerable", default: null, description: "" },
+      ],
       events: [],
     },
   ],
@@ -31,6 +34,21 @@ test("accepts Razor generic type parameters", () => {
     scaffoldComponent(kb, "RadzenDropDown", { TValue: "int", Data: "@items" }),
     `<RadzenDropDown TValue="int" Data="@items" />`,
   );
+});
+
+test("accepts @bind-<param> and Razor directives", () => {
+  assert.equal(
+    scaffoldComponent(kb, "RadzenDropDown", { "@bind-Value": "@selected" }),
+    `<RadzenDropDown @bind-Value="@selected" />`,
+  );
+  assert.equal(
+    scaffoldComponent(kb, "RadzenButton", { "@rendermode": "InteractiveServer" }),
+    `<RadzenButton @rendermode="InteractiveServer" />`,
+  );
+});
+
+test("rejects @bind- targeting a non-parameter", () => {
+  assert.throws(() => scaffoldComponent(kb, "RadzenButton", { "@bind-Nope": "x" }), /Nope/);
 });
 
 test("accepts event callbacks as attributes", () => {

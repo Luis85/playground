@@ -11,6 +11,17 @@ function escapeAttr(value: string): string {
     .replace(/>/g, "&gt;");
 }
 
+// Razor directive attributes that are always legal on a component tag.
+const RAZOR_DIRECTIVES = new Set(["@rendermode", "@ref", "@key", "@attributes"]);
+
+// A directive/attribute key is valid if it is a known parameter/event/type
+// parameter, a known Razor directive, or `@bind-<X>` where X is a real parameter.
+function isValidAttribute(key: string, valid: Set<string>): boolean {
+  if (RAZOR_DIRECTIVES.has(key)) return true;
+  if (key.startsWith("@bind-")) return valid.has(key.slice("@bind-".length));
+  return valid.has(key);
+}
+
 export function scaffoldComponent(
   kb: KnowledgeBase,
   name: string,
@@ -24,11 +35,11 @@ export function scaffoldComponent(
     ...component.events.map((e) => e.name),
     ...(component.typeParameters ?? []),
   ]);
-  const invalid = Object.keys(options).filter((k) => !valid.has(k));
+  const invalid = Object.keys(options).filter((k) => !isValidAttribute(k, valid));
   if (invalid.length > 0) {
     throw new Error(
       `Invalid option(s) for ${component.name}: ${invalid.join(", ")}. ` +
-        `Valid parameters/events: ${[...valid].join(", ")}.`,
+        `Valid parameters/events: ${[...valid].join(", ")} (also @bind-<param> and @rendermode/@ref/@key/@attributes).`,
     );
   }
   const attrs = Object.entries(options)
