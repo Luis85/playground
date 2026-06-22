@@ -10,6 +10,12 @@ on:
       - "extractor/**"
       - ".github/workflows/generate-knowledge-base.yml"
 
+# Serialize runs per branch and cancel superseded ones so a stale run can't race
+# the latest commit's run when both try to commit the regenerated KB.
+concurrency:
+  group: kb-${{ github.ref }}
+  cancel-in-progress: true
+
 permissions:
   contents: write
 
@@ -25,8 +31,23 @@ jobs:
         with:
           dotnet-version: "8.0.x"
 
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
       - name: Generate component-knowledge.json
         run: dotnet run --project extractor -- component-knowledge.json
+
+      - name: Validate knowledge base against schema
+        # Build the server and load the freshly generated KB through the same
+        # loader the server uses. If the KB is malformed (schema mismatch, bad
+        # JSON, missing fields), this throws and the job fails before anything is
+        # committed.
+        run: |
+          cd server
+          npm ci
+          npm run build
+          RADZEN_KB_PATH=../component-knowledge.json node --input-type=module -e "import('./dist/knowledge.js').then(m=>m.loadKnowledgeBase(process.env.RADZEN_KB_PATH))"
 
       - name: Commit knowledge base if changed
         run: |
@@ -39,5 +60,11 @@ jobs:
             echo "component-knowledge.json unchanged; nothing to commit."
             exit 0
           fi
+          # [skip ci] is harmless/redundant here (the default GITHUB_TOKEN push
+          # does not re-trigger workflows, and the paths filter excludes
+          # component-knowledge.json anyway) but kept as a belt-and-braces signal.
           git commit -m "chore: regenerate component-knowledge.json [skip ci]"
+          # Rebase onto the latest remote tip (autostashing our commit) so
+          # parallel/stale runs don't fail this push on a non-fast-forward.
+          git pull --rebase --autostash origin "${GITHUB_REF_NAME}"
           git push
