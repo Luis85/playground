@@ -675,91 +675,91 @@
         {
           "name": "CategoryProperty",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "ChildContent",
           "type": "RenderFragment",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "Data",
           "type": "IEnumerable\u003CTItem\u003E",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "Fill",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": "Specifies the fill (background color) of the area series."
         },
         {
           "name": "Hidden",
           "type": "Boolean",
-          "default": null,
+          "default": "false",
           "description": ""
         },
         {
           "name": "Interpolation",
           "type": "Interpolation",
-          "default": null,
+          "default": "0",
           "description": "Specifies how to render lines between data points. Set to by default"
         },
         {
           "name": "LineType",
           "type": "LineType",
-          "default": null,
+          "default": "0",
           "description": "Specifies the line type."
         },
         {
           "name": "RenderingOrder",
           "type": "Int32",
-          "default": null,
+          "default": "0",
           "description": ""
         },
         {
           "name": "Smooth",
           "type": "Boolean",
-          "default": null,
+          "default": "false",
           "description": "Specifies whether to render a smooth line. Set to false by default."
         },
         {
           "name": "Stroke",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": "Specifies the color of the line."
         },
         {
           "name": "StrokeWidth",
           "type": "Double",
-          "default": null,
+          "default": "2",
           "description": "Gets or sets the pixel width of the line. Set to 2 by default."
         },
         {
           "name": "Title",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "TooltipTemplate",
           "type": "RenderFragment\u003CTItem\u003E",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "ValueProperty",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "Visible",
           "type": "Boolean",
-          "default": null,
+          "default": "true",
           "description": ""
         }
       ],
@@ -1098,103 +1098,103 @@
         {
           "name": "CategoryProperty",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "ChildContent",
           "type": "RenderFragment",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "Data",
           "type": "IEnumerable\u003CTItem\u003E",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "Fill",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": "Specifies the fill (background color) of the bar series."
         },
         {
           "name": "FillRange",
           "type": "IList\u003CSeriesColorRange\u003E",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the color range of the fill."
         },
         {
           "name": "Fills",
           "type": "IEnumerable\u003CString\u003E",
-          "default": null,
+          "default": "null",
           "description": "Specifies a list of colors that will be used to set the individual bar backgrounds."
         },
         {
           "name": "Hidden",
           "type": "Boolean",
-          "default": null,
+          "default": "false",
           "description": ""
         },
         {
           "name": "LineType",
           "type": "LineType",
-          "default": null,
+          "default": "0",
           "description": "Gets or sets the type of the line used to render the bar border."
         },
         {
           "name": "RenderingOrder",
           "type": "Int32",
-          "default": null,
+          "default": "0",
           "description": ""
         },
         {
           "name": "Stroke",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": "Specifies the stroke (border color) of the bar series."
         },
         {
           "name": "StrokeRange",
           "type": "IList\u003CSeriesColorRange\u003E",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the color range of the stroke."
         },
         {
           "name": "Strokes",
           "type": "IEnumerable\u003CString\u003E",
-          "default": null,
+          "default": "null",
           "description": "Specifies a list of colors that will be used to set the individual bar borders."
         },
         {
           "name": "StrokeWidth",
           "type": "Double",
-          "default": null,
+          "default": "0",
           "description": "Gets or sets the width of the stroke (border)."
         },
         {
           "name": "Title",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "TooltipTemplate",
           "type": "RenderFragment\u003CTItem\u003E",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "ValueProperty",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "Visible",
           "type": "Boolean",
-          "default": null,
+          "default": "true",
           "description": ""
         }
       ],
@@ -2057,7 +2057,7 @@
         {
           "name": "Attributes",
           "type": "IReadOnlyDictionary\u003CString, Object\u003E",
-          "default": null,
+          "default": "null",
           "description": "Specifies additional custom attributes that will be rendered by the component."
         },
         {
@@ -2069,67 +2069,67 @@
         {
           "name": "Disabled",
           "type": "Boolean",
-          "default": null,
+          "default": "false",
           "description": ""
         },
         {
           "name": "InputAttributes",
           "type": "IReadOnlyDictionary\u003CString, Object\u003E",
-          "default": null,
+          "default": "null",
           "description": "Specifies additional custom attributes that will be rendered by the input."
         },
         {
           "name": "Name",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "Placeholder",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "ReadOnly",
           "type": "Boolean",
-          "default": null,
+          "default": "false",
           "description": "Gets or sets a value indicating whether is read only."
         },
         {
           "name": "Style",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the inline CSS style."
         },
         {
           "name": "TabIndex",
           "type": "Int32",
-          "default": null,
+          "default": "0",
           "description": ""
         },
         {
           "name": "TriState",
           "type": "Boolean",
-          "default": null,
+          "default": "false",
           "description": "Gets or sets a value indicating whether is tri-state (true, false or null)."
         },
         {
           "name": "Value",
           "type": "TValue",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "ValueExpression",
           "type": "Expression\u003CFunc\u003CTValue\u003E\u003E",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "Visible",
           "type": "Boolean",
-          "default": null,
+          "default": "true",
           "description": "Gets or sets a value indicating whether this is visible. Invisible components are not rendered."
         }
       ],
@@ -2171,13 +2171,13 @@
         {
           "name": "AllowSelectAll",
           "type": "Boolean",
-          "default": null,
+          "default": "false",
           "description": "Gets or sets a value indicating whether the user can select all values. Set to false by default."
         },
         {
           "name": "Attributes",
           "type": "IReadOnlyDictionary\u003CString, Object\u003E",
-          "default": null,
+          "default": "null",
           "description": "Specifies additional custom attributes that will be rendered by the component."
         },
         {
@@ -2189,103 +2189,103 @@
         {
           "name": "Data",
           "type": "IEnumerable",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the data used to generate items."
         },
         {
           "name": "Disabled",
           "type": "Boolean",
-          "default": null,
+          "default": "false",
           "description": ""
         },
         {
           "name": "DisabledProperty",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the disabled property."
         },
         {
           "name": "Items",
           "type": "RenderFragment",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the items that will be concatenated with generated items from Data."
         },
         {
           "name": "Name",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "Orientation",
           "type": "Orientation",
-          "default": null,
+          "default": "0",
           "description": "Gets or sets the orientation."
         },
         {
           "name": "Placeholder",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "ReadOnly",
           "type": "Boolean",
-          "default": null,
+          "default": "false",
           "description": "Gets or sets a value indicating whether is read only."
         },
         {
           "name": "ReadOnlyProperty",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the read-only property."
         },
         {
           "name": "SelectAllText",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the select all text."
         },
         {
           "name": "Style",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the inline CSS style."
         },
         {
           "name": "TabIndex",
           "type": "Int32",
-          "default": null,
+          "default": "0",
           "description": ""
         },
         {
           "name": "TextProperty",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the text property."
         },
         {
           "name": "Value",
           "type": "IEnumerable\u003CTValue\u003E",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "ValueExpression",
           "type": "Expression\u003CFunc\u003CIEnumerable\u003CTValue\u003E\u003E\u003E",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "ValueProperty",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the value property."
         },
         {
           "name": "Visible",
           "type": "Boolean",
-          "default": null,
+          "default": "true",
           "description": "Gets or sets a value indicating whether this is visible. Invisible components are not rendered."
         }
       ],
@@ -2327,7 +2327,7 @@
         {
           "name": "Attributes",
           "type": "IReadOnlyDictionary\u003CString, Object\u003E",
-          "default": null,
+          "default": "null",
           "description": "Specifies additional custom attributes that will be rendered by the component."
         },
         {
@@ -2339,43 +2339,43 @@
         {
           "name": "Disabled",
           "type": "Boolean",
-          "default": null,
+          "default": "false",
           "description": "Gets or sets a value indicating whether this is disabled."
         },
         {
           "name": "ReadOnly",
           "type": "Boolean",
-          "default": null,
+          "default": "false",
           "description": "Gets or sets a value indicating whether is read only."
         },
         {
           "name": "Style",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the inline CSS style."
         },
         {
           "name": "Template",
           "type": "RenderFragment\u003CRadzenCheckBoxListItem\u003CTValue\u003E\u003E",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the template."
         },
         {
           "name": "Text",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the text."
         },
         {
           "name": "Value",
           "type": "TValue",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the value."
         },
         {
           "name": "Visible",
           "type": "Boolean",
-          "default": null,
+          "default": "true",
           "description": "Gets or sets a value indicating whether this is visible. Invisible components are not rendered."
         }
       ],
@@ -2821,103 +2821,103 @@
         {
           "name": "CategoryProperty",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "ChildContent",
           "type": "RenderFragment",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "Data",
           "type": "IEnumerable\u003CTItem\u003E",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "Fill",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": "Specifies the fill (background color) of the column series."
         },
         {
           "name": "FillRange",
           "type": "IList\u003CSeriesColorRange\u003E",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the color range of the fill."
         },
         {
           "name": "Fills",
           "type": "IEnumerable\u003CString\u003E",
-          "default": null,
+          "default": "null",
           "description": "Specifies a list of colors that will be used to set the individual column backgrounds."
         },
         {
           "name": "Hidden",
           "type": "Boolean",
-          "default": null,
+          "default": "false",
           "description": ""
         },
         {
           "name": "LineType",
           "type": "LineType",
-          "default": null,
+          "default": "0",
           "description": "Gets or sets the type of the line used to render the column border."
         },
         {
           "name": "RenderingOrder",
           "type": "Int32",
-          "default": null,
+          "default": "0",
           "description": ""
         },
         {
           "name": "Stroke",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": "Specifies the stroke (border color) of the column series."
         },
         {
           "name": "StrokeRange",
           "type": "IList\u003CSeriesColorRange\u003E",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the color range of the stroke."
         },
         {
           "name": "Strokes",
           "type": "IEnumerable\u003CString\u003E",
-          "default": null,
+          "default": "null",
           "description": "Specifies a list of colors that will be used to set the individual column borders."
         },
         {
           "name": "StrokeWidth",
           "type": "Double",
-          "default": null,
+          "default": "0",
           "description": "Gets or sets the width of the stroke (border)."
         },
         {
           "name": "Title",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "TooltipTemplate",
           "type": "RenderFragment\u003CTItem\u003E",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "ValueProperty",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "Visible",
           "type": "Boolean",
-          "default": null,
+          "default": "true",
           "description": ""
         }
       ],
@@ -3404,55 +3404,55 @@
         {
           "name": "AddFilterGroupText",
           "type": "String",
-          "default": null,
+          "default": "\u0022Add filter group\u0022",
           "description": "Gets or sets the add filter group text."
         },
         {
           "name": "AddFilterText",
           "type": "String",
-          "default": null,
+          "default": "\u0022Add filter\u0022",
           "description": "Gets or sets the add filter text."
         },
         {
           "name": "AllowColumnFiltering",
           "type": "Boolean",
-          "default": null,
+          "default": "false",
           "description": "Gets or sets a value indicating whether the columns can be filtered."
         },
         {
           "name": "AndOperatorText",
           "type": "String",
-          "default": null,
+          "default": "\u0022And\u0022",
           "description": "Gets or sets the and operator text."
         },
         {
           "name": "ApplyFilterText",
           "type": "String",
-          "default": null,
+          "default": "\u0022Apply\u0022",
           "description": "Gets or sets the apply filter text."
         },
         {
           "name": "Attributes",
           "type": "IReadOnlyDictionary\u003CString, Object\u003E",
-          "default": null,
+          "default": "null",
           "description": "Specifies additional custom attributes that will be rendered by the component."
         },
         {
           "name": "Auto",
           "type": "Boolean",
-          "default": null,
+          "default": "true",
           "description": "Gets or sets a value indicating whether this filter is automatic."
         },
         {
           "name": "ClearFilterText",
           "type": "String",
-          "default": null,
+          "default": "\u0022Clear all\u0022",
           "description": "Gets or sets the clear filter text."
         },
         {
           "name": "ContainsText",
           "type": "String",
-          "default": null,
+          "default": "\u0022Contains\u0022",
           "description": "Gets or sets the contains text."
         },
         {
@@ -3464,169 +3464,169 @@
         {
           "name": "CustomText",
           "type": "String",
-          "default": null,
+          "default": "\u0022Custom\u0022",
           "description": "Gets or sets the custom filter operator text."
         },
         {
           "name": "Data",
           "type": "IEnumerable\u003CTItem\u003E",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the data."
         },
         {
           "name": "DoesNotContainText",
           "type": "String",
-          "default": null,
+          "default": "\u0022Does not contain\u0022",
           "description": "Gets or sets the does not contain text."
         },
         {
           "name": "EndsWithText",
           "type": "String",
-          "default": null,
+          "default": "\u0022Ends with\u0022",
           "description": "Gets or sets the ends with text."
         },
         {
           "name": "EnumFilterSelectText",
           "type": "String",
-          "default": null,
+          "default": "\u0022Select...\u0022",
           "description": "Gets or sets the enum filter select text."
         },
         {
           "name": "EqualsText",
           "type": "String",
-          "default": null,
+          "default": "\u0022Equals\u0022",
           "description": "Gets or sets the equals text."
         },
         {
           "name": "FilterCaseSensitivity",
           "type": "FilterCaseSensitivity",
-          "default": null,
+          "default": "0",
           "description": "Gets or sets the filter case sensitivity."
         },
         {
           "name": "FilterDateFormat",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the filter date format."
         },
         {
           "name": "FilterText",
           "type": "String",
-          "default": null,
+          "default": "\u0022Filter\u0022",
           "description": "Gets or sets the filter text."
         },
         {
           "name": "GreaterThanOrEqualsText",
           "type": "String",
-          "default": null,
+          "default": "\u0022Greater than or equals\u0022",
           "description": "Gets or sets the greater than or equals text."
         },
         {
           "name": "GreaterThanText",
           "type": "String",
-          "default": null,
+          "default": "\u0022Greater than\u0022",
           "description": "Gets or sets the greater than text."
         },
         {
           "name": "InText",
           "type": "String",
-          "default": null,
+          "default": "\u0022In\u0022",
           "description": "Gets or sets the in operator text."
         },
         {
           "name": "IsEmptyText",
           "type": "String",
-          "default": null,
+          "default": "\u0022Is empty\u0022",
           "description": "Gets or sets the is empty text."
         },
         {
           "name": "IsNotEmptyText",
           "type": "String",
-          "default": null,
+          "default": "\u0022Is not empty\u0022",
           "description": "Gets or sets the is not empty text."
         },
         {
           "name": "IsNotNullText",
           "type": "String",
-          "default": null,
+          "default": "\u0022Is not null\u0022",
           "description": "Gets or sets the not null text."
         },
         {
           "name": "IsNullText",
           "type": "String",
-          "default": null,
+          "default": "\u0022Is null\u0022",
           "description": "Gets or sets the is null text."
         },
         {
           "name": "LessThanOrEqualsText",
           "type": "String",
-          "default": null,
+          "default": "\u0022Less than or equals\u0022",
           "description": "Gets or sets the less than or equals text."
         },
         {
           "name": "LessThanText",
           "type": "String",
-          "default": null,
+          "default": "\u0022Less than\u0022",
           "description": "Gets or sets the less than text."
         },
         {
           "name": "LogicalFilterOperator",
           "type": "LogicalFilterOperator",
-          "default": null,
+          "default": "0",
           "description": "Gets or sets the logical filter operator."
         },
         {
           "name": "NotEqualsText",
           "type": "String",
-          "default": null,
+          "default": "\u0022Not equals\u0022",
           "description": "Gets or sets the not equals text."
         },
         {
           "name": "NotInText",
           "type": "String",
-          "default": null,
+          "default": "\u0022Not in\u0022",
           "description": "Gets or sets the not in operator text."
         },
         {
           "name": "OrOperatorText",
           "type": "String",
-          "default": null,
+          "default": "\u0022Or\u0022",
           "description": "Gets or sets the or operator text."
         },
         {
           "name": "Properties",
           "type": "RenderFragment",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the properties."
         },
         {
           "name": "RemoveFilterText",
           "type": "String",
-          "default": null,
+          "default": "\u0022Remove filter\u0022",
           "description": "Gets or sets the remove filter text."
         },
         {
           "name": "StartsWithText",
           "type": "String",
-          "default": null,
+          "default": "\u0022Starts with\u0022",
           "description": "Gets or sets the starts with text."
         },
         {
           "name": "Style",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the inline CSS style."
         },
         {
           "name": "UniqueFilters",
           "type": "Boolean",
-          "default": null,
+          "default": "false",
           "description": "Gets or sets a value indicating whether properties can be reused in the filter."
         },
         {
           "name": "Visible",
           "type": "Boolean",
-          "default": null,
+          "default": "true",
           "description": "Gets or sets a value indicating whether this is visible. Invisible components are not rendered."
         }
       ],
@@ -3663,19 +3663,19 @@
         {
           "name": "DataFilter",
           "type": "RadzenDataFilter\u003CTItem\u003E",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "Filter",
           "type": "CompositeFilterDescriptor",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "Parent",
           "type": "RadzenDataFilterItem\u003CTItem\u003E",
-          "default": null,
+          "default": "null",
           "description": ""
         }
       ],
@@ -3691,61 +3691,61 @@
         {
           "name": "FilterOperator",
           "type": "FilterOperator",
-          "default": null,
+          "default": "0",
           "description": "Gets or sets the filter operator."
         },
         {
           "name": "FilterProperty",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the filter property name."
         },
         {
           "name": "FilterTemplate",
           "type": "RenderFragment\u003CCompositeFilterDescriptor\u003E",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the filter template."
         },
         {
           "name": "FilterValue",
           "type": "Object",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the filter value."
         },
         {
           "name": "FormatString",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the format string."
         },
         {
           "name": "IsSelected",
           "type": "Boolean",
-          "default": null,
+          "default": "false",
           "description": "Gets or sets a value indicating whether this property is selected in the filter."
         },
         {
           "name": "Property",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the property name."
         },
         {
           "name": "Title",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the title."
         },
         {
           "name": "Type",
           "type": "Type",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the data type."
         },
         {
           "name": "Visible",
           "type": "Boolean",
-          "default": null,
+          "default": "true",
           "description": "Gets or sets a value indicating whether this is visible."
         }
       ],
@@ -3761,175 +3761,175 @@
         {
           "name": "AllColumnsText",
           "type": "String",
-          "default": null,
+          "default": "\u0022All\u0022",
           "description": "Gets or sets the column picker all columns text."
         },
         {
           "name": "AllGroupsExpanded",
           "type": "Nullable\u003CBoolean\u003E",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets a value indicating whether all groups should be expanded when DataGrid is grouped."
         },
         {
           "name": "AllowAlternatingRows",
           "type": "Boolean",
-          "default": null,
+          "default": "true",
           "description": "Gets or sets a value indicating whether DataGrid should use alternating row styles."
         },
         {
           "name": "AllowColumnPicking",
           "type": "Boolean",
-          "default": null,
+          "default": "false",
           "description": "Gets or sets a value indicating whether column picking is allowed."
         },
         {
           "name": "AllowColumnReorder",
           "type": "Boolean",
-          "default": null,
+          "default": "false",
           "description": "Gets or sets a value indicating whether column reorder is allowed."
         },
         {
           "name": "AllowColumnResize",
           "type": "Boolean",
-          "default": null,
+          "default": "false",
           "description": "Gets or sets a value indicating whether column resizing is allowed."
         },
         {
           "name": "AllowCompositeDataCells",
           "type": "Boolean",
-          "default": null,
+          "default": "false",
           "description": "Gets or sets a value indicating whether DataGrid data cells will follow the header cells structure in composite columns."
         },
         {
           "name": "AllowFilterDateInput",
           "type": "Boolean",
-          "default": null,
+          "default": "false",
           "description": "Gets or sets a value indicating whether input is allowed in filter DatePicker."
         },
         {
           "name": "AllowFiltering",
           "type": "Boolean",
-          "default": null,
+          "default": "false",
           "description": "Gets or sets a value indicating whether filtering is allowed."
         },
         {
           "name": "AllowGrouping",
           "type": "Boolean",
-          "default": null,
+          "default": "false",
           "description": "Gets or sets a value indicating whether grouping is allowed."
         },
         {
           "name": "AllowMultiColumnSorting",
           "type": "Boolean",
-          "default": null,
+          "default": "false",
           "description": "Gets or sets a value indicating whether multi column sorting is allowed."
         },
         {
           "name": "AllowPaging",
           "type": "Boolean",
-          "default": null,
+          "default": "false",
           "description": ""
         },
         {
           "name": "AllowPickAllColumns",
           "type": "Boolean",
-          "default": null,
+          "default": "true",
           "description": "Gets or sets a value indicating whether user can pick all columns in column picker."
         },
         {
           "name": "AllowRowSelectOnRowClick",
           "type": "Boolean",
-          "default": null,
+          "default": "true",
           "description": "Gets or sets a value indicating whether DataGrid row can be selected on row click."
         },
         {
           "name": "AllowSorting",
           "type": "Boolean",
-          "default": null,
+          "default": "false",
           "description": "Gets or sets a value indicating whether sorting is allowed."
         },
         {
           "name": "AllowVirtualization",
           "type": "Boolean",
-          "default": null,
+          "default": "false",
           "description": "Gets or sets a value indicating whether this instance is virtualized."
         },
         {
           "name": "AndOperatorText",
           "type": "String",
-          "default": null,
+          "default": "\u0022And\u0022",
           "description": "Gets or sets the and operator text."
         },
         {
           "name": "ApplyFilterText",
           "type": "String",
-          "default": null,
+          "default": "\u0022Apply\u0022",
           "description": "Gets or sets the apply filter text."
         },
         {
           "name": "Attributes",
           "type": "IReadOnlyDictionary\u003CString, Object\u003E",
-          "default": null,
+          "default": "null",
           "description": "Specifies additional custom attributes that will be rendered by the component."
         },
         {
           "name": "CellRender",
           "type": "Action\u003CDataGridCellRenderEventArgs\u003CTItem\u003E\u003E",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the cell render callback. Use it to set cell attributes."
         },
         {
           "name": "ClearFilterText",
           "type": "String",
-          "default": null,
+          "default": "\u0022Clear\u0022",
           "description": "Gets or sets the clear filter text."
         },
         {
           "name": "Columns",
           "type": "RenderFragment",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the columns."
         },
         {
           "name": "ColumnsPickerAllowFiltering",
           "type": "Boolean",
-          "default": null,
+          "default": "false",
           "description": "Gets or sets a value indicating whether user can filter columns in column picker."
         },
         {
           "name": "ColumnsPickerMaxSelectedLabels",
           "type": "Int32",
-          "default": null,
+          "default": "2",
           "description": "Gets or sets the column picker max selected labels."
         },
         {
           "name": "ColumnsShowingText",
           "type": "String",
-          "default": null,
+          "default": "\u0022columns showing\u0022",
           "description": "Gets or sets the column picker columns showing text."
         },
         {
           "name": "ColumnsText",
           "type": "String",
-          "default": null,
+          "default": "\u0022Columns\u0022",
           "description": "Gets or sets the column picker columns text."
         },
         {
           "name": "ColumnWidth",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the width of all columns."
         },
         {
           "name": "ContainsText",
           "type": "String",
-          "default": null,
+          "default": "\u0022Contains\u0022",
           "description": "Gets or sets the contains text."
         },
         {
           "name": "Count",
           "type": "Int32",
-          "default": null,
+          "default": "0",
           "description": ""
         },
         {
@@ -3941,601 +3941,601 @@
         {
           "name": "CustomText",
           "type": "String",
-          "default": null,
+          "default": "\u0022Custom\u0022",
           "description": "Gets or sets the custom filter operator text."
         },
         {
           "name": "Data",
           "type": "IEnumerable\u003CTItem\u003E",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "Density",
           "type": "Density",
-          "default": null,
+          "default": "0",
           "description": ""
         },
         {
           "name": "DoesNotContainText",
           "type": "String",
-          "default": null,
+          "default": "\u0022Does not contain\u0022",
           "description": "Gets or sets the does not contain text."
         },
         {
           "name": "EditMode",
           "type": "DataGridEditMode",
-          "default": null,
+          "default": "1",
           "description": "Gets or sets the edit mode."
         },
         {
           "name": "EditTemplate",
           "type": "RenderFragment\u003CTItem\u003E",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the edit template."
         },
         {
           "name": "EmptyTemplate",
           "type": "RenderFragment",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the empty template shown when Data is empty collection."
         },
         {
           "name": "EmptyText",
           "type": "String",
-          "default": null,
+          "default": "\u0022No records to display.\u0022",
           "description": "Gets or sets the empty text shown when Data is empty collection."
         },
         {
           "name": "EndsWithText",
           "type": "String",
-          "default": null,
+          "default": "\u0022Ends with\u0022",
           "description": "Gets or sets the ends with text."
         },
         {
           "name": "EnumFilterSelectText",
           "type": "String",
-          "default": null,
+          "default": "\u0022Select...\u0022",
           "description": "Gets or sets the enum filter select text."
         },
         {
           "name": "EnumFilterTranslationFunc",
           "type": "Func\u003CString, String\u003E",
-          "default": null,
+          "default": "null",
           "description": "Allows to define a custom function for enums DisplayAttribute Description property value translation in datagrid Enum filters."
         },
         {
           "name": "EnumNullFilterText",
           "type": "String",
-          "default": null,
+          "default": "\u0022No value\u0022",
           "description": "Gets or sets the nullable enum for null value filter text."
         },
         {
           "name": "EqualsText",
           "type": "String",
-          "default": null,
+          "default": "\u0022Equals\u0022",
           "description": "Gets or sets the equals text."
         },
         {
           "name": "ExpandChildItemAriaLabel",
           "type": "String",
-          "default": null,
+          "default": "\u0022Expand child item\u0022",
           "description": "Gets or sets the expand child item aria label text."
         },
         {
           "name": "ExpandGroupAriaLabel",
           "type": "String",
-          "default": null,
+          "default": "\u0022Expand group\u0022",
           "description": "Gets or sets the expand group aria label text."
         },
         {
           "name": "ExpandMode",
           "type": "DataGridExpandMode",
-          "default": null,
+          "default": "1",
           "description": "Gets or sets the expand mode."
         },
         {
           "name": "FilterCaseSensitivity",
           "type": "FilterCaseSensitivity",
-          "default": null,
+          "default": "0",
           "description": "Gets or sets the filter case sensitivity."
         },
         {
           "name": "FilterDateFormat",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the filter date format."
         },
         {
           "name": "FilterDelay",
           "type": "Int32",
-          "default": null,
+          "default": "500",
           "description": "Gets or sets the filter delay."
         },
         {
           "name": "FilterIcon",
           "type": "String",
-          "default": null,
+          "default": "\u0022filter_alt\u0022",
           "description": "Gets or set the filter icon to use."
         },
         {
           "name": "FilterMode",
           "type": "FilterMode",
-          "default": null,
+          "default": "2",
           "description": "Gets or sets the filter mode."
         },
         {
           "name": "FilterOperatorAriaLabel",
           "type": "String",
-          "default": null,
+          "default": "\u0022 filter operator \u0022",
           "description": "Gets or sets the column filter value aria label text."
         },
         {
           "name": "FilterPopupRenderMode",
           "type": "PopupRenderMode",
-          "default": null,
+          "default": "1",
           "description": "Gets or sets the render mode."
         },
         {
           "name": "FilterText",
           "type": "String",
-          "default": null,
+          "default": "\u0022Filter\u0022",
           "description": "Gets or sets the filter text."
         },
         {
           "name": "FilterToggleAriaLabel",
           "type": "String",
-          "default": null,
+          "default": "\u0022Toggle\u0022",
           "description": "Gets or sets the date simple filter toggle aria label text."
         },
         {
           "name": "FilterValueAriaLabel",
           "type": "String",
-          "default": null,
+          "default": "\u0022 filter value \u0022",
           "description": "Gets or sets the column filter value aria label text."
         },
         {
           "name": "FirstPageAriaLabel",
           "type": "String",
-          "default": null,
+          "default": "\u0022Go to first page.\u0022",
           "description": ""
         },
         {
           "name": "FirstPageTitle",
           "type": "String",
-          "default": null,
+          "default": "\u0022First page.\u0022",
           "description": ""
         },
         {
           "name": "FooterCellRender",
           "type": "Action\u003CDataGridCellRenderEventArgs\u003CTItem\u003E\u003E",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the footer cell render callback. Use it to set footer cell attributes."
         },
         {
           "name": "FooterTemplate",
           "type": "RenderFragment",
-          "default": null,
+          "default": "null",
           "description": "Gives the grid a custom footer, allowing the adding of components to create custom tool bars or custom pagination"
         },
         {
           "name": "GotoFirstPageOnSort",
           "type": "Boolean",
-          "default": null,
+          "default": "false",
           "description": "Gets or sets the ability to automatically goto the first page when sorting is changed."
         },
         {
           "name": "GreaterThanOrEqualsText",
           "type": "String",
-          "default": null,
+          "default": "\u0022Greater than or equals\u0022",
           "description": "Gets or sets the greater than or equals text."
         },
         {
           "name": "GreaterThanText",
           "type": "String",
-          "default": null,
+          "default": "\u0022Greater than\u0022",
           "description": "Gets or sets the greater than text."
         },
         {
           "name": "GridLines",
           "type": "DataGridGridLines",
-          "default": null,
+          "default": "0",
           "description": "Gets or sets the grid lines."
         },
         {
           "name": "GroupFootersAlwaysVisible",
           "type": "Boolean",
-          "default": null,
+          "default": "false",
           "description": "Gets or sets a value indicating whether group footers are visible even when the group is collapsed."
         },
         {
           "name": "GroupHeaderTemplate",
           "type": "RenderFragment\u003CGroup\u003E",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the group header template."
         },
         {
           "name": "GroupHeaderToggleTemplate",
           "type": "RenderFragment\u003CValueTuple\u003CGroup, RadzenDataGridGroupRow\u003CTItem\u003E\u003E\u003E",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the group header with option to add custom toggle visibility button template."
         },
         {
           "name": "GroupPanelText",
           "type": "String",
-          "default": null,
+          "default": "\u0022Drag a column header here and drop it to group by that column\u0022",
           "description": "Gets or sets the group panel text."
         },
         {
           "name": "GroupRowRender",
           "type": "Action\u003CGroupRowRenderEventArgs\u003E",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the group row render callback. Use it to set group row attributes."
         },
         {
           "name": "HeaderCellRender",
           "type": "Action\u003CDataGridCellRenderEventArgs\u003CTItem\u003E\u003E",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the header cell render callback. Use it to set header cell attributes."
         },
         {
           "name": "HeaderTemplate",
           "type": "RenderFragment",
-          "default": null,
+          "default": "null",
           "description": "Gives the grid a custom header, allowing the adding of components to create custom tool bars in addtion to column grouping and column picker"
         },
         {
           "name": "HideGroupedColumn",
           "type": "Boolean",
-          "default": null,
+          "default": "false",
           "description": "Gets or sets a value indicating whether grouped column should be hidden."
         },
         {
           "name": "InText",
           "type": "String",
-          "default": null,
+          "default": "\u0022In\u0022",
           "description": "Gets or sets the in operator text."
         },
         {
           "name": "IsEmptyText",
           "type": "String",
-          "default": null,
+          "default": "\u0022Is empty\u0022",
           "description": "Gets or sets the is empty text."
         },
         {
           "name": "IsLoading",
           "type": "Boolean",
-          "default": null,
+          "default": "false",
           "description": "Gets or sets a value indicating whether this instance loading indicator is shown."
         },
         {
           "name": "IsNotEmptyText",
           "type": "String",
-          "default": null,
+          "default": "\u0022Is not empty\u0022",
           "description": "Gets or sets the is not empty text."
         },
         {
           "name": "IsNotNullText",
           "type": "String",
-          "default": null,
+          "default": "\u0022Is not null\u0022",
           "description": "Gets or sets the not null text."
         },
         {
           "name": "IsNullText",
           "type": "String",
-          "default": null,
+          "default": "\u0022Is null\u0022",
           "description": "Gets or sets the is null text."
         },
         {
           "name": "KeyProperty",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the key property."
         },
         {
           "name": "LastPageAriaLabel",
           "type": "String",
-          "default": null,
+          "default": "\u0022Go to last page.\u0022",
           "description": ""
         },
         {
           "name": "LastPageTitle",
           "type": "String",
-          "default": null,
+          "default": "\u0022Last page\u0022",
           "description": ""
         },
         {
           "name": "LessThanOrEqualsText",
           "type": "String",
-          "default": null,
+          "default": "\u0022Less than or equals\u0022",
           "description": "Gets or sets the less than or equals text."
         },
         {
           "name": "LessThanText",
           "type": "String",
-          "default": null,
+          "default": "\u0022Less than\u0022",
           "description": "Gets or sets the less than text."
         },
         {
           "name": "LoadingTemplate",
           "type": "RenderFragment",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "LoadSettings",
           "type": "Action\u003CDataGridLoadSettingsEventArgs\u003E",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the load settings callback."
         },
         {
           "name": "LogicalFilterOperator",
           "type": "LogicalFilterOperator",
-          "default": null,
+          "default": "0",
           "description": "Gets or sets the logical filter operator."
         },
         {
           "name": "LogicalOperatorAriaLabel",
           "type": "String",
-          "default": null,
+          "default": "\u0022 logical filter operator \u0022",
           "description": "Gets or sets the column logical filter value aria label text."
         },
         {
           "name": "NextPageAriaLabel",
           "type": "String",
-          "default": null,
+          "default": "\u0022Go to next page.\u0022",
           "description": ""
         },
         {
           "name": "NextPageLabel",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "NextPageTitle",
           "type": "String",
-          "default": null,
+          "default": "\u0022Next page\u0022",
           "description": ""
         },
         {
           "name": "NotEqualsText",
           "type": "String",
-          "default": null,
+          "default": "\u0022Not equals\u0022",
           "description": "Gets or sets the not equals text."
         },
         {
           "name": "NotInText",
           "type": "String",
-          "default": null,
+          "default": "\u0022Not in\u0022",
           "description": "Gets or sets the not in operator text."
         },
         {
           "name": "OrOperatorText",
           "type": "String",
-          "default": null,
+          "default": "\u0022Or\u0022",
           "description": "Gets or sets the or operator text."
         },
         {
           "name": "PageAriaLabelFormat",
           "type": "String",
-          "default": null,
+          "default": "\u0022Go to page {0}.\u0022",
           "description": ""
         },
         {
           "name": "PageNumbersCount",
           "type": "Int32",
-          "default": null,
+          "default": "5",
           "description": ""
         },
         {
           "name": "PagerAlwaysVisible",
           "type": "Boolean",
-          "default": null,
+          "default": "false",
           "description": ""
         },
         {
           "name": "PagerHorizontalAlign",
           "type": "HorizontalAlign",
-          "default": null,
+          "default": "3",
           "description": ""
         },
         {
           "name": "PagerPosition",
           "type": "PagerPosition",
-          "default": null,
+          "default": "2",
           "description": ""
         },
         {
           "name": "PageSize",
           "type": "Int32",
-          "default": null,
+          "default": "10",
           "description": ""
         },
         {
           "name": "PageSizeOptions",
           "type": "IEnumerable\u003CInt32\u003E",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "PageSizeText",
           "type": "String",
-          "default": null,
+          "default": "\u0022items per page\u0022",
           "description": ""
         },
         {
           "name": "PageTitleFormat",
           "type": "String",
-          "default": null,
+          "default": "\u0022Page {0}\u0022",
           "description": ""
         },
         {
           "name": "PagingSummaryFormat",
           "type": "String",
-          "default": null,
+          "default": "\u0022Page {0} of {1} ({2} items)\u0022",
           "description": ""
         },
         {
           "name": "PrevPageAriaLabel",
           "type": "String",
-          "default": null,
+          "default": "\u0022Go to previous page.\u0022",
           "description": ""
         },
         {
           "name": "PrevPageLabel",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "PrevPageTitle",
           "type": "String",
-          "default": null,
+          "default": "\u0022Previous page\u0022",
           "description": ""
         },
         {
           "name": "RemoveGroupAriaLabel",
           "type": "String",
-          "default": null,
+          "default": "\u0022Remove group\u0022",
           "description": "Gets or sets the remove group button aria label text."
         },
         {
           "name": "Render",
           "type": "Action\u003CDataGridRenderEventArgs\u003CTItem\u003E\u003E",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the render callback."
         },
         {
           "name": "RenderAsync",
           "type": "Func\u003CDataGridRenderEventArgs\u003CTItem\u003E, Task\u003E",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the render async callback."
         },
         {
           "name": "Responsive",
           "type": "Boolean",
-          "default": null,
+          "default": "false",
           "description": "Gets or sets a value indicating whether DataGrid is responsive."
         },
         {
           "name": "RowRender",
           "type": "Action\u003CRowRenderEventArgs\u003CTItem\u003E\u003E",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the row render callback. Use it to set row attributes."
         },
         {
           "name": "SecondFilterOperatorAriaLabel",
           "type": "String",
-          "default": null,
+          "default": "\u0022 second filter operator \u0022",
           "description": "Gets or sets the column filter value aria label text."
         },
         {
           "name": "SecondFilterValueAriaLabel",
           "type": "String",
-          "default": null,
+          "default": "\u0022 second filter value \u0022",
           "description": "Gets or sets the column filter value aria label text."
         },
         {
           "name": "SelectionMode",
           "type": "DataGridSelectionMode",
-          "default": null,
+          "default": "0",
           "description": "Gets or sets the selection mode."
         },
         {
           "name": "SelectVisibleColumnsAriaLabel",
           "type": "String",
-          "default": null,
+          "default": "\u0022select visible columns\u0022",
           "description": "Gets or sets the select visible columns aria label text."
         },
         {
           "name": "Settings",
           "type": "DataGridSettings",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets DataGrid settings."
         },
         {
           "name": "ShowCellDataAsTooltip",
           "type": "Boolean",
-          "default": null,
+          "default": "true",
           "description": "Gets or sets a value indicating whether cell data should be shown as tooltip."
         },
         {
           "name": "ShowColumnTitleAsTooltip",
           "type": "Boolean",
-          "default": null,
+          "default": "true",
           "description": "Gets or sets a value indicating whether column title should be shown as tooltip."
         },
         {
           "name": "ShowEmptyMessage",
           "type": "Boolean",
-          "default": null,
+          "default": "true",
           "description": "Gets or sets a value indicating whether DataGrid data body show empty message."
         },
         {
           "name": "ShowExpandColumn",
           "type": "Boolean",
-          "default": null,
+          "default": "true",
           "description": "Gets or sets whether the expandable indicator column is visible."
         },
         {
           "name": "ShowGroupExpandColumn",
           "type": "Boolean",
-          "default": null,
+          "default": "true",
           "description": "Gets or sets a value indicating whether to show group visibility column"
         },
         {
           "name": "ShowHeader",
           "type": "Boolean",
-          "default": null,
+          "default": "true",
           "description": "Gets or sets value if headers are shown."
         },
         {
           "name": "ShowMultiColumnSortingIndex",
           "type": "Boolean",
-          "default": null,
+          "default": "false",
           "description": "Gets or sets a value indicating whether multi column sorting index is shown."
         },
         {
           "name": "ShowPagingSummary",
           "type": "Boolean",
-          "default": null,
+          "default": "false",
           "description": ""
         },
         {
           "name": "StartsWithText",
           "type": "String",
-          "default": null,
+          "default": "\u0022Starts with\u0022",
           "description": "Gets or sets the starts with text."
         },
         {
           "name": "Style",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the inline CSS style."
         },
         {
           "name": "Template",
           "type": "RenderFragment\u003CTItem\u003E",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "Value",
           "type": "IList\u003CTItem\u003E",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the selected item."
         },
         {
           "name": "VirtualizationOverscanCount",
           "type": "Int32",
-          "default": null,
+          "default": "0",
           "description": "Gets or sets a value that determines how many additional items will be rendered before and after the visible region. This help to reduce the frequency of rendering during scrolling. However, higher values mean that more elements will be present in the page."
         },
         {
           "name": "Visible",
           "type": "Boolean",
-          "default": null,
+          "default": "true",
           "description": "Gets or sets a value indicating whether this is visible. Invisible components are not rendered."
         }
       ],
@@ -4722,175 +4722,175 @@
         {
           "name": "AllowCheckBoxListVirtualization",
           "type": "Boolean",
-          "default": null,
+          "default": "true",
           "description": "Specifies wether CheckBoxList filter list virtualization is enabled. Set to true by default."
         },
         {
           "name": "CalculatedCssClass",
           "type": "Func\u003CRadzenDataGridColumn\u003CTItem\u003E, TItem, String\u003E",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets a function that calculates the CSS class based on the value."
         },
         {
           "name": "ColumnPickerTitle",
           "type": "String",
-          "default": null,
+          "default": "\u0022\u0022",
           "description": "Gets or sets the title in column picker. Value of Title is used when ColumnPickerTitle is not set"
         },
         {
           "name": "Columns",
           "type": "RenderFragment",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the columns."
         },
         {
           "name": "CssClass",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the CSS class applied to data cells."
         },
         {
           "name": "CustomFilterExpression",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the custom filter dynamic Linq dictionary."
         },
         {
           "name": "EditTemplate",
           "type": "RenderFragment\u003CTItem\u003E",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the edit template."
         },
         {
           "name": "Filterable",
           "type": "Boolean",
-          "default": null,
+          "default": "true",
           "description": "Gets or sets a value indicating whether this is filterable."
         },
         {
           "name": "FilterMode",
           "type": "Nullable\u003CFilterMode\u003E",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the column filter mode."
         },
         {
           "name": "FilterOperator",
           "type": "FilterOperator",
-          "default": null,
+          "default": "0",
           "description": "Gets or sets the filter operator."
         },
         {
           "name": "FilterOperators",
           "type": "IEnumerable\u003CFilterOperator\u003E",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the filter operators."
         },
         {
           "name": "FilterPlaceholder",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the filter placeholder."
         },
         {
           "name": "FilterProperty",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the filter property name."
         },
         {
           "name": "FilterTemplate",
           "type": "RenderFragment\u003CRadzenDataGridColumn\u003CTItem\u003E\u003E",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the filter template."
         },
         {
           "name": "FilterValue",
           "type": "Object",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the filter value."
         },
         {
           "name": "FilterValueTemplate",
           "type": "RenderFragment\u003CRadzenDataGridColumn\u003CTItem\u003E\u003E",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the filter value template."
         },
         {
           "name": "FooterCssClass",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the footer CSS class applied to footer cell."
         },
         {
           "name": "FooterTemplate",
           "type": "RenderFragment",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the footer template."
         },
         {
           "name": "FormatProvider",
           "type": "IFormatProvider",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the IFormatProvider used for FormatString."
         },
         {
           "name": "FormatString",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the format string."
         },
         {
           "name": "Frozen",
           "type": "Boolean",
-          "default": null,
+          "default": "false",
           "description": "Gets or sets a value indicating whether this is frozen."
         },
         {
           "name": "FrozenPosition",
           "type": "FrozenColumnPosition",
-          "default": null,
+          "default": "0",
           "description": "Gets or sets the frozen position this"
         },
         {
           "name": "Groupable",
           "type": "Boolean",
-          "default": null,
+          "default": "true",
           "description": "Gets or sets a value indicating whether this is groupable."
         },
         {
           "name": "GroupFooterCssClass",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the group footer CSS class applied to group footer cell."
         },
         {
           "name": "GroupFooterTemplate",
           "type": "RenderFragment\u003CGroup\u003E",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the group footer template."
         },
         {
           "name": "GroupProperty",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the group property name."
         },
         {
           "name": "HeaderCssClass",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the header CSS class applied to header cell."
         },
         {
           "name": "HeaderTemplate",
           "type": "RenderFragment",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the header template."
         },
         {
           "name": "HeaderTooltip",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the header tooltip."
         },
         {
@@ -4902,121 +4902,121 @@
         {
           "name": "LogicalFilterOperator",
           "type": "LogicalFilterOperator",
-          "default": null,
+          "default": "0",
           "description": "Gets or sets the logical filter operator."
         },
         {
           "name": "MinWidth",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the min-width."
         },
         {
           "name": "OrderIndex",
           "type": "Nullable\u003CInt32\u003E",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the order index."
         },
         {
           "name": "Pickable",
           "type": "Boolean",
-          "default": null,
+          "default": "true",
           "description": "Gets or sets a value indicating whether this is pickable - listed when DataGrid AllowColumnPicking is set to true."
         },
         {
           "name": "Property",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the property name."
         },
         {
           "name": "Reorderable",
           "type": "Boolean",
-          "default": null,
+          "default": "true",
           "description": "Gets or sets a value indicating whether this is reorderable."
         },
         {
           "name": "Resizable",
           "type": "Boolean",
-          "default": null,
+          "default": "true",
           "description": "Gets or sets a value indicating whether this is resizable."
         },
         {
           "name": "SecondFilterOperator",
           "type": "FilterOperator",
-          "default": null,
+          "default": "0",
           "description": "Gets or sets the second filter operator."
         },
         {
           "name": "SecondFilterValue",
           "type": "Object",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the second filter value."
         },
         {
           "name": "SecondFilterValueTemplate",
           "type": "RenderFragment\u003CRadzenDataGridColumn\u003CTItem\u003E\u003E",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the second filter value template."
         },
         {
           "name": "Sortable",
           "type": "Boolean",
-          "default": null,
+          "default": "true",
           "description": "Gets or sets a value indicating whether this is sortable."
         },
         {
           "name": "SortOrder",
           "type": "Nullable\u003CSortOrder\u003E",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the sort order."
         },
         {
           "name": "SortProperty",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the sort property name."
         },
         {
           "name": "Template",
           "type": "RenderFragment\u003CTItem\u003E",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the template."
         },
         {
           "name": "TextAlign",
           "type": "TextAlign",
-          "default": null,
+          "default": "0",
           "description": "Gets or sets the text align."
         },
         {
           "name": "Title",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the title."
         },
         {
           "name": "Type",
           "type": "Type",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the data type."
         },
         {
           "name": "UniqueID",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the unique identifier."
         },
         {
           "name": "Visible",
           "type": "Boolean",
-          "default": null,
+          "default": "true",
           "description": "Gets or sets a value indicating whether this is visible."
         },
         {
           "name": "Width",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the width."
         }
       ],
@@ -5032,13 +5032,13 @@
         {
           "name": "Column",
           "type": "RadzenDataGridColumn\u003CTItem\u003E",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "Grid",
           "type": "RadzenDataGrid\u003CTItem\u003E",
-          "default": null,
+          "default": "null",
           "description": ""
         }
       ],
@@ -5054,37 +5054,37 @@
         {
           "name": "Attributes",
           "type": "IReadOnlyDictionary\u003CString, Object\u003E",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "Column",
           "type": "RadzenDataGridColumn\u003CTItem\u003E",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "CssClass",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "Grid",
           "type": "RadzenDataGrid\u003CTItem\u003E",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "RowIndex",
           "type": "Int32",
-          "default": null,
+          "default": "0",
           "description": ""
         },
         {
           "name": "Style",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": ""
         }
       ],
@@ -5100,43 +5100,43 @@
         {
           "name": "Attributes",
           "type": "IReadOnlyDictionary\u003CString, Object\u003E",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "Column",
           "type": "RadzenDataGridColumn\u003CTItem\u003E",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "CssClass",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "Grid",
           "type": "RadzenDataGrid\u003CTItem\u003E",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "Group",
           "type": "Group",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "RowIndex",
           "type": "Int32",
-          "default": null,
+          "default": "0",
           "description": ""
         },
         {
           "name": "Style",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": ""
         }
       ],
@@ -5152,31 +5152,31 @@
         {
           "name": "Builder",
           "type": "RenderTreeBuilder",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "Columns",
           "type": "IList\u003CRadzenDataGridColumn\u003CTItem\u003E\u003E",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "Grid",
           "type": "RadzenDataGrid\u003CTItem\u003E",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "GroupResult",
           "type": "GroupResult",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "Parent",
           "type": "RadzenDataGridGroupRow\u003CTItem\u003E",
-          "default": null,
+          "default": "null",
           "description": ""
         }
       ],
@@ -5192,31 +5192,31 @@
         {
           "name": "Builder",
           "type": "RenderTreeBuilder",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "Columns",
           "type": "IList\u003CRadzenDataGridColumn\u003CTItem\u003E\u003E",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "Grid",
           "type": "RadzenDataGrid\u003CTItem\u003E",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "GroupResult",
           "type": "GroupResult",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "Parent",
           "type": "RadzenDataGridGroupRow\u003CTItem\u003E",
-          "default": null,
+          "default": "null",
           "description": ""
         }
       ],
@@ -5232,43 +5232,43 @@
         {
           "name": "Attributes",
           "type": "IReadOnlyDictionary\u003CString, Object\u003E",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "Column",
           "type": "RadzenDataGridColumn\u003CTItem\u003E",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "ColumnIndex",
           "type": "Int32",
-          "default": null,
+          "default": "0",
           "description": ""
         },
         {
           "name": "CssClass",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "Grid",
           "type": "RadzenDataGrid\u003CTItem\u003E",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "RowIndex",
           "type": "Int32",
-          "default": null,
+          "default": "0",
           "description": ""
         },
         {
           "name": "Style",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": ""
         }
       ],
@@ -5284,55 +5284,55 @@
         {
           "name": "Attributes",
           "type": "IReadOnlyDictionary\u003CString, Object\u003E",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "ChildContent",
           "type": "RenderFragment",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "Columns",
           "type": "IList\u003CRadzenDataGridColumn\u003CTItem\u003E\u003E",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "CssClass",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "EditContext",
           "type": "EditContext",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "Grid",
           "type": "RadzenDataGrid\u003CTItem\u003E",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "Index",
           "type": "Int32",
-          "default": null,
+          "default": "0",
           "description": ""
         },
         {
           "name": "InEditMode",
           "type": "Boolean",
-          "default": null,
+          "default": "false",
           "description": ""
         },
         {
           "name": "Item",
           "type": "TItem",
-          "default": null,
+          "default": "null",
           "description": ""
         }
       ],
@@ -5348,25 +5348,25 @@
         {
           "name": "AllowPaging",
           "type": "Boolean",
-          "default": null,
+          "default": "false",
           "description": ""
         },
         {
           "name": "AllowVirtualization",
           "type": "Boolean",
-          "default": null,
+          "default": "false",
           "description": "Gets or sets a value indicating whether this instance is virtualized."
         },
         {
           "name": "Attributes",
           "type": "IReadOnlyDictionary\u003CString, Object\u003E",
-          "default": null,
+          "default": "null",
           "description": "Specifies additional custom attributes that will be rendered by the component."
         },
         {
           "name": "Count",
           "type": "Int32",
-          "default": null,
+          "default": "0",
           "description": ""
         },
         {
@@ -5378,193 +5378,193 @@
         {
           "name": "Data",
           "type": "IEnumerable\u003CTItem\u003E",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "Density",
           "type": "Density",
-          "default": null,
+          "default": "0",
           "description": ""
         },
         {
           "name": "EmptyTemplate",
           "type": "RenderFragment",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the empty template shown when Data is empty collection."
         },
         {
           "name": "EmptyText",
           "type": "String",
-          "default": null,
+          "default": "\u0022No records to display.\u0022",
           "description": "Gets or sets the empty text shown when Data is empty collection."
         },
         {
           "name": "FirstPageAriaLabel",
           "type": "String",
-          "default": null,
+          "default": "\u0022Go to first page.\u0022",
           "description": ""
         },
         {
           "name": "FirstPageTitle",
           "type": "String",
-          "default": null,
+          "default": "\u0022First page.\u0022",
           "description": ""
         },
         {
           "name": "IsLoading",
           "type": "Boolean",
-          "default": null,
+          "default": "false",
           "description": "Gets or sets a value indicating whether this instance loading indicator is shown."
         },
         {
           "name": "LastPageAriaLabel",
           "type": "String",
-          "default": null,
+          "default": "\u0022Go to last page.\u0022",
           "description": ""
         },
         {
           "name": "LastPageTitle",
           "type": "String",
-          "default": null,
+          "default": "\u0022Last page\u0022",
           "description": ""
         },
         {
           "name": "LoadingTemplate",
           "type": "RenderFragment",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "NextPageAriaLabel",
           "type": "String",
-          "default": null,
+          "default": "\u0022Go to next page.\u0022",
           "description": ""
         },
         {
           "name": "NextPageLabel",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "NextPageTitle",
           "type": "String",
-          "default": null,
+          "default": "\u0022Next page\u0022",
           "description": ""
         },
         {
           "name": "PageAriaLabelFormat",
           "type": "String",
-          "default": null,
+          "default": "\u0022Go to page {0}.\u0022",
           "description": ""
         },
         {
           "name": "PageNumbersCount",
           "type": "Int32",
-          "default": null,
+          "default": "5",
           "description": ""
         },
         {
           "name": "PagerAlwaysVisible",
           "type": "Boolean",
-          "default": null,
+          "default": "false",
           "description": ""
         },
         {
           "name": "PagerHorizontalAlign",
           "type": "HorizontalAlign",
-          "default": null,
+          "default": "3",
           "description": ""
         },
         {
           "name": "PagerPosition",
           "type": "PagerPosition",
-          "default": null,
+          "default": "2",
           "description": ""
         },
         {
           "name": "PageSize",
           "type": "Int32",
-          "default": null,
+          "default": "10",
           "description": ""
         },
         {
           "name": "PageSizeOptions",
           "type": "IEnumerable\u003CInt32\u003E",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "PageSizeText",
           "type": "String",
-          "default": null,
+          "default": "\u0022items per page\u0022",
           "description": ""
         },
         {
           "name": "PageTitleFormat",
           "type": "String",
-          "default": null,
+          "default": "\u0022Page {0}\u0022",
           "description": ""
         },
         {
           "name": "PagingSummaryFormat",
           "type": "String",
-          "default": null,
+          "default": "\u0022Page {0} of {1} ({2} items)\u0022",
           "description": ""
         },
         {
           "name": "PrevPageAriaLabel",
           "type": "String",
-          "default": null,
+          "default": "\u0022Go to previous page.\u0022",
           "description": ""
         },
         {
           "name": "PrevPageLabel",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "PrevPageTitle",
           "type": "String",
-          "default": null,
+          "default": "\u0022Previous page\u0022",
           "description": ""
         },
         {
           "name": "ShowEmptyMessage",
           "type": "Boolean",
-          "default": null,
+          "default": "false",
           "description": "Gets or sets a value indicating whether DataList should show empty message."
         },
         {
           "name": "ShowPagingSummary",
           "type": "Boolean",
-          "default": null,
+          "default": "false",
           "description": ""
         },
         {
           "name": "Style",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the inline CSS style."
         },
         {
           "name": "Template",
           "type": "RenderFragment\u003CTItem\u003E",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "Visible",
           "type": "Boolean",
-          "default": null,
+          "default": "true",
           "description": "Gets or sets a value indicating whether this is visible. Invisible components are not rendered."
         },
         {
           "name": "WrapItems",
           "type": "Boolean",
-          "default": null,
+          "default": "false",
           "description": "Gets or sets a value indicating whether to wrap items."
         }
       ],
@@ -5606,13 +5606,13 @@
         {
           "name": "DataList",
           "type": "RadzenDataList\u003CTItem\u003E",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "Item",
           "type": "TItem",
-          "default": null,
+          "default": "null",
           "description": ""
         }
       ],
@@ -5628,31 +5628,31 @@
         {
           "name": "AllowClear",
           "type": "Boolean",
-          "default": null,
+          "default": "false",
           "description": "Gets or sets a value indicating whether value can be cleared."
         },
         {
           "name": "AllowInput",
           "type": "Boolean",
-          "default": null,
+          "default": "true",
           "description": "Gets or sets a value indicating whether input is allowed."
         },
         {
           "name": "Attributes",
           "type": "IReadOnlyDictionary\u003CString, Object\u003E",
-          "default": null,
+          "default": "null",
           "description": "Specifies additional custom attributes that will be rendered by the component."
         },
         {
           "name": "ButtonClass",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the button CSS class."
         },
         {
           "name": "CalendarWeekTitle",
           "type": "String",
-          "default": null,
+          "default": "\u0022#\u0022",
           "description": "Gets or sets the previous month aria label text."
         },
         {
@@ -5664,247 +5664,247 @@
         {
           "name": "DateFormat",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the date format."
         },
         {
           "name": "DateRender",
           "type": "Action\u003CDateRenderEventArgs\u003E",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the date render callback. Use it to set attributes."
         },
         {
           "name": "Disabled",
           "type": "Boolean",
-          "default": null,
+          "default": "false",
           "description": "Gets or sets a value indicating whether this is disabled."
         },
         {
           "name": "FooterTemplate",
           "type": "RenderFragment",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the footer template."
         },
         {
           "name": "HourFormat",
           "type": "String",
-          "default": null,
+          "default": "\u002224\u0022",
           "description": "Gets or sets the hour format."
         },
         {
           "name": "HoursStep",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the hours step."
         },
         {
           "name": "InitialViewDate",
           "type": "Nullable\u003CDateTime\u003E",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the Initial Date/Month View."
         },
         {
           "name": "Inline",
           "type": "Boolean",
-          "default": null,
+          "default": "false",
           "description": "Gets or sets a value indicating whether this is inline - only Calender."
         },
         {
           "name": "InputAttributes",
           "type": "IReadOnlyDictionary\u003CString, Object\u003E",
-          "default": null,
+          "default": "null",
           "description": "Specifies additional custom attributes that will be rendered by the input."
         },
         {
           "name": "InputClass",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the input CSS class."
         },
         {
           "name": "Kind",
           "type": "DateTimeKind",
-          "default": null,
+          "default": "0",
           "description": "Gets or sets the kind of DateTime bind to control"
         },
         {
           "name": "Max",
           "type": "Nullable\u003CDateTime\u003E",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the Maximum Selectable Date."
         },
         {
           "name": "Min",
           "type": "Nullable\u003CDateTime\u003E",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the Minimum Selectable Date."
         },
         {
           "name": "MinutesStep",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the minutes step."
         },
         {
           "name": "Name",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the name of the form component."
         },
         {
           "name": "NextMonthAriaLabel",
           "type": "String",
-          "default": null,
+          "default": "\u0022Next month\u0022",
           "description": "Gets or sets the next month aria label text."
         },
         {
           "name": "OkAriaLabel",
           "type": "String",
-          "default": null,
+          "default": "\u0022Ok\u0022",
           "description": "Gets or sets the OK button aria label text."
         },
         {
           "name": "PadHours",
           "type": "Boolean",
-          "default": null,
+          "default": "false",
           "description": "Gets or sets a value indicating whether the hour picker is padded with a leading zero."
         },
         {
           "name": "PadMinutes",
           "type": "Boolean",
-          "default": null,
+          "default": "false",
           "description": "Gets or sets a value indicating whether the minute picker is padded with a leading zero."
         },
         {
           "name": "PadSeconds",
           "type": "Boolean",
-          "default": null,
+          "default": "false",
           "description": "Gets or sets a value indicating whether the second picker is padded with a leading zero."
         },
         {
           "name": "ParseInput",
           "type": "Func\u003CString, Nullable\u003CDateTime\u003E\u003E",
-          "default": null,
+          "default": "null",
           "description": "Parse the input using an function outside the Radzen-library"
         },
         {
           "name": "Placeholder",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the input placeholder."
         },
         {
           "name": "PopupRenderMode",
           "type": "PopupRenderMode",
-          "default": null,
+          "default": "1",
           "description": "Gets or sets the render mode."
         },
         {
           "name": "PrevMonthAriaLabel",
           "type": "String",
-          "default": null,
+          "default": "\u0022Previous month\u0022",
           "description": "Gets or sets the previous month aria label text."
         },
         {
           "name": "ReadOnly",
           "type": "Boolean",
-          "default": null,
+          "default": "false",
           "description": "Gets or sets a value indicating whether read only."
         },
         {
           "name": "SecondsStep",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the seconds step."
         },
         {
           "name": "ShowButton",
           "type": "Boolean",
-          "default": null,
+          "default": "true",
           "description": "Gets or sets a value indicating whether popup datepicker button is shown."
         },
         {
           "name": "ShowCalendarWeek",
           "type": "Boolean",
-          "default": null,
+          "default": "false",
           "description": "Gets or sets a value indicating whether calendar week will be shown."
         },
         {
           "name": "ShowDays",
           "type": "Boolean",
-          "default": null,
+          "default": "true",
           "description": "Gets or sets a value indicating whether days part is shown."
         },
         {
           "name": "ShowSeconds",
           "type": "Boolean",
-          "default": null,
+          "default": "false",
           "description": "Gets or sets a value indicating whether seconds are shown."
         },
         {
           "name": "ShowTime",
           "type": "Boolean",
-          "default": null,
+          "default": "false",
           "description": "Gets or sets a value indicating whether time part is shown."
         },
         {
           "name": "ShowTimeOkButton",
           "type": "Boolean",
-          "default": null,
+          "default": "true",
           "description": "Gets or sets a value indicating whether time ok button is shown."
         },
         {
           "name": "Style",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the inline CSS style."
         },
         {
           "name": "TabIndex",
           "type": "Int32",
-          "default": null,
+          "default": "0",
           "description": "Gets or sets the tab index."
         },
         {
           "name": "TimeOnly",
           "type": "Boolean",
-          "default": null,
+          "default": "false",
           "description": "Gets or sets a value indicating whether time only can be set."
         },
         {
           "name": "ToggleAmPmAriaLabel",
           "type": "String",
-          "default": null,
+          "default": "\u0022Toggle Am/Pm\u0022",
           "description": "Gets or sets the toggle Am/Pm aria label text."
         },
         {
           "name": "ToggleAriaLabel",
           "type": "String",
-          "default": null,
+          "default": "\u0022Toggle\u0022",
           "description": "Gets or sets the toggle popup aria label text."
         },
         {
           "name": "Value",
           "type": "Object",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the value."
         },
         {
           "name": "ValueExpression",
           "type": "Expression\u003CFunc\u003CTValue\u003E\u003E",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the value expression."
         },
         {
           "name": "Visible",
           "type": "Boolean",
-          "default": null,
+          "default": "true",
           "description": "Gets or sets a value indicating whether this is visible. Invisible components are not rendered."
         },
         {
           "name": "YearRange",
           "type": "String",
-          "default": null,
+          "default": "\u00221950:2056\u0022",
           "description": "Gets or sets the year range."
         }
       ],
@@ -6003,115 +6003,115 @@
         {
           "name": "CategoryProperty",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "ChildContent",
           "type": "RenderFragment",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "Data",
           "type": "IEnumerable\u003CTItem\u003E",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "Fills",
           "type": "IEnumerable\u003CString\u003E",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "Hidden",
           "type": "Boolean",
-          "default": null,
+          "default": "false",
           "description": ""
         },
         {
           "name": "InnerRadius",
           "type": "Nullable\u003CDouble\u003E",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the inner radius of the donut."
         },
         {
           "name": "Radius",
           "type": "Nullable\u003CDouble\u003E",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "RenderingOrder",
           "type": "Int32",
-          "default": null,
+          "default": "0",
           "description": ""
         },
         {
           "name": "StartAngle",
           "type": "Double",
-          "default": null,
+          "default": "90",
           "description": ""
         },
         {
           "name": "Strokes",
           "type": "IEnumerable\u003CString\u003E",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "StrokeWidth",
           "type": "Double",
-          "default": null,
+          "default": "0",
           "description": ""
         },
         {
           "name": "Title",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "TitleTemplate",
           "type": "RenderFragment",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the title template."
         },
         {
           "name": "TooltipTemplate",
           "type": "RenderFragment\u003CTItem\u003E",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "TotalAngle",
           "type": "Double",
-          "default": null,
+          "default": "360",
           "description": ""
         },
         {
           "name": "ValueProperty",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "Visible",
           "type": "Boolean",
-          "default": null,
+          "default": "true",
           "description": ""
         },
         {
           "name": "X",
           "type": "Nullable\u003CDouble\u003E",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "Y",
           "type": "Nullable\u003CDouble\u003E",
-          "default": null,
+          "default": "null",
           "description": ""
         }
       ],
@@ -6127,49 +6127,49 @@
         {
           "name": "AllowClear",
           "type": "Boolean",
-          "default": null,
+          "default": "false",
           "description": ""
         },
         {
           "name": "AllowFiltering",
           "type": "Boolean",
-          "default": null,
+          "default": "false",
           "description": ""
         },
         {
           "name": "AllowSelectAll",
           "type": "Boolean",
-          "default": null,
+          "default": "true",
           "description": ""
         },
         {
           "name": "AllowVirtualization",
           "type": "Boolean",
-          "default": null,
+          "default": "false",
           "description": ""
         },
         {
           "name": "Attributes",
           "type": "IReadOnlyDictionary\u003CString, Object\u003E",
-          "default": null,
+          "default": "null",
           "description": "Specifies additional custom attributes that will be rendered by the component."
         },
         {
           "name": "Chips",
           "type": "Boolean",
-          "default": null,
+          "default": "false",
           "description": "Gets or sets a value indicating whether the selected items will be displayed as chips. Set to false by default. Requires to be set to true."
         },
         {
           "name": "ClearSearchAfterSelection",
           "type": "Boolean",
-          "default": null,
+          "default": "false",
           "description": "Gets or sets a value indicating whether search field need to be cleared after selection. Set to false by default."
         },
         {
           "name": "Count",
           "type": "Int32",
-          "default": null,
+          "default": "0",
           "description": ""
         },
         {
@@ -6181,241 +6181,241 @@
         {
           "name": "Data",
           "type": "IEnumerable",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "Disabled",
           "type": "Boolean",
-          "default": null,
+          "default": "false",
           "description": ""
         },
         {
           "name": "DisabledProperty",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "EmptyAriaLabel",
           "type": "String",
-          "default": null,
+          "default": "\u0022Empty\u0022",
           "description": ""
         },
         {
           "name": "EmptyTemplate",
           "type": "RenderFragment",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the empty template."
         },
         {
           "name": "FilterAsYouType",
           "type": "Boolean",
-          "default": null,
+          "default": "true",
           "description": ""
         },
         {
           "name": "FilterAutoCompleteType",
           "type": "AutoCompleteType",
-          "default": null,
+          "default": "0",
           "description": "Gets or Sets the filter autocomplete type."
         },
         {
           "name": "FilterCaseSensitivity",
           "type": "FilterCaseSensitivity",
-          "default": null,
+          "default": "0",
           "description": ""
         },
         {
           "name": "FilterDelay",
           "type": "Int32",
-          "default": null,
+          "default": "500",
           "description": ""
         },
         {
           "name": "FilterOperator",
           "type": "StringFilterOperator",
-          "default": null,
+          "default": "0",
           "description": ""
         },
         {
           "name": "FilterPlaceholder",
           "type": "String",
-          "default": null,
+          "default": "\u0022\u0022",
           "description": "Gets or sets the filter placeholder."
         },
         {
           "name": "HeaderTemplate",
           "type": "RenderFragment",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "InputAttributes",
           "type": "IReadOnlyDictionary\u003CString, Object\u003E",
-          "default": null,
+          "default": "null",
           "description": "Specifies additional custom attributes that will be rendered by the input."
         },
         {
           "name": "ItemComparer",
           "type": "IEqualityComparer\u003CObject\u003E",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "ItemRender",
           "type": "Action\u003CDropDownItemRenderEventArgs\u003CTValue\u003E\u003E",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the row render callback. Use it to set row attributes."
         },
         {
           "name": "MaxSelectedLabels",
           "type": "Int32",
-          "default": null,
+          "default": "4",
           "description": "Gets or sets the number of maximum selected labels."
         },
         {
           "name": "Multiple",
           "type": "Boolean",
-          "default": null,
+          "default": "false",
           "description": ""
         },
         {
           "name": "Name",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "OpenOnFocus",
           "type": "Boolean",
-          "default": null,
+          "default": "false",
           "description": "Gets or sets a value indicating whether popup should open on focus. Set to false by default."
         },
         {
           "name": "PageSize",
           "type": "Int32",
-          "default": null,
+          "default": "5",
           "description": ""
         },
         {
           "name": "Placeholder",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "PopupStyle",
           "type": "String",
-          "default": null,
+          "default": "\u0022max-height:200px;overflow-x:hidden\u0022",
           "description": "Gets or sets the Popup height."
         },
         {
           "name": "ReadOnly",
           "type": "Boolean",
-          "default": null,
+          "default": "false",
           "description": "Gets or sets a value indicating whether is read only."
         },
         {
           "name": "RemoveChipTitle",
           "type": "String",
-          "default": null,
+          "default": "\u0022Remove\u0022",
           "description": ""
         },
         {
           "name": "SearchAriaLabel",
           "type": "String",
-          "default": null,
+          "default": "\u0022Search\u0022",
           "description": ""
         },
         {
           "name": "SearchText",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "SelectAllText",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the select all text."
         },
         {
           "name": "SelectedItem",
           "type": "Object",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "SelectedItemsText",
           "type": "String",
-          "default": null,
+          "default": "\u0022items selected\u0022",
           "description": "Gets or sets the selected items text."
         },
         {
           "name": "Separator",
           "type": "String",
-          "default": null,
+          "default": "\u0022,\u0022",
           "description": ""
         },
         {
           "name": "Style",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the inline CSS style."
         },
         {
           "name": "TabIndex",
           "type": "Int32",
-          "default": null,
+          "default": "0",
           "description": ""
         },
         {
           "name": "Template",
           "type": "RenderFragment\u003CObject\u003E",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "TextProperty",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "Value",
           "type": "Object",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "ValueExpression",
           "type": "Expression\u003CFunc\u003CTValue\u003E\u003E",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "ValueProperty",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "ValueTemplate",
           "type": "RenderFragment\u003CObject\u003E",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the value template."
         },
         {
           "name": "VirtualizationOverscanCount",
           "type": "Int32",
-          "default": null,
+          "default": "0",
           "description": ""
         },
         {
           "name": "Visible",
           "type": "Boolean",
-          "default": null,
+          "default": "true",
           "description": "Gets or sets a value indicating whether this is visible. Invisible components are not rendered."
         }
       ],
@@ -6482,97 +6482,97 @@
         {
           "name": "AddAriaLabel",
           "type": "String",
-          "default": null,
+          "default": "\u0022Add\u0022",
           "description": "Gets or sets the add button aria-label attribute."
         },
         {
           "name": "AllowClear",
           "type": "Boolean",
-          "default": null,
+          "default": "false",
           "description": ""
         },
         {
           "name": "AllowColumnResize",
           "type": "Boolean",
-          "default": null,
+          "default": "false",
           "description": "Gets or sets a value indicating whether column resizing is allowed."
         },
         {
           "name": "AllowFiltering",
           "type": "Boolean",
-          "default": null,
+          "default": "true",
           "description": "Gets or sets a value indicating whether filtering is allowed."
         },
         {
           "name": "AllowFilteringByAllStringColumns",
           "type": "Boolean",
-          "default": null,
+          "default": "false",
           "description": "Gets or sets a value indicating whether filtering by all string columns is allowed."
         },
         {
           "name": "AllowFilteringByWord",
           "type": "Boolean",
-          "default": null,
+          "default": "false",
           "description": "Gets or sets a value indicating whether filtering by each entered word in the search term, sperated by a space, is allowed."
         },
         {
           "name": "AllowRowSelectOnRowClick",
           "type": "Boolean",
-          "default": null,
+          "default": "true",
           "description": "Gets or sets a value indicating whether DataGrid row can be selected on row click."
         },
         {
           "name": "AllowSelectAll",
           "type": "Boolean",
-          "default": null,
+          "default": "true",
           "description": ""
         },
         {
           "name": "AllowSorting",
           "type": "Boolean",
-          "default": null,
+          "default": "true",
           "description": "Gets or sets a value indicating whether sorting is allowed."
         },
         {
           "name": "AllowVirtualization",
           "type": "Boolean",
-          "default": null,
+          "default": "false",
           "description": ""
         },
         {
           "name": "Attributes",
           "type": "IReadOnlyDictionary\u003CString, Object\u003E",
-          "default": null,
+          "default": "null",
           "description": "Specifies additional custom attributes that will be rendered by the component."
         },
         {
           "name": "CellRender",
           "type": "Action\u003CDataGridCellRenderEventArgs\u003CObject\u003E\u003E",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the cell render callback. Use it to set cell attributes."
         },
         {
           "name": "Chips",
           "type": "Boolean",
-          "default": null,
+          "default": "false",
           "description": "Gets or sets a value indicating whether the selected items will be displayed as chips. Set to false by default. Requires to be set to true."
         },
         {
           "name": "Columns",
           "type": "RenderFragment",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the columns."
         },
         {
           "name": "ColumnWidth",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the width of all columns."
         },
         {
           "name": "Count",
           "type": "Int32",
-          "default": null,
+          "default": "0",
           "description": ""
         },
         {
@@ -6584,367 +6584,367 @@
         {
           "name": "Data",
           "type": "IEnumerable",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "Density",
           "type": "Density",
-          "default": null,
+          "default": "0",
           "description": "Gets or sets a value indicating DataGrid density."
         },
         {
           "name": "Disabled",
           "type": "Boolean",
-          "default": null,
+          "default": "false",
           "description": ""
         },
         {
           "name": "DisabledProperty",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "EmptyAriaLabel",
           "type": "String",
-          "default": null,
+          "default": "\u0022Empty\u0022",
           "description": ""
         },
         {
           "name": "EmptyTemplate",
           "type": "RenderFragment",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the empty template shown when Data is empty collection."
         },
         {
           "name": "EmptyText",
           "type": "String",
-          "default": null,
+          "default": "\u0022No records to display.\u0022",
           "description": "Gets or sets the empty text."
         },
         {
           "name": "FilterAsYouType",
           "type": "Boolean",
-          "default": null,
+          "default": "true",
           "description": ""
         },
         {
           "name": "FilterCaseSensitivity",
           "type": "FilterCaseSensitivity",
-          "default": null,
+          "default": "0",
           "description": ""
         },
         {
           "name": "FilterDelay",
           "type": "Int32",
-          "default": null,
+          "default": "500",
           "description": ""
         },
         {
           "name": "FilterOperator",
           "type": "StringFilterOperator",
-          "default": null,
+          "default": "0",
           "description": ""
         },
         {
           "name": "FirstPageAriaLabel",
           "type": "String",
-          "default": null,
+          "default": "\u0022Go to first page.\u0022",
           "description": "Gets or sets the pager\u0027s first page button\u0027s aria-label attribute."
         },
         {
           "name": "FirstPageTitle",
           "type": "String",
-          "default": null,
+          "default": "\u0022First page.\u0022",
           "description": "Gets or sets the pager\u0027s first page button\u0027s title attribute."
         },
         {
           "name": "FocusFilterOnPopup",
           "type": "Boolean",
-          "default": null,
+          "default": "true",
           "description": "Gets or sets whether popup automatically focuses on filter input."
         },
         {
           "name": "FooterTemplate",
           "type": "RenderFragment",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the footer template."
         },
         {
           "name": "HeaderTemplate",
           "type": "RenderFragment",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "InputAttributes",
           "type": "IReadOnlyDictionary\u003CString, Object\u003E",
-          "default": null,
+          "default": "null",
           "description": "Specifies additional custom attributes that will be rendered by the input."
         },
         {
           "name": "IsLoading",
           "type": "Boolean",
-          "default": null,
+          "default": "false",
           "description": "Gets or sets a value indicating whether this instance loading indicator is shown."
         },
         {
           "name": "ItemComparer",
           "type": "IEqualityComparer\u003CObject\u003E",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "LastPageAriaLabel",
           "type": "String",
-          "default": null,
+          "default": "\u0022Go to last page.\u0022",
           "description": "Gets or sets the pager\u0027s last page button\u0027s aria-label attribute."
         },
         {
           "name": "LastPageTitle",
           "type": "String",
-          "default": null,
+          "default": "\u0022Last page\u0022",
           "description": "Gets or sets the pager\u0027s last page button\u0027s title attribute."
         },
         {
           "name": "MaxSelectedLabels",
           "type": "Int32",
-          "default": null,
+          "default": "4",
           "description": "Gets or sets the number of maximum selected labels."
         },
         {
           "name": "Multiple",
           "type": "Boolean",
-          "default": null,
+          "default": "false",
           "description": ""
         },
         {
           "name": "Name",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "NextPageAriaLabel",
           "type": "String",
-          "default": null,
+          "default": "\u0022Go to next page.\u0022",
           "description": "Gets or sets the pager\u0027s next page button\u0027s aria-label attribute."
         },
         {
           "name": "NextPageTitle",
           "type": "String",
-          "default": null,
+          "default": "\u0022Next page\u0022",
           "description": "Gets or sets the pager\u0027s next page button\u0027s title attribute."
         },
         {
           "name": "OpenOnFocus",
           "type": "Boolean",
-          "default": null,
+          "default": "false",
           "description": "Gets or sets a value indicating whether popup should open on focus. Set to false by default."
         },
         {
           "name": "PageAriaLabelFormat",
           "type": "String",
-          "default": null,
+          "default": "\u0022Go to page {0}.\u0022",
           "description": "Gets or sets the pager\u0027s numeric page number buttons\u0027 aria-label attributes."
         },
         {
           "name": "PageNumbersCount",
           "type": "Int32",
-          "default": null,
+          "default": "2",
           "description": "Gets or sets the page numbers count."
         },
         {
           "name": "PagerAlwaysVisible",
           "type": "Boolean",
-          "default": null,
+          "default": "false",
           "description": "Gets or sets a value indicating whether pager is visible even when not enough data for paging."
         },
         {
           "name": "PagerHorizontalAlign",
           "type": "HorizontalAlign",
-          "default": null,
+          "default": "3",
           "description": "Gets or sets the horizontal align."
         },
         {
           "name": "PageSize",
           "type": "Int32",
-          "default": null,
+          "default": "5",
           "description": ""
         },
         {
           "name": "PageTitleFormat",
           "type": "String",
-          "default": null,
+          "default": "\u0022Page {0}\u0022",
           "description": "Gets or sets the pager\u0027s numeric page number buttons\u0027 title attributes."
         },
         {
           "name": "PagingSummaryFormat",
           "type": "String",
-          "default": null,
+          "default": "\u0022Page {0} of {1} ({2} items)\u0022",
           "description": "Gets or sets the pager summary format."
         },
         {
           "name": "Placeholder",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "PreserveRowSelectionOnPaging",
           "type": "Boolean",
-          "default": null,
+          "default": "false",
           "description": "Gets or sets preserving the selected row index on pageing."
         },
         {
           "name": "PrevPageAriaLabel",
           "type": "String",
-          "default": null,
+          "default": "\u0022Go to previous page.\u0022",
           "description": "Gets or sets the pager\u0027s previous page button\u0027s aria-label attribute."
         },
         {
           "name": "PrevPageTitle",
           "type": "String",
-          "default": null,
+          "default": "\u0022Previous page\u0022",
           "description": "Gets or sets the pager\u0027s previous page button\u0027s title attribute."
         },
         {
           "name": "RemoveChipTitle",
           "type": "String",
-          "default": null,
+          "default": "\u0022Remove\u0022",
           "description": ""
         },
         {
           "name": "Responsive",
           "type": "Boolean",
-          "default": null,
+          "default": "false",
           "description": "Gets or sets a value indicating whether this is responsive."
         },
         {
           "name": "RowRender",
           "type": "Action\u003CRowRenderEventArgs\u003CObject\u003E\u003E",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the row render callback. Use it to set row attributes."
         },
         {
           "name": "SearchAriaLabel",
           "type": "String",
-          "default": null,
+          "default": "\u0022Search\u0022",
           "description": ""
         },
         {
           "name": "SearchText",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "SearchTextPlaceholder",
           "type": "String",
-          "default": null,
+          "default": "\u0022Search...\u0022",
           "description": "Gets or sets the search input placeholder text."
         },
         {
           "name": "SelectedItem",
           "type": "Object",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "SelectedItemsText",
           "type": "String",
-          "default": null,
+          "default": "\u0022items selected\u0022",
           "description": "Gets or sets the selected items text."
         },
         {
           "name": "SelectedValue",
           "type": "Object",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the selected value."
         },
         {
           "name": "Separator",
           "type": "String",
-          "default": null,
+          "default": "\u0022,\u0022",
           "description": ""
         },
         {
           "name": "ShowAdd",
           "type": "Boolean",
-          "default": null,
+          "default": "false",
           "description": "Gets or sets a value indicating whether the create button is shown."
         },
         {
           "name": "ShowPagingSummary",
           "type": "Boolean",
-          "default": null,
+          "default": "false",
           "description": "Gets or sets the pager summary visibility."
         },
         {
           "name": "ShowSearch",
           "type": "Boolean",
-          "default": null,
+          "default": "true",
           "description": "Gets or sets a value indicating whether search button is shown."
         },
         {
           "name": "Style",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the inline CSS style."
         },
         {
           "name": "TabIndex",
           "type": "Int32",
-          "default": null,
+          "default": "0",
           "description": ""
         },
         {
           "name": "Template",
           "type": "RenderFragment\u003CObject\u003E",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "TextProperty",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "Value",
           "type": "Object",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "ValueExpression",
           "type": "Expression\u003CFunc\u003CTValue\u003E\u003E",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "ValueProperty",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "ValueTemplate",
           "type": "RenderFragment\u003CObject\u003E",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the value template."
         },
         {
           "name": "VirtualizationOverscanCount",
           "type": "Int32",
-          "default": null,
+          "default": "0",
           "description": ""
         },
         {
           "name": "Visible",
           "type": "Boolean",
-          "default": null,
+          "default": "true",
           "description": "Gets or sets a value indicating whether this is visible. Invisible components are not rendered."
         }
       ],
@@ -7314,25 +7314,25 @@
         {
           "name": "Attributes",
           "type": "IReadOnlyDictionary\u003CString, Object\u003E",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "Disabled",
           "type": "Boolean",
-          "default": null,
+          "default": "false",
           "description": ""
         },
         {
           "name": "DropDown",
           "type": "RadzenDropDown\u003CTValue\u003E",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "Item",
           "type": "Object",
-          "default": null,
+          "default": "null",
           "description": ""
         }
       ],
@@ -7348,13 +7348,13 @@
         {
           "name": "Attributes",
           "type": "IReadOnlyDictionary\u003CString, Object\u003E",
-          "default": null,
+          "default": "null",
           "description": "Specifies additional custom attributes that will be rendered by the component."
         },
         {
           "name": "ChildContent",
           "type": "RenderFragment",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the child content"
         },
         {
@@ -7366,25 +7366,25 @@
         {
           "name": "Footer",
           "type": "RenderFragment",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the Footer Templated The Footer Template is rendered below the items in the"
         },
         {
           "name": "Style",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the inline CSS style."
         },
         {
           "name": "Value",
           "type": "Object",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the zone value used to compare items in container Selector function."
         },
         {
           "name": "Visible",
           "type": "Boolean",
-          "default": null,
+          "default": "true",
           "description": "Gets or sets a value indicating whether this is visible. Invisible components are not rendered."
         }
       ],
@@ -7416,19 +7416,19 @@
         {
           "name": "Attributes",
           "type": "IReadOnlyDictionary\u003CString, Object\u003E",
-          "default": null,
+          "default": "null",
           "description": "Specifies additional custom attributes that will be rendered by the component."
         },
         {
           "name": "CanDrop",
           "type": "Func\u003CRadzenDropZoneItemEventArgs\u003CTItem\u003E, Boolean\u003E",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the function that checks if the item can be dropped in specific zone or item."
         },
         {
           "name": "ChildContent",
           "type": "RenderFragment",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the child content"
         },
         {
@@ -7440,37 +7440,37 @@
         {
           "name": "Data",
           "type": "IEnumerable\u003CTItem\u003E",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the data."
         },
         {
           "name": "ItemRender",
           "type": "Action\u003CRadzenDropZoneItemRenderEventArgs\u003CTItem\u003E\u003E",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the row render callback. Use it to set row attributes."
         },
         {
           "name": "ItemSelector",
           "type": "Func\u003CTItem, RadzenDropZone\u003CTItem\u003E, Boolean\u003E",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the selector function for zone items."
         },
         {
           "name": "Style",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the inline CSS style."
         },
         {
           "name": "Template",
           "type": "RenderFragment\u003CTItem\u003E",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the template for zone items."
         },
         {
           "name": "Visible",
           "type": "Boolean",
-          "default": null,
+          "default": "true",
           "description": "Gets or sets a value indicating whether this is visible. Invisible components are not rendered."
         }
       ],
@@ -7507,7 +7507,7 @@
         {
           "name": "Attributes",
           "type": "IReadOnlyDictionary\u003CString, Object\u003E",
-          "default": null,
+          "default": "null",
           "description": "Specifies additional custom attributes that will be rendered by the component."
         },
         {
@@ -7519,13 +7519,13 @@
         {
           "name": "Style",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the inline CSS style."
         },
         {
           "name": "Visible",
           "type": "Boolean",
-          "default": null,
+          "default": "true",
           "description": "Gets or sets a value indicating whether this is visible. Invisible components are not rendered."
         }
       ],
@@ -7753,19 +7753,19 @@
         {
           "name": "Accept",
           "type": "String",
-          "default": null,
+          "default": "\u0022image/*\u0022",
           "description": "Gets or sets the comma-separated accepted MIME types."
         },
         {
           "name": "Attributes",
           "type": "IReadOnlyDictionary\u003CString, Object\u003E",
-          "default": null,
+          "default": "null",
           "description": "Specifies additional custom attributes that will be rendered by the component."
         },
         {
           "name": "ChooseText",
           "type": "String",
-          "default": null,
+          "default": "\u0022Choose\u0022",
           "description": "Gets or sets the choose button text."
         },
         {
@@ -7777,109 +7777,109 @@
         {
           "name": "DeleteText",
           "type": "String",
-          "default": null,
+          "default": "\u0022Delete\u0022",
           "description": "Gets or sets the delete button text."
         },
         {
           "name": "Disabled",
           "type": "Boolean",
-          "default": null,
+          "default": "false",
           "description": ""
         },
         {
           "name": "FileName",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the image file name."
         },
         {
           "name": "FileSize",
           "type": "Nullable\u003CInt64\u003E",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the image file size."
         },
         {
           "name": "ImageAlternateText",
           "type": "String",
-          "default": null,
+          "default": "\u0022image\u0022",
           "description": "Gets or sets the text."
         },
         {
           "name": "ImageStyle",
           "type": "String",
-          "default": null,
+          "default": "\u0022width:100px;\u0022",
           "description": "Gets or sets the image style."
         },
         {
           "name": "InputAttributes",
           "type": "IReadOnlyDictionary\u003CString, Object\u003E",
-          "default": null,
+          "default": "null",
           "description": "Specifies additional custom attributes that will be rendered by the input."
         },
         {
           "name": "MaxFileSize",
           "type": "Int32",
-          "default": null,
+          "default": "5242880",
           "description": "Gets or sets the maximum size of the file."
         },
         {
           "name": "MaxHeight",
           "type": "Int32",
-          "default": null,
+          "default": "0",
           "description": "Gets or sets the maximum height of the file, keeping aspect ratio."
         },
         {
           "name": "MaxWidth",
           "type": "Int32",
-          "default": null,
+          "default": "0",
           "description": "Gets or sets the maximum width of the file, keeping aspect ratio."
         },
         {
           "name": "Name",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "Placeholder",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "Style",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the inline CSS style."
         },
         {
           "name": "TabIndex",
           "type": "Int32",
-          "default": null,
+          "default": "0",
           "description": ""
         },
         {
           "name": "Title",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the title."
         },
         {
           "name": "Value",
           "type": "TValue",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "ValueExpression",
           "type": "Expression\u003CFunc\u003CTValue\u003E\u003E",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "Visible",
           "type": "Boolean",
-          "default": null,
+          "default": "true",
           "description": "Gets or sets a value indicating whether this is visible. Invisible components are not rendered."
         }
       ],
@@ -10028,85 +10028,85 @@
         {
           "name": "CategoryProperty",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "ChildContent",
           "type": "RenderFragment",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "Data",
           "type": "IEnumerable\u003CTItem\u003E",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "Hidden",
           "type": "Boolean",
-          "default": null,
+          "default": "false",
           "description": ""
         },
         {
           "name": "Interpolation",
           "type": "Interpolation",
-          "default": null,
+          "default": "0",
           "description": "Specifies how to render lines between data points. Set to by default"
         },
         {
           "name": "LineType",
           "type": "LineType",
-          "default": null,
+          "default": "0",
           "description": "Specifies the line type."
         },
         {
           "name": "RenderingOrder",
           "type": "Int32",
-          "default": null,
+          "default": "0",
           "description": ""
         },
         {
           "name": "Smooth",
           "type": "Boolean",
-          "default": null,
+          "default": "false",
           "description": "Specifies whether to render a smooth line. Set to false by default."
         },
         {
           "name": "Stroke",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": "Specifies the color of the line."
         },
         {
           "name": "StrokeWidth",
           "type": "Double",
-          "default": null,
+          "default": "2",
           "description": "Specifies the pixel width of the line. Set to 2 by default."
         },
         {
           "name": "Title",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "TooltipTemplate",
           "type": "RenderFragment\u003CTItem\u003E",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "ValueProperty",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "Visible",
           "type": "Boolean",
-          "default": null,
+          "default": "true",
           "description": ""
         }
       ],
@@ -10224,37 +10224,37 @@
         {
           "name": "AllowClear",
           "type": "Boolean",
-          "default": null,
+          "default": "false",
           "description": ""
         },
         {
           "name": "AllowFiltering",
           "type": "Boolean",
-          "default": null,
+          "default": "false",
           "description": ""
         },
         {
           "name": "AllowSelectAll",
           "type": "Boolean",
-          "default": null,
+          "default": "true",
           "description": ""
         },
         {
           "name": "AllowVirtualization",
           "type": "Boolean",
-          "default": null,
+          "default": "false",
           "description": ""
         },
         {
           "name": "Attributes",
           "type": "IReadOnlyDictionary\u003CString, Object\u003E",
-          "default": null,
+          "default": "null",
           "description": "Specifies additional custom attributes that will be rendered by the component."
         },
         {
           "name": "Count",
           "type": "Int32",
-          "default": null,
+          "default": "0",
           "description": ""
         },
         {
@@ -10266,193 +10266,193 @@
         {
           "name": "Data",
           "type": "IEnumerable",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "Disabled",
           "type": "Boolean",
-          "default": null,
+          "default": "false",
           "description": ""
         },
         {
           "name": "DisabledProperty",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "EmptyAriaLabel",
           "type": "String",
-          "default": null,
+          "default": "\u0022Empty\u0022",
           "description": ""
         },
         {
           "name": "FilterAsYouType",
           "type": "Boolean",
-          "default": null,
+          "default": "true",
           "description": ""
         },
         {
           "name": "FilterCaseSensitivity",
           "type": "FilterCaseSensitivity",
-          "default": null,
+          "default": "0",
           "description": ""
         },
         {
           "name": "FilterDelay",
           "type": "Int32",
-          "default": null,
+          "default": "500",
           "description": ""
         },
         {
           "name": "FilterOperator",
           "type": "StringFilterOperator",
-          "default": null,
+          "default": "0",
           "description": ""
         },
         {
           "name": "HeaderTemplate",
           "type": "RenderFragment",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "InputAttributes",
           "type": "IReadOnlyDictionary\u003CString, Object\u003E",
-          "default": null,
+          "default": "null",
           "description": "Specifies additional custom attributes that will be rendered by the input."
         },
         {
           "name": "ItemComparer",
           "type": "IEqualityComparer\u003CObject\u003E",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "ItemRender",
           "type": "Action\u003CListBoxItemRenderEventArgs\u003CTValue\u003E\u003E",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the row render callback. Use it to set row attributes."
         },
         {
           "name": "Multiple",
           "type": "Boolean",
-          "default": null,
+          "default": "false",
           "description": ""
         },
         {
           "name": "Name",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "PageSize",
           "type": "Int32",
-          "default": null,
+          "default": "5",
           "description": ""
         },
         {
           "name": "Placeholder",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "ReadOnly",
           "type": "Boolean",
-          "default": null,
+          "default": "false",
           "description": "Gets or sets a value indicating whether is read only."
         },
         {
           "name": "RemoveChipTitle",
           "type": "String",
-          "default": null,
+          "default": "\u0022Remove\u0022",
           "description": ""
         },
         {
           "name": "SearchAriaLabel",
           "type": "String",
-          "default": null,
+          "default": "\u0022Search\u0022",
           "description": ""
         },
         {
           "name": "SearchText",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "SelectAllText",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the select all text."
         },
         {
           "name": "SelectedItem",
           "type": "Object",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "Separator",
           "type": "String",
-          "default": null,
+          "default": "\u0022,\u0022",
           "description": ""
         },
         {
           "name": "Style",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the inline CSS style."
         },
         {
           "name": "TabIndex",
           "type": "Int32",
-          "default": null,
+          "default": "0",
           "description": ""
         },
         {
           "name": "Template",
           "type": "RenderFragment\u003CObject\u003E",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "TextProperty",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "Value",
           "type": "Object",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "ValueExpression",
           "type": "Expression\u003CFunc\u003CTValue\u003E\u003E",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "ValueProperty",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "VirtualizationOverscanCount",
           "type": "Int32",
-          "default": null,
+          "default": "0",
           "description": ""
         },
         {
           "name": "Visible",
           "type": "Boolean",
-          "default": null,
+          "default": "true",
           "description": "Gets or sets a value indicating whether this is visible. Invisible components are not rendered."
         }
       ],
@@ -10509,25 +10509,25 @@
         {
           "name": "Attributes",
           "type": "IReadOnlyDictionary\u003CString, Object\u003E",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "Disabled",
           "type": "Boolean",
-          "default": null,
+          "default": "false",
           "description": ""
         },
         {
           "name": "Item",
           "type": "Object",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "ListBox",
           "type": "RadzenListBox\u003CTValue\u003E",
-          "default": null,
+          "default": "null",
           "description": ""
         }
       ],
@@ -11304,19 +11304,19 @@
         {
           "name": "Attributes",
           "type": "IReadOnlyDictionary\u003CString, Object\u003E",
-          "default": null,
+          "default": "null",
           "description": "Specifies additional custom attributes that will be rendered by the component."
         },
         {
           "name": "AutoCompleteType",
           "type": "AutoCompleteType",
-          "default": null,
+          "default": "1",
           "description": ""
         },
         {
           "name": "ConvertValue",
           "type": "Func\u003CString, TValue\u003E",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the function which returns TValue from string."
         },
         {
@@ -11328,109 +11328,109 @@
         {
           "name": "Disabled",
           "type": "Boolean",
-          "default": null,
+          "default": "false",
           "description": ""
         },
         {
           "name": "DownAriaLabel",
           "type": "String",
-          "default": null,
+          "default": "\u0022Down\u0022",
           "description": "Gets or sets the down button aria-label attribute."
         },
         {
           "name": "Format",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the format."
         },
         {
           "name": "InputAttributes",
           "type": "IReadOnlyDictionary\u003CString, Object\u003E",
-          "default": null,
+          "default": "null",
           "description": "Specifies additional custom attributes that will be rendered by the input."
         },
         {
           "name": "Max",
           "type": "Nullable\u003CDecimal\u003E",
-          "default": null,
+          "default": "null",
           "description": "Determines the maximum value."
         },
         {
           "name": "Min",
           "type": "Nullable\u003CDecimal\u003E",
-          "default": null,
+          "default": "null",
           "description": "Determines the minimum value."
         },
         {
           "name": "Name",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "Placeholder",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "ReadOnly",
           "type": "Boolean",
-          "default": null,
+          "default": "false",
           "description": "Gets or sets a value indicating whether is read only."
         },
         {
           "name": "ShowUpDown",
           "type": "Boolean",
-          "default": null,
+          "default": "true",
           "description": "Gets or sets a value indicating whether up down buttons are shown."
         },
         {
           "name": "Step",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the step."
         },
         {
           "name": "Style",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the inline CSS style."
         },
         {
           "name": "TabIndex",
           "type": "Int32",
-          "default": null,
+          "default": "0",
           "description": ""
         },
         {
           "name": "TextAlign",
           "type": "TextAlign",
-          "default": null,
+          "default": "0",
           "description": "Gets or sets the text align."
         },
         {
           "name": "UpAriaLabel",
           "type": "String",
-          "default": null,
+          "default": "\u0022Up\u0022",
           "description": "Gets or sets the up button aria-label attribute."
         },
         {
           "name": "Value",
           "type": "TValue",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the value."
         },
         {
           "name": "ValueExpression",
           "type": "Expression\u003CFunc\u003CTValue\u003E\u003E",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "Visible",
           "type": "Boolean",
-          "default": null,
+          "default": "true",
           "description": "Gets or sets a value indicating whether this is visible. Invisible components are not rendered."
         }
       ],
@@ -12207,73 +12207,73 @@
         {
           "name": "AllowFiltering",
           "type": "Boolean",
-          "default": null,
+          "default": "false",
           "description": "Gets or sets value if filtering is allowed."
         },
         {
           "name": "AllowMoveAll",
           "type": "Boolean",
-          "default": null,
+          "default": "true",
           "description": "Gets or sets a value indicating whether it is allowed to move all items."
         },
         {
           "name": "AllowMoveAllSourceToTarget",
           "type": "Boolean",
-          "default": null,
+          "default": "true",
           "description": "Gets or sets a value indicating whether it is allowed to move all items from source to target."
         },
         {
           "name": "AllowMoveAllTargetToSource",
           "type": "Boolean",
-          "default": null,
+          "default": "true",
           "description": "Gets or sets a value indicating whether it is allowed to move all items from target to source."
         },
         {
           "name": "AllowSelectAll",
           "type": "Boolean",
-          "default": null,
+          "default": "true",
           "description": "Gets or sets a value indicating whether selecting all items is allowed."
         },
         {
           "name": "Attributes",
           "type": "IReadOnlyDictionary\u003CString, Object\u003E",
-          "default": null,
+          "default": "null",
           "description": "Specifies additional custom attributes that will be rendered by the component."
         },
         {
           "name": "ButtonGap",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the buttons spacing"
         },
         {
           "name": "ButtonJustifyContent",
           "type": "JustifyContent",
-          "default": null,
+          "default": "1",
           "description": "Gets or sets the buttons style"
         },
         {
           "name": "ButtonShade",
           "type": "Shade",
-          "default": null,
+          "default": "2",
           "description": "Gets or sets the color shade of the buttons."
         },
         {
           "name": "ButtonSize",
           "type": "ButtonSize",
-          "default": null,
+          "default": "0",
           "description": "Gets or sets the buttons size."
         },
         {
           "name": "ButtonStyle",
           "type": "ButtonStyle",
-          "default": null,
+          "default": "0",
           "description": "Gets or sets the buttons style"
         },
         {
           "name": "ButtonVariant",
           "type": "Variant",
-          "default": null,
+          "default": "2",
           "description": "Gets or sets the design variant of the buttons."
         },
         {
@@ -12285,157 +12285,157 @@
         {
           "name": "Disabled",
           "type": "Boolean",
-          "default": null,
+          "default": "false",
           "description": "Gets or sets a value indicating whether component is disabled."
         },
         {
           "name": "DisabledProperty",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the disabled property"
         },
         {
           "name": "ItemRender",
           "type": "Action\u003CPickListItemRenderEventArgs\u003CTItem\u003E\u003E",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the row render callback. Use it to set row attributes."
         },
         {
           "name": "Multiple",
           "type": "Boolean",
-          "default": null,
+          "default": "false",
           "description": "Gets or sets a value indicating whether multiple selection is allowed."
         },
         {
           "name": "Orientation",
           "type": "Orientation",
-          "default": null,
+          "default": "0",
           "description": "Gets or sets the orientation"
         },
         {
           "name": "Placeholder",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the common placeholder"
         },
         {
           "name": "SelectAllText",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the select all text."
         },
         {
           "name": "SelectedSourceToTargetIcon",
           "type": "String",
-          "default": null,
+          "default": "\u0022keyboard_arrow_right\u0022",
           "description": "Gets or sets the selected source to target icon"
         },
         {
           "name": "SelectedSourceToTargetTitle",
           "type": "String",
-          "default": null,
+          "default": "\u0022Move all selected source items to target collection\u0022",
           "description": "Gets or sets the selected source to target title"
         },
         {
           "name": "SelectedTargetToSourceIcon",
           "type": "String",
-          "default": null,
+          "default": "\u0022keyboard_arrow_left\u0022",
           "description": "Gets or sets the selected target to source icon"
         },
         {
           "name": "SelectedTargetToSourceTitle",
           "type": "String",
-          "default": null,
+          "default": "\u0022Move selected target items to source collection\u0022",
           "description": "Gets or sets the selected target to source title"
         },
         {
           "name": "ShowHeader",
           "type": "Boolean",
-          "default": null,
+          "default": "true",
           "description": "Gets or sets value if headers are shown."
         },
         {
           "name": "Source",
           "type": "IEnumerable\u003CTItem\u003E",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the source collection."
         },
         {
           "name": "SourceHeader",
           "type": "RenderFragment",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the source header"
         },
         {
           "name": "SourcePlaceholder",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the source placeholder"
         },
         {
           "name": "SourceToTargetIcon",
           "type": "String",
-          "default": null,
+          "default": "\u0022keyboard_double_arrow_right\u0022",
           "description": "Gets or sets the source to target icon"
         },
         {
           "name": "SourceToTargetTitle",
           "type": "String",
-          "default": null,
+          "default": "\u0022Move all items from source to target collection\u0022",
           "description": "Gets or sets the source to target title"
         },
         {
           "name": "Style",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the inline CSS style."
         },
         {
           "name": "Target",
           "type": "IEnumerable\u003CTItem\u003E",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the target collection."
         },
         {
           "name": "TargetHeader",
           "type": "RenderFragment",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the target header"
         },
         {
           "name": "TargetPlaceholder",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the target placeholder"
         },
         {
           "name": "TargetToSourceIcon",
           "type": "String",
-          "default": null,
+          "default": "\u0022keyboard_double_arrow_left\u0022",
           "description": "Gets or sets the target to source icon"
         },
         {
           "name": "TargetToSourceTitle",
           "type": "String",
-          "default": null,
+          "default": "\u0022Move all items from target to source collection\u0022",
           "description": "Gets or sets the target to source title"
         },
         {
           "name": "Template",
           "type": "RenderFragment\u003CTItem\u003E",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the source template"
         },
         {
           "name": "TextProperty",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the text property"
         },
         {
           "name": "Visible",
           "type": "Boolean",
-          "default": null,
+          "default": "true",
           "description": "Gets or sets a value indicating whether this is visible. Invisible components are not rendered."
         }
       ],
@@ -12477,103 +12477,103 @@
         {
           "name": "CategoryProperty",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "ChildContent",
           "type": "RenderFragment",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "Data",
           "type": "IEnumerable\u003CTItem\u003E",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "Fills",
           "type": "IEnumerable\u003CString\u003E",
-          "default": null,
+          "default": "null",
           "description": "The fill colors of the pie segments. Used as the background of the segments."
         },
         {
           "name": "Hidden",
           "type": "Boolean",
-          "default": null,
+          "default": "false",
           "description": ""
         },
         {
           "name": "Radius",
           "type": "Nullable\u003CDouble\u003E",
-          "default": null,
+          "default": "null",
           "description": "Specifies the radius of the pie. Not set by default - the pie takes as much size of the chart as possible."
         },
         {
           "name": "RenderingOrder",
           "type": "Int32",
-          "default": null,
+          "default": "0",
           "description": ""
         },
         {
           "name": "StartAngle",
           "type": "Double",
-          "default": null,
+          "default": "90",
           "description": "Gets or sets the start angle from which segments are rendered (clockwise). Set to 90 by default. Top is 90, right is 0, bottom is 270, left is 180."
         },
         {
           "name": "Strokes",
           "type": "IEnumerable\u003CString\u003E",
-          "default": null,
+          "default": "null",
           "description": "The stroke colors of the pie segments."
         },
         {
           "name": "StrokeWidth",
           "type": "Double",
-          "default": null,
+          "default": "0",
           "description": "The stroke width of the segments in pixels. By default set to 0."
         },
         {
           "name": "Title",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "TooltipTemplate",
           "type": "RenderFragment\u003CTItem\u003E",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "TotalAngle",
           "type": "Double",
-          "default": null,
+          "default": "360",
           "description": "Gets or sets the total angle of the pie in degrees. Set to 360 by default which renders a full circle. Set to 180 to render a half circle or"
         },
         {
           "name": "ValueProperty",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "Visible",
           "type": "Boolean",
-          "default": null,
+          "default": "true",
           "description": ""
         },
         {
           "name": "X",
           "type": "Nullable\u003CDouble\u003E",
-          "default": null,
+          "default": "null",
           "description": "Specifies the x coordinate of the pie center. Not set by default which centers pie horizontally."
         },
         {
           "name": "Y",
           "type": "Nullable\u003CDouble\u003E",
-          "default": null,
+          "default": "null",
           "description": "Specifies the y coordinate of the pie center. Not set by default which centers pie vertically."
         }
       ],
@@ -13278,7 +13278,7 @@
         {
           "name": "Attributes",
           "type": "IReadOnlyDictionary\u003CString, Object\u003E",
-          "default": null,
+          "default": "null",
           "description": "Specifies additional custom attributes that will be rendered by the component."
         },
         {
@@ -13290,91 +13290,91 @@
         {
           "name": "Data",
           "type": "IEnumerable",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the data."
         },
         {
           "name": "Disabled",
           "type": "Boolean",
-          "default": null,
+          "default": "false",
           "description": ""
         },
         {
           "name": "DisabledProperty",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the disabled property."
         },
         {
           "name": "Items",
           "type": "RenderFragment",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the items."
         },
         {
           "name": "Name",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "Orientation",
           "type": "Orientation",
-          "default": null,
+          "default": "0",
           "description": "Gets or sets the orientation."
         },
         {
           "name": "Placeholder",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "Style",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the inline CSS style."
         },
         {
           "name": "TabIndex",
           "type": "Int32",
-          "default": null,
+          "default": "0",
           "description": ""
         },
         {
           "name": "TextProperty",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the text property."
         },
         {
           "name": "Value",
           "type": "TValue",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "ValueExpression",
           "type": "Expression\u003CFunc\u003CTValue\u003E\u003E",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "ValueProperty",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the value property."
         },
         {
           "name": "Visible",
           "type": "Boolean",
-          "default": null,
+          "default": "true",
           "description": "Gets or sets a value indicating whether this is visible. Invisible components are not rendered."
         },
         {
           "name": "VisibleProperty",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the visible property."
         }
       ],
@@ -13416,7 +13416,7 @@
         {
           "name": "Attributes",
           "type": "IReadOnlyDictionary\u003CString, Object\u003E",
-          "default": null,
+          "default": "null",
           "description": "Specifies additional custom attributes that will be rendered by the component."
         },
         {
@@ -13428,43 +13428,43 @@
         {
           "name": "Disabled",
           "type": "Boolean",
-          "default": null,
+          "default": "false",
           "description": "Gets or sets a value indicating whether this is disabled."
         },
         {
           "name": "InputAttributes",
           "type": "IReadOnlyDictionary\u003CString, Object\u003E",
-          "default": null,
+          "default": "null",
           "description": "Specifies additional custom attributes that will be rendered by the input."
         },
         {
           "name": "Style",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the inline CSS style."
         },
         {
           "name": "Template",
           "type": "RenderFragment\u003CRadzenRadioButtonListItem\u003CTValue\u003E\u003E",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the template."
         },
         {
           "name": "Text",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the text."
         },
         {
           "name": "Value",
           "type": "TValue",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the value."
         },
         {
           "name": "Visible",
           "type": "Boolean",
-          "default": null,
+          "default": "true",
           "description": "Gets or sets a value indicating whether this is visible. Invisible components are not rendered."
         }
       ],
@@ -13836,19 +13836,19 @@
         {
           "name": "AppointmentRender",
           "type": "Action\u003CSchedulerAppointmentRenderEventArgs\u003CTItem\u003E\u003E",
-          "default": null,
+          "default": "null",
           "description": "An action that will be invoked when the current view renders an appointment. Never call StateHasChanged when handling AppointmentRender."
         },
         {
           "name": "Attributes",
           "type": "IReadOnlyDictionary\u003CString, Object\u003E",
-          "default": null,
+          "default": "null",
           "description": "Specifies additional custom attributes that will be rendered by the component."
         },
         {
           "name": "ChildContent",
           "type": "RenderFragment",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the child content of the scheduler. Use to specify what views to render."
         },
         {
@@ -13860,91 +13860,91 @@
         {
           "name": "Data",
           "type": "IEnumerable\u003CTItem\u003E",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the data of RadzenScheduler. It will display an appointment for every item of the collection which is within the current view date range."
         },
         {
           "name": "Date",
           "type": "DateTime",
-          "default": null,
+          "default": "\u00222026-06-22T00:00:00\u002B00:00\u0022",
           "description": "Gets or sets the initial date displayed by the selected view. Set to DateTime.Today by default."
         },
         {
           "name": "EndProperty",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": "Specifies the property of which will set ."
         },
         {
           "name": "NavigationTemplate",
           "type": "RenderFragment",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the additional content to be rendered in place of the default navigation buttons in the scheduler. This property allows for complete customization of the navigation controls, replacing the native date navigation buttons (such as year, month, and day) with user-defined content or buttons. Use this to add custom controls or interactive elements that better suit your application\u0027s requirements."
         },
         {
           "name": "NextText",
           "type": "String",
-          "default": null,
+          "default": "\u0022Next\u0022",
           "description": "Gets or sets the text of the next button. Set to Next by default."
         },
         {
           "name": "PrevText",
           "type": "String",
-          "default": null,
+          "default": "\u0022Previous\u0022",
           "description": "Gets or sets the text of the previous button. Set to Previous by default."
         },
         {
           "name": "SelectedIndex",
           "type": "Int32",
-          "default": null,
+          "default": "0",
           "description": "Specifies the initially selected view."
         },
         {
           "name": "ShowHeader",
           "type": "Boolean",
-          "default": null,
+          "default": "true",
           "description": "Specifies whether to Show or Hide the Scheduler Header. Defaults to true /\u003E."
         },
         {
           "name": "SlotRender",
           "type": "Action\u003CSchedulerSlotRenderEventArgs\u003E",
-          "default": null,
+          "default": "null",
           "description": "An action that will be invoked when the current view renders an slot. Never call StateHasChanged when handling SlotRender."
         },
         {
           "name": "StartProperty",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": "Specifies the property of which will set ."
         },
         {
           "name": "Style",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the inline CSS style."
         },
         {
           "name": "Template",
           "type": "RenderFragment\u003CTItem\u003E",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the template used to render appointments."
         },
         {
           "name": "TextProperty",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": "Specifies the property of which will set ."
         },
         {
           "name": "TodayText",
           "type": "String",
-          "default": null,
+          "default": "\u0022Today\u0022",
           "description": "Gets or sets the text of the today button. Set to Today by default."
         },
         {
           "name": "Visible",
           "type": "Boolean",
-          "default": null,
+          "default": "true",
           "description": "Gets or sets a value indicating whether this is visible. Invisible components are not rendered."
         }
       ],
@@ -14138,7 +14138,7 @@
         {
           "name": "Attributes",
           "type": "IReadOnlyDictionary\u003CString, Object\u003E",
-          "default": null,
+          "default": "null",
           "description": "Specifies additional custom attributes that will be rendered by the component."
         },
         {
@@ -14150,91 +14150,91 @@
         {
           "name": "Data",
           "type": "IEnumerable",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the data."
         },
         {
           "name": "Disabled",
           "type": "Boolean",
-          "default": null,
+          "default": "false",
           "description": ""
         },
         {
           "name": "Items",
           "type": "RenderFragment",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the items."
         },
         {
           "name": "Multiple",
           "type": "Boolean",
-          "default": null,
+          "default": "false",
           "description": "Gets or sets a value indicating whether this is multiple."
         },
         {
           "name": "Name",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "Orientation",
           "type": "Orientation",
-          "default": null,
+          "default": "0",
           "description": "Gets or sets the orientation. Set to Orientation.Horizontal by default."
         },
         {
           "name": "Placeholder",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "Size",
           "type": "ButtonSize",
-          "default": null,
+          "default": "0",
           "description": "Gets or sets the size. Set to ButtonSize.Medium by default."
         },
         {
           "name": "Style",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the inline CSS style."
         },
         {
           "name": "TabIndex",
           "type": "Int32",
-          "default": null,
+          "default": "0",
           "description": ""
         },
         {
           "name": "TextProperty",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the text property."
         },
         {
           "name": "Value",
           "type": "TValue",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "ValueExpression",
           "type": "Expression\u003CFunc\u003CTValue\u003E\u003E",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "ValueProperty",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the value property."
         },
         {
           "name": "Visible",
           "type": "Boolean",
-          "default": null,
+          "default": "true",
           "description": "Gets or sets a value indicating whether this is visible. Invisible components are not rendered."
         }
       ],
@@ -14378,37 +14378,37 @@
         {
           "name": "Data",
           "type": "TItem",
-          "default": null,
+          "default": "null",
           "description": "The data item from the series this annotation applies to."
         },
         {
           "name": "Fill",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": "The color of the annotation text."
         },
         {
           "name": "OffsetX",
           "type": "Double",
-          "default": null,
+          "default": "0",
           "description": "Horizontal offset from the default position."
         },
         {
           "name": "OffsetY",
           "type": "Double",
-          "default": null,
+          "default": "0",
           "description": "Vertical offset from the default position."
         },
         {
           "name": "Text",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": "The text to display in the annotation."
         },
         {
           "name": "Visible",
           "type": "Boolean",
-          "default": null,
+          "default": "true",
           "description": "Determines whether the annotation is visible. Set to true by default."
         }
       ],
@@ -14794,7 +14794,7 @@
         {
           "name": "Attributes",
           "type": "IReadOnlyDictionary\u003CString, Object\u003E",
-          "default": null,
+          "default": "null",
           "description": "Specifies additional custom attributes that will be rendered by the component."
         },
         {
@@ -14806,79 +14806,79 @@
         {
           "name": "Disabled",
           "type": "Boolean",
-          "default": null,
+          "default": "false",
           "description": ""
         },
         {
           "name": "Max",
           "type": "Decimal",
-          "default": null,
+          "default": "100",
           "description": "Determines the maximum value."
         },
         {
           "name": "Min",
           "type": "Decimal",
-          "default": null,
+          "default": "0",
           "description": "Determines the minimum value."
         },
         {
           "name": "Name",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "Orientation",
           "type": "Orientation",
-          "default": null,
+          "default": "0",
           "description": "Specifies the orientation. Set to Orientation.Horizontal by default."
         },
         {
           "name": "Placeholder",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "Range",
           "type": "Boolean",
-          "default": null,
+          "default": "false",
           "description": "Gets or sets a value indicating whether this is range."
         },
         {
           "name": "Step",
           "type": "String",
-          "default": null,
+          "default": "\u00221\u0022",
           "description": "Gets or sets the step."
         },
         {
           "name": "Style",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the inline CSS style."
         },
         {
           "name": "TabIndex",
           "type": "Int32",
-          "default": null,
+          "default": "0",
           "description": ""
         },
         {
           "name": "Value",
           "type": "TValue",
-          "default": null,
+          "default": "0",
           "description": "Gets or sets the value."
         },
         {
           "name": "ValueExpression",
           "type": "Expression\u003CFunc\u003CTValue\u003E\u003E",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "Visible",
           "type": "Boolean",
-          "default": null,
+          "default": "true",
           "description": "Gets or sets a value indicating whether this is visible. Invisible components are not rendered."
         }
       ],
@@ -15706,91 +15706,91 @@
         {
           "name": "CategoryProperty",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "ChildContent",
           "type": "RenderFragment",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "Data",
           "type": "IEnumerable\u003CTItem\u003E",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "Fill",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": "Specifies the fill (background color) of the area series."
         },
         {
           "name": "Hidden",
           "type": "Boolean",
-          "default": null,
+          "default": "false",
           "description": ""
         },
         {
           "name": "Interpolation",
           "type": "Interpolation",
-          "default": null,
+          "default": "0",
           "description": "Specifies how to render lines between data points. Set to by default"
         },
         {
           "name": "LineType",
           "type": "LineType",
-          "default": null,
+          "default": "0",
           "description": "Specifies the line type."
         },
         {
           "name": "RenderingOrder",
           "type": "Int32",
-          "default": null,
+          "default": "0",
           "description": ""
         },
         {
           "name": "Smooth",
           "type": "Boolean",
-          "default": null,
+          "default": "false",
           "description": "Specifies whether to render a smooth line. Set to false by default."
         },
         {
           "name": "Stroke",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": "Specifies the color of the line."
         },
         {
           "name": "StrokeWidth",
           "type": "Double",
-          "default": null,
+          "default": "2",
           "description": "Gets or sets the pixel width of the line. Set to 2 by default."
         },
         {
           "name": "Title",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "TooltipTemplate",
           "type": "RenderFragment\u003CTItem\u003E",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "ValueProperty",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "Visible",
           "type": "Boolean",
-          "default": null,
+          "default": "true",
           "description": ""
         }
       ],
@@ -15806,103 +15806,103 @@
         {
           "name": "CategoryProperty",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "ChildContent",
           "type": "RenderFragment",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "Data",
           "type": "IEnumerable\u003CTItem\u003E",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "Fill",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": "Specifies the fill (background color) of the bar series."
         },
         {
           "name": "FillRange",
           "type": "IList\u003CSeriesColorRange\u003E",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the color range of the fill."
         },
         {
           "name": "Fills",
           "type": "IEnumerable\u003CString\u003E",
-          "default": null,
+          "default": "null",
           "description": "Specifies a list of colors that will be used to set the individual bar backgrounds."
         },
         {
           "name": "Hidden",
           "type": "Boolean",
-          "default": null,
+          "default": "false",
           "description": ""
         },
         {
           "name": "LineType",
           "type": "LineType",
-          "default": null,
+          "default": "0",
           "description": "Gets or sets the type of the line used to render the bar border."
         },
         {
           "name": "RenderingOrder",
           "type": "Int32",
-          "default": null,
+          "default": "0",
           "description": ""
         },
         {
           "name": "Stroke",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": "Specifies the stroke (border color) of the bar series."
         },
         {
           "name": "StrokeRange",
           "type": "IList\u003CSeriesColorRange\u003E",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the color range of the stroke."
         },
         {
           "name": "Strokes",
           "type": "IEnumerable\u003CString\u003E",
-          "default": null,
+          "default": "null",
           "description": "Specifies a list of colors that will be used to set the individual bar borders."
         },
         {
           "name": "StrokeWidth",
           "type": "Double",
-          "default": null,
+          "default": "0",
           "description": "Gets or sets the width of the stroke (border)."
         },
         {
           "name": "Title",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "TooltipTemplate",
           "type": "RenderFragment\u003CTItem\u003E",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "ValueProperty",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "Visible",
           "type": "Boolean",
-          "default": null,
+          "default": "true",
           "description": ""
         }
       ],
@@ -15918,103 +15918,103 @@
         {
           "name": "CategoryProperty",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "ChildContent",
           "type": "RenderFragment",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "Data",
           "type": "IEnumerable\u003CTItem\u003E",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "Fill",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": "Specifies the fill (background color) of the column series."
         },
         {
           "name": "FillRange",
           "type": "IList\u003CSeriesColorRange\u003E",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the color range of the fill."
         },
         {
           "name": "Fills",
           "type": "IEnumerable\u003CString\u003E",
-          "default": null,
+          "default": "null",
           "description": "Specifies a list of colors that will be used to set the individual column backgrounds."
         },
         {
           "name": "Hidden",
           "type": "Boolean",
-          "default": null,
+          "default": "false",
           "description": ""
         },
         {
           "name": "LineType",
           "type": "LineType",
-          "default": null,
+          "default": "0",
           "description": "Gets or sets the type of the line used to render the column border."
         },
         {
           "name": "RenderingOrder",
           "type": "Int32",
-          "default": null,
+          "default": "0",
           "description": ""
         },
         {
           "name": "Stroke",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": "Specifies the stroke (border color) of the column series."
         },
         {
           "name": "StrokeRange",
           "type": "IList\u003CSeriesColorRange\u003E",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the color range of the stroke."
         },
         {
           "name": "Strokes",
           "type": "IEnumerable\u003CString\u003E",
-          "default": null,
+          "default": "null",
           "description": "Specifies a list of colors that will be used to set the individual column borders."
         },
         {
           "name": "StrokeWidth",
           "type": "Double",
-          "default": null,
+          "default": "0",
           "description": "Gets or sets the width of the stroke (border)."
         },
         {
           "name": "Title",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "TooltipTemplate",
           "type": "RenderFragment\u003CTItem\u003E",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "ValueProperty",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": ""
         },
         {
           "name": "Visible",
           "type": "Boolean",
-          "default": null,
+          "default": "true",
           "description": ""
         }
       ],
@@ -16877,19 +16877,19 @@
         {
           "name": "Action",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": "Specifies the form action attribute. When set the form submits to the specified URL."
         },
         {
           "name": "Attributes",
           "type": "IReadOnlyDictionary\u003CString, Object\u003E",
-          "default": null,
+          "default": "null",
           "description": "Specifies additional custom attributes that will be rendered by the component."
         },
         {
           "name": "ChildContent",
           "type": "RenderFragment\u003CEditContext\u003E",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the child content."
         },
         {
@@ -16901,31 +16901,31 @@
         {
           "name": "Data",
           "type": "TItem",
-          "default": null,
+          "default": "null",
           "description": "Specifies the model of the form. Required to support validation."
         },
         {
           "name": "EditContext",
           "type": "EditContext",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the edit context."
         },
         {
           "name": "Method",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": "Specifies the form method attribute. Used together with ."
         },
         {
           "name": "Style",
           "type": "String",
-          "default": null,
+          "default": "null",
           "description": "Gets or sets the inline CSS style."
         },
         {
           "name": "Visible",
           "type": "Boolean",
-          "default": null,
+          "default": "true",
           "description": "Gets or sets a value indicating whether this is visible. Invisible components are not rendered."
         }
       ],
