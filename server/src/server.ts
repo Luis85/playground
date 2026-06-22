@@ -13,6 +13,7 @@ import { searchComponents } from "./tools/searchComponents.ts";
 import { scaffoldComponent } from "./tools/scaffoldComponent.ts";
 import { formatComponent } from "./format.ts";
 import { writeVault } from "./exportObsidian.ts";
+import { listUsageTopics, getUsage } from "./tools/usage.ts";
 
 function textResult(value: unknown) {
   return { content: [{ type: "text" as const, text: JSON.stringify(value, null, 2) }] };
@@ -95,6 +96,34 @@ export function createServer(kb: KnowledgeBase): McpServer {
       try {
         // Return the markup as raw text (not JSON-encoded) so it is paste-ready.
         return { content: [{ type: "text" as const, text: scaffoldComponent(kb, name, options) }] };
+      } catch (err) {
+        return errorResult(err);
+      }
+    },
+  );
+
+  server.registerTool(
+    "list_usage_topics",
+    {
+      description:
+        "List curated Radzen Blazor usage topics (setup, data-binding, validation, datagrid, events, layout, theming, dialogs-notifications, icons). Use to find the right how-to before writing a feature; then call get_usage.",
+      inputSchema: {},
+    },
+    async () => textResult(listUsageTopics()),
+  );
+
+  server.registerTool(
+    "get_usage",
+    {
+      description:
+        "Get a curated Radzen Blazor usage guide (markdown with working code) for a topic id. Covers the structural patterns reflection can't show: setup, @bind-Value, validation linkage, DataGrid LoadData, theming, layout, services, events, icons.",
+      inputSchema: {
+        topic_id: z.string().describe("Topic id from list_usage_topics, e.g. 'datagrid' or 'validation'."),
+      },
+    },
+    async ({ topic_id }) => {
+      try {
+        return textResult(getUsage(topic_id));
       } catch (err) {
         return errorResult(err);
       }
