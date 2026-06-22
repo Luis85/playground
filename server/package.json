@@ -2,7 +2,9 @@
   "name": "radzen-blazor-mcp",
   "version": "0.1.0",
   "type": "module",
-  "bin": { "radzen-blazor-mcp": "dist/server.js" },
+  "bin": {
+    "radzen-blazor-mcp": "dist/server.js"
+  },
   "scripts": {
     "test": "node --import tsx --test \"test/**/*.test.ts\"",
     "build": "tsc",
@@ -10,11 +12,12 @@
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.0.0",
+    "fuse.js": "^7.4.2",
     "zod": "^3.23.0"
   },
   "devDependencies": {
+    "@types/node": "^20.14.0",
     "tsx": "^4.19.0",
-    "typescript": "^5.7.0",
-    "@types/node": "^20.14.0"
+    "typescript": "^5.7.0"
   }
 }
