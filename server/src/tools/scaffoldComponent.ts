@@ -1,16 +1,28 @@
-import type { KnowledgeBase } from "../types.ts";
+import type { ComponentInfo, KnowledgeBase } from "../types.ts";
 import { getComponent } from "./getComponent.ts";
 import { escapeAttr } from "../escape.ts";
 
 // Razor directive attributes that are always legal on a component tag.
 const RAZOR_DIRECTIVES = new Set(["@rendermode", "@ref", "@key", "@attributes"]);
 
-// A directive/attribute key is valid if it is a known parameter/event/type
-// parameter, a known Razor directive, or `@bind-<X>` where X is a real parameter.
-function isValidAttribute(key: string, valid: Set<string>): boolean {
+// HTML pass-through attribute name (class, id, style, aria-*, data-*): lowercase,
+// hyphens allowed. PascalCase parameter typos won't match, so they stay rejected.
+const HTML_ATTRIBUTE = /^[a-z][a-z0-9-]*$/;
+
+// A component has a catch-all if it exposes the Radzen `Attributes` parameter
+// (CaptureUnmatchedValues), which renders arbitrary attributes onto the element.
+function hasCatchAll(component: ComponentInfo): boolean {
+  return component.parameters.some((p) => p.name === "Attributes" && /dictionary/i.test(p.type));
+}
+
+// A key is valid if it's a known parameter/event/type parameter, a Razor directive,
+// `@bind-<param>` where the base is a real parameter, or — when the component has a
+// catch-all — a plain HTML attribute name.
+function isValidAttribute(key: string, valid: Set<string>, catchAll: boolean): boolean {
   if (RAZOR_DIRECTIVES.has(key)) return true;
   if (key.startsWith("@bind-")) return valid.has(key.slice("@bind-".length));
-  return valid.has(key);
+  if (valid.has(key)) return true;
+  return catchAll && HTML_ATTRIBUTE.test(key);
 }
 
 export function scaffoldComponent(
@@ -26,10 +38,12 @@ export function scaffoldComponent(
     ...component.events.map((e) => e.name),
     ...(component.typeParameters ?? []),
   ]);
-  const invalid = Object.keys(options).filter((k) => !isValidAttribute(k, valid));
+  const catchAll = hasCatchAll(component);
+  const invalid = Object.keys(options).filter((k) => !isValidAttribute(k, valid, catchAll));
   if (invalid.length > 0) {
+    const extra = catchAll ? "" : " (this component has no catch-all for arbitrary HTML attributes)";
     throw new Error(
-      `Invalid option(s) for ${component.name}: ${invalid.join(", ")}. ` +
+      `Invalid option(s) for ${component.name}: ${invalid.join(", ")}.${extra} ` +
         `Valid parameters/events: ${[...valid].join(", ")} (also @bind-<param> and @rendermode/@ref/@key/@attributes).`,
     );
   }

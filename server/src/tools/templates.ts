@@ -25,6 +25,14 @@ export function scaffoldTemplate(templateId: string, options: Record<string, str
       : " Call list_templates to see available templates.";
     throw new Error(`Unknown template "${templateId}".${hint}`);
   }
+  const allowed = new Set(template.options.map((o) => o.name));
+  const invalid = Object.keys(options).filter((k) => !allowed.has(k));
+  if (invalid.length > 0) {
+    throw new Error(
+      `Invalid option(s) for template "${template.id}": ${invalid.join(", ")}. ` +
+        `Valid options: ${[...allowed].join(", ")}.`,
+    );
+  }
   const resolved: Record<string, string> = {};
   // Escape option values — they are interpolated into attribute values in markup.
   for (const o of template.options) resolved[o.name] = escapeAttr(options[o.name] ?? o.default);

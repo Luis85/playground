@@ -33,6 +33,13 @@ test("escapes option values to prevent markup injection", () => {
   assert.doesNotMatch(markup, /Text="Bob "Admin""/);
 });
 
+test("rejects unknown template options instead of ignoring them", () => {
+  assert.throws(
+    () => scaffoldTemplate("datagrid", { itemtype: "Employee" }),
+    /Invalid option.*itemtype/s,
+  );
+});
+
 test("unknown template suggests nearest", () => {
   assert.throws(() => scaffoldTemplate("frm"), /Did you mean.*form/s);
 });

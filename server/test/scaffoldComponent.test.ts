@@ -13,6 +13,7 @@ const kb: KnowledgeBase = {
       parameters: [
         { name: "Text", type: "string", default: '""', description: "" },
         { name: "Disabled", type: "bool", default: "false", description: "" },
+        { name: "Attributes", type: "IReadOnlyDictionary<String, Object>", default: null, description: "" },
       ],
       events: [{ name: "Click", type: "EventCallback<MouseEventArgs>", description: "" }],
     },
@@ -49,6 +50,22 @@ test("accepts @bind-<param> and Razor directives", () => {
 
 test("rejects @bind- targeting a non-parameter", () => {
   assert.throws(() => scaffoldComponent(kb, "RadzenButton", { "@bind-Nope": "x" }), /Nope/);
+});
+
+test("allows HTML pass-through attributes on catch-all components", () => {
+  assert.equal(
+    scaffoldComponent(kb, "RadzenButton", { Text: "Save", class: "rz-m-2", "aria-label": "Save" }),
+    `<RadzenButton Text="Save" class="rz-m-2" aria-label="Save" />`,
+  );
+});
+
+test("still rejects misspelled PascalCase parameters on catch-all components", () => {
+  assert.throws(() => scaffoldComponent(kb, "RadzenButton", { Tex: "Save" }), /Tex/);
+});
+
+test("rejects arbitrary attributes when there is no catch-all", () => {
+  // RadzenDropDown fixture has no Attributes catch-all.
+  assert.throws(() => scaffoldComponent(kb, "RadzenDropDown", { class: "x" }), /class/);
 });
 
 test("accepts event callbacks as attributes", () => {
