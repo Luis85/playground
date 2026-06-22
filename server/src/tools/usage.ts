@@ -1,5 +1,5 @@
-import Fuse from "fuse.js";
 import { usageTopics, type UsageTopic } from "../usage/topics.ts";
+import { suggest } from "../search.ts";
 
 export interface UsageTopicSummary {
   id: string;
@@ -17,9 +17,7 @@ export function getUsage(topicId: string): UsageTopic {
   const found = usageTopics.find((t) => t.id.toLowerCase() === needle);
   if (found) return found;
 
-  const suggestions = new Fuse(usageTopics, { keys: ["id", "title"], threshold: 0.5, ignoreLocation: true })
-    .search(topicId, { limit: 3 })
-    .map((r) => r.item.id);
+  const suggestions = suggest(usageTopics, ["id", "title"], topicId, 3);
   const hint = suggestions.length
     ? ` Did you mean: ${suggestions.join(", ")}?`
     : " Call list_usage_topics to see available topics.";

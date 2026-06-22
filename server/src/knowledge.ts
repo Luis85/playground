@@ -24,8 +24,8 @@ const componentSchema = z.object({
 });
 
 const knowledgeBaseSchema = z.object({
-  radzenVersion: z.string(),
-  components: z.array(componentSchema),
+  radzenVersion: z.string().min(1),
+  components: z.array(componentSchema).min(1),
 });
 
 export function loadKnowledgeBase(path: string): KnowledgeBase {

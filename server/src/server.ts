@@ -21,7 +21,8 @@ function textResult(value: unknown) {
 }
 
 function errorResult(err: unknown) {
-  return { isError: true, content: [{ type: "text" as const, text: (err as Error).message }] };
+  const message = err instanceof Error ? err.message : String(err);
+  return { isError: true, content: [{ type: "text" as const, text: message }] };
 }
 
 export function createServer(kb: KnowledgeBase): McpServer {
@@ -31,15 +32,21 @@ export function createServer(kb: KnowledgeBase): McpServer {
     "list_components",
     {
       description:
-        "List Radzen Blazor component names with one-line summaries. Use to discover what components exist before drilling into one. Summaries come from Radzen's published docs and may be empty in the current build.",
+        "List Radzen Blazor component names with one-line summaries. Use to discover what components exist before drilling into one. Summaries are sourced from Radzen's published docs and populated for most components (a minority may be blank).",
       inputSchema: {
         filter: z
           .string()
           .optional()
           .describe("Optional case-insensitive substring to filter by component name or summary."),
+        limit: z
+          .number()
+          .int()
+          .positive()
+          .optional()
+          .describe("Maximum number of components to return (default 50)."),
       },
     },
-    async ({ filter }) => textResult(listComponents(kb, filter)),
+    async ({ filter, limit }) => textResult(listComponents(kb, filter).slice(0, limit ?? 50)),
   );
 
   server.registerTool(
@@ -74,12 +81,25 @@ export function createServer(kb: KnowledgeBase): McpServer {
     "search_components",
     {
       description:
-        "Fuzzy-search Radzen Blazor components by a query matched (typo-tolerant) against component names, parameter names, and descriptions. Use when you don't know the exact component name. Descriptions may be empty in the current build, but name/parameter matching still works.",
+        "Fuzzy-search Radzen Blazor components by a query matched (typo-tolerant) against component names, parameter names, and descriptions. Use when you don't know the exact component name. Descriptions are sourced from Radzen's published docs and populated for most components (a minority may be blank), but name/parameter matching still works.",
       inputSchema: {
         query: z.string().describe("Free-text query, e.g. 'grid', 'date picker', 'disabled'."),
+        limit: z
+          .number()
+          .int()
+          .positive()
+          .optional()
+          .describe("Maximum number of results to return (default 10)."),
       },
     },
-    async ({ query }) => textResult(searchComponents(kb, query)),
+    async ({ query, limit }) =>
+      // Map to concise {name, summary} to keep token cost low; the underlying
+      // searchComponents returns full ComponentInfo[] for reuse elsewhere.
+      textResult(
+        searchComponents(kb, query)
+          .slice(0, limit ?? 10)
+          .map((c) => ({ name: c.name, summary: c.summary })),
+      ),
   );
 
   server.registerTool(
@@ -189,16 +209,23 @@ export function createServer(kb: KnowledgeBase): McpServer {
   return server;
 }
 
-async function main(): Promise<void> {
-  const here = dirname(fileURLToPath(import.meta.url));
-  // Prefer a knowledge base bundled next to the entrypoint (published npm
-  // package / built dist); fall back to the repo root during development.
+/**
+ * Resolve which knowledge-base JSON to load. RADZEN_KB_PATH overrides everything;
+ * otherwise prefer a KB bundled next to the entrypoint (published npm package /
+ * built dist), then fall back to the repo root during development.
+ */
+export function resolveKbPath(here: string, env: NodeJS.ProcessEnv): string {
+  if (env.RADZEN_KB_PATH) return env.RADZEN_KB_PATH;
   const candidates = [
     resolve(here, "component-knowledge.json"),
     resolve(here, "..", "..", "component-knowledge.json"),
   ];
-  const kbPath =
-    process.env.RADZEN_KB_PATH ?? candidates.find(existsSync) ?? candidates[candidates.length - 1];
+  return candidates.find(existsSync) ?? candidates[candidates.length - 1];
+}
+
+async function main(): Promise<void> {
+  const here = dirname(fileURLToPath(import.meta.url));
+  const kbPath = resolveKbPath(here, process.env);
   const kb = loadKnowledgeBase(kbPath);
   const server = createServer(kb);
   await server.connect(new StdioServerTransport());

@@ -3,6 +3,28 @@ import { usageTopics as defaultTopics, type UsageTopic } from "./usage/topics.ts
 
 const INDEX_TITLE = "Radzen Components";
 
+/**
+ * Sanitize a string into a safe note basename/wikilink text. The same function
+ * feeds BOTH the file basename and the [[wikilink]] so they always match.
+ * Strips/replaces path-unsafe and control chars with "-", rejects "..", and
+ * collapses whitespace.
+ */
+export function noteName(s: string): string {
+  const cleaned = s
+    // Replace path-unsafe characters and ASCII control chars with "-".
+    // eslint-disable-next-line no-control-regex
+    .replace(/[\\/:*?"<>|\x00-\x1f]/g, "-")
+    .replace(/\s+/g, " ")
+    .trim();
+  if (cleaned === ".." || cleaned === "" || cleaned === ".") return "-";
+  return cleaned;
+}
+
+/** Quote a YAML scalar so values containing ":" or other specials are safe. */
+function yamlQuote(value: string): string {
+  return `"${value.replace(/\\/g, "\\\\").replace(/"/g, '\\"')}"`;
+}
+
 export function relatedComponents(kb: KnowledgeBase, component: ComponentInfo): string[] {
   return kb.components
     .filter((c) => c.name !== component.name)
@@ -16,7 +38,12 @@ function usageForComponent(component: ComponentInfo, topics: UsageTopic[]): Usag
 }
 
 function escapeCell(text: string): string {
-  return text.replace(/\|/g, "\\|").replace(/\n/g, " ");
+  // Escape backslash FIRST so the pipe-escaping backslashes aren't double-escaped,
+  // then escape table-cell pipes, then flatten any newlines to a space.
+  return text
+    .replace(/\\/g, "\\\\")
+    .replace(/\|/g, "\\|")
+    .replace(/\r\n|\r|\n/g, " ");
 }
 
 function table(header: string[], rows: string[][]): string {
@@ -28,7 +55,8 @@ function table(header: string[], rows: string[][]): string {
 }
 
 function block(items: string[]): string {
-  return items.length ? items.map((n) => `- [[${n}]]`).join("\n") : "_None._";
+  // Sanitize link targets with noteName so they match the note basenames on disk.
+  return items.length ? items.map((n) => `- [[${noteName(n)}]]`).join("\n") : "_None._";
 }
 
 export function renderComponentNote(
@@ -39,8 +67,8 @@ export function renderComponentNote(
   const alias = component.name.replace(/^Radzen/, "");
   const frontmatter = [
     "---",
-    `title: ${component.name}`,
-    `aliases: [${alias}]`,
+    `title: ${yamlQuote(component.name)}`,
+    `aliases: [${yamlQuote(alias)}]`,
     "type: radzen-component",
     `radzenVersion: ${kb.radzenVersion}`,
     `parameters: ${component.parameters.length}`,
@@ -79,9 +107,9 @@ export function renderComponentNote(
 export function renderUsageNote(topic: UsageTopic): string {
   const frontmatter = [
     "---",
-    `title: ${topic.title}`,
+    `title: ${yamlQuote(topic.title)}`,
     "type: radzen-usage",
-    `topicId: ${topic.id}`,
+    `topicId: ${yamlQuote(topic.id)}`,
     "tags: [radzen, blazor, usage]",
     "---",
   ].join("\n");
@@ -99,7 +127,7 @@ export function renderUsageNote(topic: UsageTopic): string {
 export function renderIndexNote(kb: KnowledgeBase, topics: UsageTopic[] = defaultTopics): string {
   const frontmatter = [
     "---",
-    `title: ${INDEX_TITLE}`,
+    `title: ${yamlQuote(INDEX_TITLE)}`,
     "type: radzen-index",
     `radzenVersion: ${kb.radzenVersion}`,
     `components: ${kb.components.length}`,
@@ -108,9 +136,9 @@ export function renderIndexNote(kb: KnowledgeBase, topics: UsageTopic[] = defaul
   ].join("\n");
   const componentList = [...kb.components]
     .sort((a, b) => a.name.localeCompare(b.name))
-    .map((c) => `- [[${c.name}]] — ${c.summary || ""}`.trimEnd())
+    .map((c) => `- [[${noteName(c.name)}]] — ${c.summary || ""}`.trimEnd())
     .join("\n");
-  const usageList = topics.map((t) => `- [[${t.title}]] — ${t.summary}`).join("\n");
+  const usageList = topics.map((t) => `- [[${noteName(t.title)}]] — ${t.summary}`).join("\n");
   return [
     frontmatter,
     `# ${INDEX_TITLE}`,
@@ -130,11 +158,11 @@ export function buildVault(
   return [
     { path: `${INDEX_TITLE}.md`, content: renderIndexNote(kb, topics) },
     ...kb.components.map((c) => ({
-      path: `components/${c.name}.md`,
+      path: `components/${noteName(c.name)}.md`,
       content: renderComponentNote(kb, c, topics),
     })),
     ...topics.map((t) => ({
-      path: `usage/${t.title}.md`,
+      path: `usage/${noteName(t.title)}.md`,
       content: renderUsageNote(t),
     })),
   ];

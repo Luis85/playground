@@ -22,11 +22,18 @@ export function fuzzySearch(kb: KnowledgeBase, query: string, limit = 25): Compo
     .map((r) => r.item);
 }
 
+/**
+ * Generic fuzzy "did you mean" helper: returns up to `n` of the given items
+ * (mapped to their first key's string value) that best match `query`.
+ */
+export function suggest<T>(items: T[], keys: string[], query: string, n = 3): string[] {
+  const fuse = new Fuse(items, { keys, threshold: 0.5, ignoreLocation: true });
+  const primary = keys[0];
+  return fuse
+    .search(query, { limit: n })
+    .map((r) => String((r.item as Record<string, unknown>)[primary]));
+}
+
 export function suggestNames(kb: KnowledgeBase, name: string, n = 3): string[] {
-  const fuse = new Fuse(kb.components, {
-    keys: ["name"],
-    threshold: 0.5,
-    ignoreLocation: true,
-  });
-  return fuse.search(name, { limit: n }).map((r) => r.item.name);
+  return suggest(kb.components, ["name"], name, n);
 }

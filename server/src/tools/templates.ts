@@ -1,6 +1,6 @@
-import Fuse from "fuse.js";
 import { templates, type Template, type TemplateOption } from "../templates/templates.ts";
 import { escapeAttr } from "../escape.ts";
+import { suggest } from "../search.ts";
 
 export interface TemplateSummary {
   id: string;
@@ -17,9 +17,7 @@ export function scaffoldTemplate(templateId: string, options: Record<string, str
   const needle = templateId.toLowerCase().trim();
   const template: Template | undefined = templates.find((t) => t.id.toLowerCase() === needle);
   if (!template) {
-    const suggestions = new Fuse(templates, { keys: ["id", "title"], threshold: 0.5, ignoreLocation: true })
-      .search(templateId, { limit: 3 })
-      .map((r) => r.item.id);
+    const suggestions = suggest(templates, ["id", "title"], templateId, 3);
     const hint = suggestions.length
       ? ` Did you mean: ${suggestions.join(", ")}?`
       : " Call list_templates to see available templates.";

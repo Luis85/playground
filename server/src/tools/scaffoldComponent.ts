@@ -48,7 +48,10 @@ export function scaffoldComponent(
     );
   }
   const attrs = Object.entries(options)
-    .map(([k, v]) => `${k}="${escapeAttr(v)}"`)
+    // Razor expressions (values starting with "@") must pass through verbatim —
+    // HTML-escaping them would corrupt e.g. "@(() => Save())" or "&&". Literal
+    // values are still escaped so quotes/markup can't break out of the tag.
+    .map(([k, v]) => `${k}="${v.startsWith("@") ? v : escapeAttr(v)}"`)
     .join(" ");
   return attrs ? `<${component.name} ${attrs} />` : `<${component.name} />`;
 }
