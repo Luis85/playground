@@ -52,8 +52,19 @@ var components = new List<object>();
 var summaryCount = 0;
 foreach (var type in assembly.GetExportedTypes().Where(IsComponent).OrderBy(t => t.Name))
 {
+    // Close open generic component definitions (e.g. RadzenDataGrid<TItem>) with a
+    // concrete type argument so an instance can be created and real parameter
+    // defaults read. Falls back to null defaults if constraints reject `object`.
+    Type concrete = type;
     object? instance = null;
-    try { instance = Activator.CreateInstance(type); } catch { /* leave defaults null */ }
+    try
+    {
+        concrete = type.IsGenericTypeDefinition
+            ? type.MakeGenericType(type.GetGenericArguments().Select(_ => typeof(object)).ToArray())
+            : type;
+        instance = Activator.CreateInstance(concrete);
+    }
+    catch { instance = null; }
 
     var parameters = new List<object>();
     var events = new List<object>();
@@ -79,7 +90,12 @@ foreach (var type in assembly.GetExportedTypes().Where(IsComponent).OrderBy(t =>
             string? def = null;
             if (instance is not null)
             {
-                try { def = JsonSerializer.Serialize(prop.GetValue(instance)); }
+                // Read the property off the closed type so generic components work.
+                try
+                {
+                    var liveProp = concrete.GetProperty(prop.Name, BindingFlags.Public | BindingFlags.Instance);
+                    def = JsonSerializer.Serialize(liveProp?.GetValue(instance));
+                }
                 catch { def = null; }
             }
             parameters.Add(new { name = prop.Name, type = TypeName(prop.PropertyType), @default = def, description });

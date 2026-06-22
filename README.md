@@ -14,12 +14,12 @@ for the design, `docs/adr/` for key decisions, and `CONTEXT.md` for the glossary
 ## Quick start
 
 ```sh
-cd server && npm install && npm run build
+cd server && npm install && npm run build && cd ..
 ```
 
 Register the server with an MCP client. This repo ships a project-scoped
 [`.mcp.json`](./.mcp.json) (picked up by Claude Code and other clients when you
-open the repo). To register manually with Claude Code:
+open the repo). To register manually with Claude Code (run from the repo root):
 
 ```sh
 claude mcp add radzen-blazor -- node "$PWD/server/dist/server.js"
