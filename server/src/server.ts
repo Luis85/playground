@@ -68,7 +68,8 @@ export function createServer(kb: KnowledgeBase): McpServer {
     },
     async ({ name, options }) => {
       try {
-        return textResult(scaffoldComponent(kb, name, options));
+        // Return the markup as raw text (not JSON-encoded) so it is paste-ready.
+        return { content: [{ type: "text" as const, text: scaffoldComponent(kb, name, options) }] };
       } catch (err) {
         return errorResult(err);
       }
