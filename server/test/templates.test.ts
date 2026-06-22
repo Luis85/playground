@@ -27,6 +27,12 @@ test("dashboard renders the requested number of cards with computed width", () =
   assert.match(markup, /SizeMD="6"/);
 });
 
+test("escapes option values to prevent markup injection", () => {
+  const markup = scaffoldTemplate("layout", { app: 'Bob "Admin"' });
+  assert.match(markup, /Text="Bob &quot;Admin&quot;"/);
+  assert.doesNotMatch(markup, /Text="Bob "Admin""/);
+});
+
 test("unknown template suggests nearest", () => {
   assert.throws(() => scaffoldTemplate("frm"), /Did you mean.*form/s);
 });

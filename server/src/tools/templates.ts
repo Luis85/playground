@@ -1,5 +1,6 @@
 import Fuse from "fuse.js";
 import { templates, type Template, type TemplateOption } from "../templates/templates.ts";
+import { escapeAttr } from "../escape.ts";
 
 export interface TemplateSummary {
   id: string;
@@ -25,6 +26,7 @@ export function scaffoldTemplate(templateId: string, options: Record<string, str
     throw new Error(`Unknown template "${templateId}".${hint}`);
   }
   const resolved: Record<string, string> = {};
-  for (const o of template.options) resolved[o.name] = options[o.name] ?? o.default;
+  // Escape option values — they are interpolated into attribute values in markup.
+  for (const o of template.options) resolved[o.name] = escapeAttr(options[o.name] ?? o.default);
   return template.render(resolved);
 }

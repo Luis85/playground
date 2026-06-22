@@ -7,6 +7,7 @@ export function formatComponent(component: ComponentInfo, format: ResponseFormat
   return {
     name: component.name,
     summary: component.summary,
+    typeParameters: component.typeParameters ?? [],
     parameters: component.parameters.map((p) => p.name),
     events: component.events.map((e) => e.name),
   };

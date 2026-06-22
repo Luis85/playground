@@ -4,18 +4,20 @@ import { formatComponent } from "../src/format.ts";
 import type { ComponentInfo } from "../src/types.ts";
 
 const c: ComponentInfo = {
-  name: "RadzenButton",
-  summary: "A button.",
-  parameters: [{ name: "Text", type: "string", default: '""', description: "The text." }],
-  events: [{ name: "Click", type: "EventCallback<MouseEventArgs>", description: "Clicked." }],
+  name: "RadzenDropDown",
+  summary: "A drop down.",
+  typeParameters: ["TValue"],
+  parameters: [{ name: "Value", type: "object", default: null, description: "The value." }],
+  events: [{ name: "Change", type: "EventCallback<object>", description: "Changed." }],
 };
 
-test("concise returns names only", () => {
+test("concise returns names only, including type parameters", () => {
   assert.deepEqual(formatComponent(c, "concise"), {
-    name: "RadzenButton",
-    summary: "A button.",
-    parameters: ["Text"],
-    events: ["Click"],
+    name: "RadzenDropDown",
+    summary: "A drop down.",
+    typeParameters: ["TValue"],
+    parameters: ["Value"],
+    events: ["Change"],
   });
 });
 

@@ -1,15 +1,6 @@
 import type { KnowledgeBase } from "../types.ts";
 import { getComponent } from "./getComponent.ts";
-
-// HTML-escape an attribute value so quotes/markup characters can't break out of
-// the generated tag or splice in unintended attributes.
-function escapeAttr(value: string): string {
-  return value
-    .replace(/&/g, "&amp;")
-    .replace(/"/g, "&quot;")
-    .replace(/</g, "&lt;")
-    .replace(/>/g, "&gt;");
-}
+import { escapeAttr } from "../escape.ts";
 
 // Razor directive attributes that are always legal on a component tag.
 const RAZOR_DIRECTIVES = new Set(["@rendermode", "@ref", "@key", "@attributes"]);
