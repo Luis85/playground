@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <!-- Copy any XML docs shipped by referenced packages to the output dir so
+         the extractor can populate component summaries when they are available. -->
+    <CopyDocumentationFilesFromPackages>true</CopyDocumentationFilesFromPackages>
+  </PropertyGroup>
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+    <!-- Pinned so regeneration reproduces the committed component-knowledge.json
+         (radzenVersion 5.9.9.0). Bump deliberately to refresh the knowledge base. -->
+    <PackageReference Include="Radzen.Blazor" Version="5.9.9" GeneratePathProperty="true" />
+  </ItemGroup>
+</Project>

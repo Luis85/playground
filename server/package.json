@@ -1,0 +1,34 @@
+{
+  "name": "radzen-blazor-mcp",
+  "version": "0.1.0",
+  "type": "module",
+  "mcpName": "io.github.luis85/radzen-blazor-mcp",
+  "engines": {
+    "node": ">=20"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "bin": {
+    "radzen-blazor-mcp": "dist/server.js"
+  },
+  "scripts": {
+    "test": "node --import tsx --test \"test/**/*.test.ts\"",
+    "build": "tsc",
+    "bundle:kb": "node scripts/bundle-kb.mjs",
+    "prepack": "npm run build && npm run bundle:kb",
+    "start": "tsx src/server.ts",
+    "export:obsidian": "tsx src/exportObsidian.ts"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "fuse.js": "^7.4.2",
+    "zod": "^3.23.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0"
+  }
+}
