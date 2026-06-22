@@ -1,0 +1,43 @@
+name: Generate knowledge base
+
+# Runs the .NET extractor (which needs the .NET SDK + Radzen.Blazor package) and
+# commits the regenerated component-knowledge.json back to the branch. This is
+# also the first real build/run of the extractor, which the local dev env can't do.
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - claude/radzen-local-mcp-wypnsa
+    paths:
+      - "extractor/**"
+      - ".github/workflows/generate-knowledge-base.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: "8.0.x"
+
+      - name: Generate component-knowledge.json
+        run: dotnet run --project extractor -- component-knowledge.json
+
+      - name: Commit knowledge base if changed
+        run: |
+          if git diff --quiet -- component-knowledge.json; then
+            echo "component-knowledge.json unchanged; nothing to commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add component-knowledge.json
+          git commit -m "chore: regenerate component-knowledge.json [skip ci]"
+          git push
