@@ -4,6 +4,7 @@
     {
       "name": "RadzenAccordion",
       "summary": "RadzenAccordion component.",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "Attributes",
@@ -84,6 +85,7 @@
     {
       "name": "RadzenAccordionItem",
       "summary": "Class RadzenAccordionItem.",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "Attributes",
@@ -202,6 +204,7 @@
     {
       "name": "RadzenAlert",
       "summary": "RadzenAlert component.",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "AlertStyle",
@@ -325,6 +328,7 @@
     {
       "name": "RadzenAppearanceToggle",
       "summary": "Dark or light theme switch. Requires to be registered in the DI container.",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "Attributes",
@@ -408,6 +412,7 @@
     {
       "name": "RadzenArcGauge",
       "summary": "",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "Attributes",
@@ -461,6 +466,7 @@
     {
       "name": "RadzenArcGaugeScale",
       "summary": "RadzenArcGaugeScale component.",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "ChildContent",
@@ -612,6 +618,7 @@
     {
       "name": "RadzenArcGaugeScaleValue",
       "summary": "RadzenArcGaugeScaleValue component.",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "Fill",
@@ -661,6 +668,9 @@
     {
       "name": "RadzenAreaSeries",
       "summary": "Renders area series in .",
+      "typeParameters": [
+        "TItem"
+      ],
       "parameters": [
         {
           "name": "CategoryProperty",
@@ -758,6 +768,7 @@
     {
       "name": "RadzenAutoComplete",
       "summary": "RadzenAutoComplete component.",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "Attributes",
@@ -956,6 +967,7 @@
     {
       "name": "RadzenAxisTitle",
       "summary": "Represents the title configuration of a .",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "Text",
@@ -969,6 +981,7 @@
     {
       "name": "RadzenBadge",
       "summary": "RadzenBadge component.",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "Attributes",
@@ -1052,6 +1065,7 @@
     {
       "name": "RadzenBarOptions",
       "summary": "Common configuration of .",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "Height",
@@ -1077,6 +1091,9 @@
     {
       "name": "RadzenBarSeries",
       "summary": "Renders bar series in .",
+      "typeParameters": [
+        "TItem"
+      ],
       "parameters": [
         {
           "name": "CategoryProperty",
@@ -1186,6 +1203,7 @@
     {
       "name": "RadzenBody",
       "summary": "RadzenBody component.",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "Attributes",
@@ -1250,6 +1268,7 @@
     {
       "name": "RadzenBreadCrumb",
       "summary": "A component to display a Bread Crumb style menu",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "Attributes",
@@ -1309,6 +1328,7 @@
     {
       "name": "RadzenBreadCrumbItem",
       "summary": "Bread Crumb Item Component",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "Attributes",
@@ -1386,6 +1406,7 @@
     {
       "name": "RadzenButton",
       "summary": "RadzenButton component.",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "Attributes",
@@ -1528,6 +1549,7 @@
     {
       "name": "RadzenCard",
       "summary": "RadzenCard component.",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "Attributes",
@@ -1587,6 +1609,7 @@
     {
       "name": "RadzenCardGroup",
       "summary": "RadzenCardGroup component.",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "Attributes",
@@ -1646,6 +1669,7 @@
     {
       "name": "RadzenCarousel",
       "summary": "RadzenCarousel component.",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "AllowNavigation",
@@ -1799,6 +1823,7 @@
     {
       "name": "RadzenCarouselItem",
       "summary": "RadzenCarouselItem component.",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "Attributes",
@@ -1818,6 +1843,7 @@
     {
       "name": "RadzenCategoryAxis",
       "summary": "",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "ChildContent",
@@ -1909,6 +1935,7 @@
     {
       "name": "RadzenChart",
       "summary": "Displays line, area, donut, pie, bar or column series.",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "Attributes",
@@ -1990,12 +2017,14 @@
     {
       "name": "RadzenChartTooltip",
       "summary": "",
+      "typeParameters": [],
       "parameters": [],
       "events": []
     },
     {
       "name": "RadzenChartTooltipOptions",
       "summary": "Contains tooltip configuration.",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "Shared",
@@ -2021,6 +2050,9 @@
     {
       "name": "RadzenCheckBox",
       "summary": "RadzenCheckBox component.",
+      "typeParameters": [
+        "TValue"
+      ],
       "parameters": [
         {
           "name": "Attributes",
@@ -2132,6 +2164,9 @@
     {
       "name": "RadzenCheckBoxList",
       "summary": "RadzenCheckBoxList component.",
+      "typeParameters": [
+        "TValue"
+      ],
       "parameters": [
         {
           "name": "AllowSelectAll",
@@ -2285,6 +2320,9 @@
     {
       "name": "RadzenCheckBoxListItem",
       "summary": "RadzenCheckBoxListItem component.",
+      "typeParameters": [
+        "TValue"
+      ],
       "parameters": [
         {
           "name": "Attributes",
@@ -2362,6 +2400,7 @@
     {
       "name": "RadzenColorPicker",
       "summary": "RadzenColorPicker component.",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "AlphaText",
@@ -2555,6 +2594,7 @@
     {
       "name": "RadzenColorPickerItem",
       "summary": "RadzenColorPickerItem component.",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "Value",
@@ -2568,6 +2608,7 @@
     {
       "name": "RadzenColumn",
       "summary": "RadzenColumn component.",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "Attributes",
@@ -2747,6 +2788,7 @@
     {
       "name": "RadzenColumnOptions",
       "summary": "Common configuration of .",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "Margin",
@@ -2772,6 +2814,9 @@
     {
       "name": "RadzenColumnSeries",
       "summary": "Renders column series in",
+      "typeParameters": [
+        "TItem"
+      ],
       "parameters": [
         {
           "name": "CategoryProperty",
@@ -2881,6 +2926,7 @@
     {
       "name": "RadzenCompareValidator",
       "summary": "A validator component which compares a component value with a specified value. Must be placed inside a",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "Attributes",
@@ -2964,6 +3010,7 @@
     {
       "name": "RadzenComponent",
       "summary": "Base class of Radzen Blazor components.",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "Attributes",
@@ -3011,6 +3058,7 @@
     {
       "name": "RadzenComponents",
       "summary": "",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "Attributes",
@@ -3024,6 +3072,7 @@
     {
       "name": "RadzenComponentWithChildren",
       "summary": "A base class of components that have child content.",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "Attributes",
@@ -3077,6 +3126,7 @@
     {
       "name": "RadzenContent",
       "summary": "RadzenContent component.",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "Attributes",
@@ -3136,6 +3186,7 @@
     {
       "name": "RadzenContentContainer",
       "summary": "RadzenContentContainer component.",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "Attributes",
@@ -3195,12 +3246,14 @@
     {
       "name": "RadzenContextMenu",
       "summary": "RadzenContextMenu component.",
+      "typeParameters": [],
       "parameters": [],
       "events": []
     },
     {
       "name": "RadzenCustomValidator",
       "summary": "A validator component which compares a component value with a specified value. Must be placed inside a",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "Attributes",
@@ -3272,6 +3325,7 @@
     {
       "name": "RadzenDataAnnotationValidator",
       "summary": "A validator component which validates a component value using the data annotations defined on the corresponding model property. Must be placed inside a",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "Attributes",
@@ -3343,6 +3397,9 @@
     {
       "name": "RadzenDataFilter",
       "summary": "RadzenDataFilter component.",
+      "typeParameters": [
+        "TItem"
+      ],
       "parameters": [
         {
           "name": "AddFilterGroupText",
@@ -3599,6 +3656,9 @@
     {
       "name": "RadzenDataFilterItem",
       "summary": "",
+      "typeParameters": [
+        "TItem"
+      ],
       "parameters": [
         {
           "name": "DataFilter",
@@ -3624,6 +3684,9 @@
     {
       "name": "RadzenDataFilterProperty",
       "summary": "RadzenDataFilterProperty component. Must be placed inside a",
+      "typeParameters": [
+        "TItem"
+      ],
       "parameters": [
         {
           "name": "FilterOperator",
@@ -3691,6 +3754,9 @@
     {
       "name": "RadzenDataGrid",
       "summary": "RadzenDataGrid component.",
+      "typeParameters": [
+        "TItem"
+      ],
       "parameters": [
         {
           "name": "AllColumnsText",
@@ -4649,6 +4715,9 @@
     {
       "name": "RadzenDataGridColumn",
       "summary": "RadzenDataGridColumn component. Must be placed inside a",
+      "typeParameters": [
+        "TItem"
+      ],
       "parameters": [
         {
           "name": "AllowCheckBoxListVirtualization",
@@ -4956,6 +5025,9 @@
     {
       "name": "RadzenDataGridFilterMenu",
       "summary": "",
+      "typeParameters": [
+        "TItem"
+      ],
       "parameters": [
         {
           "name": "Column",
@@ -4975,6 +5047,9 @@
     {
       "name": "RadzenDataGridFooterCell",
       "summary": "",
+      "typeParameters": [
+        "TItem"
+      ],
       "parameters": [
         {
           "name": "Attributes",
@@ -5018,6 +5093,9 @@
     {
       "name": "RadzenDataGridGroupFooterCell",
       "summary": "",
+      "typeParameters": [
+        "TItem"
+      ],
       "parameters": [
         {
           "name": "Attributes",
@@ -5067,6 +5145,9 @@
     {
       "name": "RadzenDataGridGroupFooterRow",
       "summary": "",
+      "typeParameters": [
+        "TItem"
+      ],
       "parameters": [
         {
           "name": "Builder",
@@ -5104,6 +5185,9 @@
     {
       "name": "RadzenDataGridGroupRow",
       "summary": "",
+      "typeParameters": [
+        "TItem"
+      ],
       "parameters": [
         {
           "name": "Builder",
@@ -5141,6 +5225,9 @@
     {
       "name": "RadzenDataGridHeaderCell",
       "summary": "",
+      "typeParameters": [
+        "TItem"
+      ],
       "parameters": [
         {
           "name": "Attributes",
@@ -5190,6 +5277,9 @@
     {
       "name": "RadzenDataGridRow",
       "summary": "RadzenDataGridRow.",
+      "typeParameters": [
+        "TItem"
+      ],
       "parameters": [
         {
           "name": "Attributes",
@@ -5251,6 +5341,9 @@
     {
       "name": "RadzenDataList",
       "summary": "RadzenDataList component.",
+      "typeParameters": [
+        "TItem"
+      ],
       "parameters": [
         {
           "name": "AllowPaging",
@@ -5506,6 +5599,9 @@
     {
       "name": "RadzenDataListRow",
       "summary": "",
+      "typeParameters": [
+        "TItem"
+      ],
       "parameters": [
         {
           "name": "DataList",
@@ -5525,6 +5621,9 @@
     {
       "name": "RadzenDatePicker",
       "summary": "RadzenDatePicker component.",
+      "typeParameters": [
+        "TValue"
+      ],
       "parameters": [
         {
           "name": "AllowClear",
@@ -5845,6 +5944,7 @@
     {
       "name": "RadzenDayView",
       "summary": "Displays the appointments in a single day in",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "EndTime",
@@ -5882,6 +5982,7 @@
     {
       "name": "RadzenDialog",
       "summary": "",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "CloseSideDialogAriaLabel",
@@ -5895,6 +5996,9 @@
     {
       "name": "RadzenDonutSeries",
       "summary": "Renders donut series in .",
+      "typeParameters": [
+        "TItem"
+      ],
       "parameters": [
         {
           "name": "CategoryProperty",
@@ -6016,6 +6120,9 @@
     {
       "name": "RadzenDropDown",
       "summary": "RadzenDropDown component.",
+      "typeParameters": [
+        "TValue"
+      ],
       "parameters": [
         {
           "name": "AllowClear",
@@ -6368,6 +6475,9 @@
     {
       "name": "RadzenDropDownDataGrid",
       "summary": "RadzenDropDownDataGrid component.",
+      "typeParameters": [
+        "TValue"
+      ],
       "parameters": [
         {
           "name": "AddAriaLabel",
@@ -6889,6 +6999,7 @@
     {
       "name": "RadzenDropDownDataGridColumn",
       "summary": "",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "AllowCheckBoxListVirtualization",
@@ -7196,6 +7307,9 @@
     {
       "name": "RadzenDropDownItem",
       "summary": "",
+      "typeParameters": [
+        "TValue"
+      ],
       "parameters": [
         {
           "name": "Attributes",
@@ -7227,6 +7341,9 @@
     {
       "name": "RadzenDropZone",
       "summary": "RadzenDropZone component.",
+      "typeParameters": [
+        "TItem"
+      ],
       "parameters": [
         {
           "name": "Attributes",
@@ -7292,6 +7409,9 @@
     {
       "name": "RadzenDropZoneContainer",
       "summary": "RadzenDropZoneContainer component.",
+      "typeParameters": [
+        "TItem"
+      ],
       "parameters": [
         {
           "name": "Attributes",
@@ -7380,6 +7500,9 @@
     {
       "name": "RadzenDropZoneItem",
       "summary": "RadzenDropZoneItem component.",
+      "typeParameters": [
+        "TItem"
+      ],
       "parameters": [
         {
           "name": "Attributes",
@@ -7427,6 +7550,7 @@
     {
       "name": "RadzenEmailValidator",
       "summary": "A validator component which checks if a component value is a valid email address. Must be placed inside a",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "Attributes",
@@ -7492,6 +7616,7 @@
     {
       "name": "RadzenFieldset",
       "summary": "RadzenFieldset component.",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "AllowCollapse",
@@ -7621,6 +7746,9 @@
     {
       "name": "RadzenFileInput",
       "summary": "RadzenFileInput component.",
+      "typeParameters": [
+        "TValue"
+      ],
       "parameters": [
         {
           "name": "Accept",
@@ -7806,6 +7934,7 @@
     {
       "name": "RadzenFlexComponent",
       "summary": "A base class of row/col components.",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "AlignItems",
@@ -7871,6 +8000,7 @@
     {
       "name": "RadzenFooter",
       "summary": "RadzenFooter component.",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "Attributes",
@@ -7924,6 +8054,7 @@
     {
       "name": "RadzenFormField",
       "summary": "A Blazor component that wraps another component and adds a label, helper text, start and end content.",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "AllowFloatingLabel",
@@ -8019,6 +8150,7 @@
     {
       "name": "RadzenGoogleMap",
       "summary": "RadzenGoogleMap component.",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "ApiKey",
@@ -8124,6 +8256,7 @@
     {
       "name": "RadzenGoogleMapMarker",
       "summary": "RadzenGoogleMapMarker component.",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "Attributes",
@@ -8189,6 +8322,7 @@
     {
       "name": "RadzenGravatar",
       "summary": "RadzenGravatar component.",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "AlternateText",
@@ -8254,6 +8388,7 @@
     {
       "name": "RadzenGridLines",
       "summary": "Grid line configuration of .",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "LineType",
@@ -8285,6 +8420,7 @@
     {
       "name": "RadzenGridRow",
       "summary": "",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "Attributes",
@@ -8316,6 +8452,7 @@
     {
       "name": "RadzenHeader",
       "summary": "RadzenHeader component.",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "Attributes",
@@ -8369,6 +8506,7 @@
     {
       "name": "RadzenHeading",
       "summary": "RadzenHeading component.",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "Attributes",
@@ -8428,6 +8566,7 @@
     {
       "name": "RadzenHtml",
       "summary": "RadzenHtml component.",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "ChildContent",
@@ -8447,6 +8586,7 @@
     {
       "name": "RadzenHtmlEditor",
       "summary": "A component which edits HTML content. Provides built-in upload capabilities.",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "Attributes",
@@ -8595,6 +8735,7 @@
     {
       "name": "RadzenHtmlEditorAlignCenter",
       "summary": "A RadzenHtmlEditor tool which centers the selection.",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "Shortcut",
@@ -8614,6 +8755,7 @@
     {
       "name": "RadzenHtmlEditorAlignLeft",
       "summary": "A RadzenHtmlEditor tool which aligns the selection to the left.",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "Shortcut",
@@ -8633,6 +8775,7 @@
     {
       "name": "RadzenHtmlEditorAlignRight",
       "summary": "A RadzenHtmlEditor tool which aligns the selection to the right.",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "Shortcut",
@@ -8652,6 +8795,7 @@
     {
       "name": "RadzenHtmlEditorBackground",
       "summary": "A RadzenHtmlEditor tool which sets the background color of the selection.",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "AlphaText",
@@ -8743,6 +8887,7 @@
     {
       "name": "RadzenHtmlEditorBackgroundItem",
       "summary": "Adds a custom color to .",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "Value",
@@ -8756,6 +8901,7 @@
     {
       "name": "RadzenHtmlEditorBold",
       "summary": "A RadzenHtmlEditor tool which bolds the selection.",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "Shortcut",
@@ -8775,6 +8921,7 @@
     {
       "name": "RadzenHtmlEditorColor",
       "summary": "A RadzenHtmlEditor tool which sets the text color of the selection.",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "AlphaText",
@@ -8866,6 +9013,7 @@
     {
       "name": "RadzenHtmlEditorColorItem",
       "summary": "Adds a custom color to .",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "Value",
@@ -8879,6 +9027,7 @@
     {
       "name": "RadzenHtmlEditorCustomTool",
       "summary": "A custom tool in RadzenHtmlEditor",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "CommandName",
@@ -8940,6 +9089,7 @@
     {
       "name": "RadzenHtmlEditorFontName",
       "summary": "A tool which changes the font of the selected text.",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "ChildContent",
@@ -8965,6 +9115,7 @@
     {
       "name": "RadzenHtmlEditorFontNameItem",
       "summary": "Adds a custom font to a .",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "Text",
@@ -8984,6 +9135,7 @@
     {
       "name": "RadzenHtmlEditorFontSize",
       "summary": "A tool which changes the font size of the selected text.",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "Placeholder",
@@ -9003,6 +9155,7 @@
     {
       "name": "RadzenHtmlEditorFormatBlock",
       "summary": "A tool which changes the style of a the selected text by making it a heading or paragraph.",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "Heading1Text",
@@ -9064,6 +9217,7 @@
     {
       "name": "RadzenHtmlEditorImage",
       "summary": "A tool which inserts and uploads images in a .",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "AltText",
@@ -9155,6 +9309,7 @@
     {
       "name": "RadzenHtmlEditorIndent",
       "summary": "A RadzenHtmlEditor tool which indents the selection.",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "Shortcut",
@@ -9174,6 +9329,7 @@
     {
       "name": "RadzenHtmlEditorItalic",
       "summary": "A RadzenHtmlEditor tool which makes the selection italic.",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "Shortcut",
@@ -9193,6 +9349,7 @@
     {
       "name": "RadzenHtmlEditorJustify",
       "summary": "A RadzenHtmlEditor tool which justifies the selection.",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "Shortcut",
@@ -9212,6 +9369,7 @@
     {
       "name": "RadzenHtmlEditorLink",
       "summary": "A tool which creates links from the selection of a .",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "CancelText",
@@ -9261,6 +9419,7 @@
     {
       "name": "RadzenHtmlEditorOrderedList",
       "summary": "A RadzenHtmlEditor tool which inserts an ordered list (ol).",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "Shortcut",
@@ -9280,6 +9439,7 @@
     {
       "name": "RadzenHtmlEditorOutdent",
       "summary": "A RadzenHtmlEditor tool which outdents the selection.",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "Shortcut",
@@ -9299,6 +9459,7 @@
     {
       "name": "RadzenHtmlEditorRedo",
       "summary": "A RadzenHtmlEditor tool which repeats the last undone command.",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "Shortcut",
@@ -9318,6 +9479,7 @@
     {
       "name": "RadzenHtmlEditorRemoveFormat",
       "summary": "A RadzenHtmlEditor tool which removes the styling of the selection.",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "Shortcut",
@@ -9337,12 +9499,14 @@
     {
       "name": "RadzenHtmlEditorSeparator",
       "summary": "A RadzenHtmlEditor visual separator.",
+      "typeParameters": [],
       "parameters": [],
       "events": []
     },
     {
       "name": "RadzenHtmlEditorSource",
       "summary": "A tool which switches between rendered and source views in .",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "Shortcut",
@@ -9362,6 +9526,7 @@
     {
       "name": "RadzenHtmlEditorStrikeThrough",
       "summary": "A RadzenHtmlEditor tool which applies \u0022strike through\u0022 styling to the selection.",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "Shortcut",
@@ -9381,6 +9546,7 @@
     {
       "name": "RadzenHtmlEditorSubscript",
       "summary": "A RadzenHtmlEditor tool which formats the selection as subscript.",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "Shortcut",
@@ -9400,6 +9566,7 @@
     {
       "name": "RadzenHtmlEditorSuperscript",
       "summary": "A RadzenHtmlEditor tool which formats the selection as superscript.",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "Shortcut",
@@ -9419,6 +9586,7 @@
     {
       "name": "RadzenHtmlEditorUnderline",
       "summary": "A RadzenHtmlEditor tool which underlines the selection.",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "Shortcut",
@@ -9438,6 +9606,7 @@
     {
       "name": "RadzenHtmlEditorUndo",
       "summary": "A RadzenHtmlEditor tool which reverts the last edit operation.",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "Shortcut",
@@ -9457,6 +9626,7 @@
     {
       "name": "RadzenHtmlEditorUnlink",
       "summary": "A RadzenHtmlEditor tool which removes a link.",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "Shortcut",
@@ -9476,6 +9646,7 @@
     {
       "name": "RadzenHtmlEditorUnorderedList",
       "summary": "A RadzenHtmlEditor tool which inserts a bullet list (ul).",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "Shortcut",
@@ -9495,6 +9666,7 @@
     {
       "name": "RadzenIcon",
       "summary": "RadzenIcon component. Displays icon from Material Symbols variable font.",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "Attributes",
@@ -9560,6 +9732,7 @@
     {
       "name": "RadzenImage",
       "summary": "RadzenImage component.",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "AlternateText",
@@ -9630,6 +9803,7 @@
     {
       "name": "RadzenLabel",
       "summary": "RadzenLabel component.",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "Attributes",
@@ -9695,6 +9869,7 @@
     {
       "name": "RadzenLayout",
       "summary": "RadzenLayout component.",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "Attributes",
@@ -9748,6 +9923,7 @@
     {
       "name": "RadzenLegend",
       "summary": "Class RadzenLegend.",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "Position",
@@ -9767,6 +9943,7 @@
     {
       "name": "RadzenLengthValidator",
       "summary": "A validator component which checks if then component value length is within a specified range. Must be placed inside a",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "Attributes",
@@ -9844,6 +10021,9 @@
     {
       "name": "RadzenLineSeries",
       "summary": "Renders line series in .",
+      "typeParameters": [
+        "TItem"
+      ],
       "parameters": [
         {
           "name": "CategoryProperty",
@@ -9935,6 +10115,7 @@
     {
       "name": "RadzenLink",
       "summary": "RadzenLink component.",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "Attributes",
@@ -10036,6 +10217,9 @@
     {
       "name": "RadzenListBox",
       "summary": "RadzenListBox component.",
+      "typeParameters": [
+        "TValue"
+      ],
       "parameters": [
         {
           "name": "AllowClear",
@@ -10318,6 +10502,9 @@
     {
       "name": "RadzenListBoxItem",
       "summary": "",
+      "typeParameters": [
+        "TValue"
+      ],
       "parameters": [
         {
           "name": "Attributes",
@@ -10349,6 +10536,7 @@
     {
       "name": "RadzenLogin",
       "summary": "RadzenLogin component. Must be placed in RadzenTemplateForm.",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "AllowRegister",
@@ -10531,6 +10719,7 @@
     {
       "name": "RadzenMarkers",
       "summary": "Class RadzenMarkers.",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "Fill",
@@ -10574,6 +10763,7 @@
     {
       "name": "RadzenMask",
       "summary": "RadzenMask component.",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "Attributes",
@@ -10703,6 +10893,7 @@
     {
       "name": "RadzenMediaQuery",
       "summary": "RadzenMediaQuery fires its event when the media query specified via matches or not.",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "Query",
@@ -10722,6 +10913,7 @@
     {
       "name": "RadzenMenu",
       "summary": "RadzenMenu component.",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "Attributes",
@@ -10798,6 +10990,7 @@
     {
       "name": "RadzenMenuItem",
       "summary": "RadzenMenuItem component.",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "Attributes",
@@ -10928,6 +11121,7 @@
     {
       "name": "RadzenMenuItemWrapper",
       "summary": "",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "Attributes",
@@ -10987,6 +11181,7 @@
     {
       "name": "RadzenMonthView",
       "summary": "Displays the appointments in a month day in",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "MaxAppointmentsInSlot",
@@ -11012,6 +11207,7 @@
     {
       "name": "RadzenMultiDayView",
       "summary": "Displays the appointments in a multi-day view in",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "AdvanceDays",
@@ -11067,6 +11263,7 @@
     {
       "name": "RadzenNotification",
       "summary": "",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "Style",
@@ -11080,6 +11277,7 @@
     {
       "name": "RadzenNotificationMessage",
       "summary": "",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "Message",
@@ -11099,6 +11297,9 @@
     {
       "name": "RadzenNumeric",
       "summary": "RadzenNumeric component.",
+      "typeParameters": [
+        "TValue"
+      ],
       "parameters": [
         {
           "name": "Attributes",
@@ -11264,6 +11465,7 @@
     {
       "name": "RadzenNumericRangeValidator",
       "summary": "A validator component which checks if a component value is within a specified range. Must be placed inside a",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "AllowNull",
@@ -11347,6 +11549,7 @@
     {
       "name": "RadzenPager",
       "summary": "RadzenPager component.",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "AlwaysVisible",
@@ -11536,6 +11739,7 @@
     {
       "name": "RadzenPanel",
       "summary": "RadzenPanel component.",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "AllowCollapse",
@@ -11671,6 +11875,7 @@
     {
       "name": "RadzenPanelMenu",
       "summary": "RadzenPanelMenu component.",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "Attributes",
@@ -11753,6 +11958,7 @@
     {
       "name": "RadzenPanelMenuItem",
       "summary": "RadzenPanelMenuItem component.",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "Attributes",
@@ -11888,6 +12094,7 @@
     {
       "name": "RadzenPassword",
       "summary": "RadzenPassword component.",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "Attributes",
@@ -11993,6 +12200,9 @@
     {
       "name": "RadzenPickList",
       "summary": "RadzenCard component.",
+      "typeParameters": [
+        "TItem"
+      ],
       "parameters": [
         {
           "name": "AllowFiltering",
@@ -12260,6 +12470,9 @@
     {
       "name": "RadzenPieSeries",
       "summary": "Renders pie series in .",
+      "typeParameters": [
+        "TItem"
+      ],
       "parameters": [
         {
           "name": "CategoryProperty",
@@ -12369,6 +12582,7 @@
     {
       "name": "RadzenProfileMenu",
       "summary": "RadzenProfileMenu component.",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "Attributes",
@@ -12439,6 +12653,7 @@
     {
       "name": "RadzenProfileMenuItem",
       "summary": "RadzenProfileMenuItem component.",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "Attributes",
@@ -12540,6 +12755,7 @@
     {
       "name": "RadzenProgressBar",
       "summary": "RadzenProgressBar component.",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "Attributes",
@@ -12641,6 +12857,7 @@
     {
       "name": "RadzenProgressBarCircular",
       "summary": "RadzenProgressBarCircular component.",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "Attributes",
@@ -12748,6 +12965,7 @@
     {
       "name": "RadzenRadialGauge",
       "summary": "",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "Attributes",
@@ -12801,6 +13019,7 @@
     {
       "name": "RadzenRadialGaugeScale",
       "summary": "RadzenRadialGaugeScale component.",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "ChildContent",
@@ -12940,6 +13159,7 @@
     {
       "name": "RadzenRadialGaugeScalePointer",
       "summary": "RadzenRadialGaugeScalePointer component.",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "Fill",
@@ -13007,6 +13227,7 @@
     {
       "name": "RadzenRadialGaugeScaleRange",
       "summary": "RadzenRadialGaugeScaleRange component.",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "Fill",
@@ -13050,6 +13271,9 @@
     {
       "name": "RadzenRadioButtonList",
       "summary": "RadzenRadioButtonList component.",
+      "typeParameters": [
+        "TValue"
+      ],
       "parameters": [
         {
           "name": "Attributes",
@@ -13185,6 +13409,9 @@
     {
       "name": "RadzenRadioButtonListItem",
       "summary": "RadzenRadioButtonListItem component.",
+      "typeParameters": [
+        "TValue"
+      ],
       "parameters": [
         {
           "name": "Attributes",
@@ -13262,6 +13489,7 @@
     {
       "name": "RadzenRating",
       "summary": "RadzenRating component.",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "Attributes",
@@ -13379,6 +13607,7 @@
     {
       "name": "RadzenRegexValidator",
       "summary": "A validator component which matches a component value against a specified regular expression pattern. Must be placed inside a",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "Attributes",
@@ -13450,6 +13679,7 @@
     {
       "name": "RadzenRequiredValidator",
       "summary": "A validator component which checks if a component has value. Must be placed inside a",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "Attributes",
@@ -13521,6 +13751,7 @@
     {
       "name": "RadzenRow",
       "summary": "RadzenCard component.",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "AlignItems",
@@ -13598,6 +13829,9 @@
     {
       "name": "RadzenScheduler",
       "summary": "Displays a collection of in day, week or month view.",
+      "typeParameters": [
+        "TItem"
+      ],
       "parameters": [
         {
           "name": "AppointmentRender",
@@ -13785,6 +14019,7 @@
     {
       "name": "RadzenSecurityCode",
       "summary": "RadzenRating component.",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "Attributes",
@@ -13896,6 +14131,9 @@
     {
       "name": "RadzenSelectBar",
       "summary": "RadzenSelectBar component.",
+      "typeParameters": [
+        "TValue"
+      ],
       "parameters": [
         {
           "name": "Attributes",
@@ -14031,6 +14269,7 @@
     {
       "name": "RadzenSelectBarItem",
       "summary": "RadzenSelectBarItem component.",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "Attributes",
@@ -14132,6 +14371,9 @@
     {
       "name": "RadzenSeriesAnnotation",
       "summary": "Displays a text label for the specified data item from the series.",
+      "typeParameters": [
+        "TItem"
+      ],
       "parameters": [
         {
           "name": "Data",
@@ -14175,6 +14417,7 @@
     {
       "name": "RadzenSeriesDataLabels",
       "summary": "Displays the series values as text labels.",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "OffsetX",
@@ -14200,6 +14443,7 @@
     {
       "name": "RadzenSeriesMeanLine",
       "summary": "Displays the mean of a chart series.",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "LineType",
@@ -14243,6 +14487,7 @@
     {
       "name": "RadzenSeriesMedianLine",
       "summary": "Displays the median of a chart series.",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "LineType",
@@ -14286,6 +14531,7 @@
     {
       "name": "RadzenSeriesModeLine",
       "summary": "Displays the mode of a chart series.",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "LineType",
@@ -14329,6 +14575,7 @@
     {
       "name": "RadzenSeriesTrendLine",
       "summary": "Displays the trend of a chart series.",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "LineType",
@@ -14360,6 +14607,7 @@
     {
       "name": "RadzenSeriesValueLine",
       "summary": "",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "LineType",
@@ -14403,6 +14651,7 @@
     {
       "name": "RadzenSidebar",
       "summary": "RadzenSidebar component.",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "Attributes",
@@ -14473,6 +14722,7 @@
     {
       "name": "RadzenSidebarToggle",
       "summary": "RadzenSidebarToggle component.",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "Attributes",
@@ -14537,6 +14787,9 @@
     {
       "name": "RadzenSlider",
       "summary": "RadzenSlider component.",
+      "typeParameters": [
+        "TValue"
+      ],
       "parameters": [
         {
           "name": "Attributes",
@@ -14660,6 +14913,7 @@
     {
       "name": "RadzenSparkline",
       "summary": "A sparkline is a small chart that provides a simple way to visualize trends in data.",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "Attributes",
@@ -14741,6 +14995,7 @@
     {
       "name": "RadzenSpeechToTextButton",
       "summary": "RadzenSpeechToTextButton component. Enables speech to text functionality. This is only supported on select browsers. See https://caniuse.com/?search=SpeechRecognition \u003CRadzenSpeechToTextButton Change=@(args =\u003E Console.WriteLine($\u0022Value: {args}\u0022)) /\u003E",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "Attributes",
@@ -14835,6 +15090,7 @@
     {
       "name": "RadzenSplitButton",
       "summary": "RadzenSplitButton component.",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "AlwaysOpenPopup",
@@ -15001,6 +15257,7 @@
     {
       "name": "RadzenSplitButtonItem",
       "summary": "RadzenSplitButtonItem component.",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "Attributes",
@@ -15078,6 +15335,7 @@
     {
       "name": "RadzenSplitter",
       "summary": "RadzenSplitter component.",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "Attributes",
@@ -15152,6 +15410,7 @@
     {
       "name": "RadzenSplitterPane",
       "summary": "RadzenSplitterPane component.",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "Attributes",
@@ -15247,6 +15506,7 @@
     {
       "name": "RadzenSSRSViewer",
       "summary": "RadzenSSRSViewer component.",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "Attributes",
@@ -15329,6 +15589,7 @@
     {
       "name": "RadzenSSRSViewerParameter",
       "summary": "RadzenSSRSViewerParameter component.",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "ParameterName",
@@ -15348,6 +15609,7 @@
     {
       "name": "RadzenStack",
       "summary": "RadzenStack component.",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "AlignItems",
@@ -15437,6 +15699,9 @@
     {
       "name": "RadzenStackedAreaSeries",
       "summary": "Renders stacked area series in .",
+      "typeParameters": [
+        "TItem"
+      ],
       "parameters": [
         {
           "name": "CategoryProperty",
@@ -15534,6 +15799,9 @@
     {
       "name": "RadzenStackedBarSeries",
       "summary": "Renders bar series in .",
+      "typeParameters": [
+        "TItem"
+      ],
       "parameters": [
         {
           "name": "CategoryProperty",
@@ -15643,6 +15911,9 @@
     {
       "name": "RadzenStackedColumnSeries",
       "summary": "Renders column series in",
+      "typeParameters": [
+        "TItem"
+      ],
       "parameters": [
         {
           "name": "CategoryProperty",
@@ -15752,6 +16023,7 @@
     {
       "name": "RadzenSteps",
       "summary": "RadzenSteps component.",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "AllowStepSelect",
@@ -15862,6 +16134,7 @@
     {
       "name": "RadzenStepsItem",
       "summary": "RadzenStepsItem component.",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "Attributes",
@@ -15951,6 +16224,7 @@
     {
       "name": "RadzenSwitch",
       "summary": "RadzenSwitch component.",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "Attributes",
@@ -16056,6 +16330,7 @@
     {
       "name": "RadzenTable",
       "summary": "RadzenTable component.",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "AllowAlternatingRows",
@@ -16121,6 +16396,7 @@
     {
       "name": "RadzenTableBody",
       "summary": "RadzenTableBody component.",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "Attributes",
@@ -16174,6 +16450,7 @@
     {
       "name": "RadzenTableCell",
       "summary": "RadzenTableRow component.",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "Attributes",
@@ -16227,6 +16504,7 @@
     {
       "name": "RadzenTableHeader",
       "summary": "RadzenTableHeader component.",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "Attributes",
@@ -16280,6 +16558,7 @@
     {
       "name": "RadzenTableHeaderCell",
       "summary": "RadzenTableRow component.",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "Attributes",
@@ -16333,6 +16612,7 @@
     {
       "name": "RadzenTableHeaderRow",
       "summary": "RadzenTableRow component.",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "Attributes",
@@ -16386,6 +16666,7 @@
     {
       "name": "RadzenTableRow",
       "summary": "RadzenTableRow component.",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "Attributes",
@@ -16439,6 +16720,7 @@
     {
       "name": "RadzenTabs",
       "summary": "RadzenTabs component.",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "Attributes",
@@ -16520,6 +16802,7 @@
     {
       "name": "RadzenTabsItem",
       "summary": "RadzenTabsItem component.",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "Attributes",
@@ -16587,6 +16870,9 @@
     {
       "name": "RadzenTemplateForm",
       "summary": "A component which represents a form. Provides validation support.",
+      "typeParameters": [
+        "TItem"
+      ],
       "parameters": [
         {
           "name": "Action",
@@ -16679,6 +16965,7 @@
     {
       "name": "RadzenText",
       "summary": "A component which displays text or makup with predefined styling.",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "Anchor",
@@ -16762,6 +17049,7 @@
     {
       "name": "RadzenTextArea",
       "summary": "RadzenTextArea component.",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "Attributes",
@@ -16879,6 +17167,7 @@
     {
       "name": "RadzenTextBox",
       "summary": "An input component for single line text entry.",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "Attributes",
@@ -16996,6 +17285,7 @@
     {
       "name": "RadzenTheme",
       "summary": "Registers and manages the current theme. Requires to be registered in the DI container.",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "Theme",
@@ -17015,6 +17305,7 @@
     {
       "name": "RadzenTicks",
       "summary": "Tick configuration of .",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "LineType",
@@ -17046,6 +17337,7 @@
     {
       "name": "RadzenTimeline",
       "summary": "RadzenTimeline component is a graphical representation used to display a chronological sequence of events or data points.",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "AlignItems",
@@ -17123,6 +17415,7 @@
     {
       "name": "RadzenTimelineItem",
       "summary": "RadzenTimeline item.",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "Attributes",
@@ -17224,6 +17517,7 @@
     {
       "name": "RadzenToggleButton",
       "summary": "RadzenButton component.",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "Attributes",
@@ -17424,12 +17718,14 @@
     {
       "name": "RadzenTooltip",
       "summary": "",
+      "typeParameters": [],
       "parameters": [],
       "events": []
     },
     {
       "name": "RadzenTree",
       "summary": "A component which displays a hierarchy of items. Supports inline definition and data-binding.",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "AllowCheckBoxes",
@@ -17585,6 +17881,7 @@
     {
       "name": "RadzenTreeItem",
       "summary": "A component which is an item in a",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "Attributes",
@@ -17670,6 +17967,7 @@
     {
       "name": "RadzenTreeLevel",
       "summary": "Configures a level of nodes in a during data-binding.",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "Checkable",
@@ -17731,6 +18029,7 @@
     {
       "name": "RadzenUpload",
       "summary": "RadzenUpload component.",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "Accept",
@@ -17888,6 +18187,7 @@
     {
       "name": "RadzenUploadHeader",
       "summary": "",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "Name",
@@ -17907,6 +18207,7 @@
     {
       "name": "RadzenValueAxis",
       "summary": "",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "ChildContent",
@@ -17992,6 +18293,7 @@
     {
       "name": "RadzenWeekView",
       "summary": "Displays the appointments in a week day in",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "EndTime",
@@ -18035,6 +18337,7 @@
     {
       "name": "RadzenYearPlannerView",
       "summary": "Displays the appointments in a month day in",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "MaxAppointmentsInSlot",
@@ -18066,6 +18369,7 @@
     {
       "name": "RadzenYearTimelineView",
       "summary": "Displays the appointments in a month day in",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "MaxAppointmentsInSlot",
@@ -18097,6 +18401,7 @@
     {
       "name": "RadzenYearView",
       "summary": "Displays the appointments in a month day in",
+      "typeParameters": [],
       "parameters": [
         {
           "name": "MoreText",
