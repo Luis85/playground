@@ -18,8 +18,10 @@ test("createServer registers the four tools", () => {
       "get_component",
       "get_usage",
       "list_components",
+      "list_templates",
       "list_usage_topics",
       "scaffold_component",
+      "scaffold_template",
       "search_components",
     ],
   );

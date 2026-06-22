@@ -14,6 +14,7 @@ import { scaffoldComponent } from "./tools/scaffoldComponent.ts";
 import { formatComponent } from "./format.ts";
 import { writeVault } from "./exportObsidian.ts";
 import { listUsageTopics, getUsage, usageTopicsForComponent } from "./tools/usage.ts";
+import { listTemplates, scaffoldTemplate } from "./tools/templates.ts";
 
 function textResult(value: unknown) {
   return { content: [{ type: "text" as const, text: JSON.stringify(value, null, 2) }] };
@@ -128,6 +129,38 @@ export function createServer(kb: KnowledgeBase): McpServer {
     async ({ topic_id }) => {
       try {
         return textResult(getUsage(topic_id));
+      } catch (err) {
+        return errorResult(err);
+      }
+    },
+  );
+
+  server.registerTool(
+    "list_templates",
+    {
+      description:
+        "List ready-made Radzen Blazor markup templates (form, datagrid, layout, dashboard) with their options. Use to scaffold a whole pattern, not just one component; then call scaffold_template.",
+      inputSchema: {},
+    },
+    async () => textResult(listTemplates()),
+  );
+
+  server.registerTool(
+    "scaffold_template",
+    {
+      description:
+        "Generate ready-to-paste Radzen Blazor markup for a common pattern (validated form, data grid, app layout shell, dashboard card grid). Options fill in type/handler/field names; omitted options use sensible defaults.",
+      inputSchema: {
+        template_id: z.string().describe("Template id from list_templates, e.g. 'form' or 'datagrid'."),
+        options: z
+          .record(z.string())
+          .optional()
+          .describe("Template option values, e.g. { \"item_type\": \"Employee\", \"data\": \"employees\" }."),
+      },
+    },
+    async ({ template_id, options }) => {
+      try {
+        return { content: [{ type: "text" as const, text: scaffoldTemplate(template_id, options) }] };
       } catch (err) {
         return errorResult(err);
       }

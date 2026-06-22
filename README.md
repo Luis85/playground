@@ -49,6 +49,7 @@ Before the knowledge base exists (or to use a different one), set `RADZEN_KB_PAT
 | `list_components(filter?)` | Component names + one-line summaries; optional substring filter. |
 | `get_component(name, response_format?)` | Full API (parameters, events) plus ids of related usage guides. `response_format: "concise"` returns names only; `"detailed"` (default) returns full metadata. Unknown names get "did you mean" suggestions. |
 | `list_usage_topics()` / `get_usage(topic_id)` | Curated Radzen usage guides (setup, data-binding, validation, datagrid, events, layout, theming, dialogs-notifications, icons) — the structural patterns reflection can't show. |
+| `list_templates()` / `scaffold_template(template_id, options?)` | Ready-made multi-element patterns (validated form, data grid, app layout shell, dashboard card grid); options fill in type/handler/field names with sensible defaults. |
 | `search_components(query)` | Typo-tolerant fuzzy search over names, parameter names, and descriptions. |
 | `scaffold_component(name, options?)` | Ready-to-paste Razor markup; option keys validated against the component's parameters **and** events; values are HTML-escaped. |
 | `export_obsidian_library(output_dir)` | Generate an Obsidian vault of the whole component library (see below). |
