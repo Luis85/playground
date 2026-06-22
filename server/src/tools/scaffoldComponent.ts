@@ -17,11 +17,12 @@ export function scaffoldComponent(
   options: Record<string, string> = {},
 ): string {
   const component = getComponent(kb, name); // throws on unknown component
-  // Both parameters and event callbacks are legal Razor component attributes
-  // (e.g. Text="..." and Click="@OnClick"), so both are valid option keys.
+  // Valid attributes: [Parameter] properties, event callbacks, and Razor generic
+  // type parameters (e.g. TItem on RadzenDataGrid<TItem>) — all legal on the tag.
   const valid = new Set([
     ...component.parameters.map((p) => p.name),
     ...component.events.map((e) => e.name),
+    ...(component.typeParameters ?? []),
   ]);
   const invalid = Object.keys(options).filter((k) => !valid.has(k));
   if (invalid.length > 0) {

@@ -89,10 +89,18 @@ foreach (var type in assembly.GetExportedTypes().Where(IsComponent).OrderBy(t =>
     var typeKey = $"T:{type.FullName}";
     var summary = summaries.TryGetValue(typeKey, out var ts) ? ts : "";
     if (!string.IsNullOrEmpty(summary)) summaryCount++;
+
+    // Razor generic type parameters (e.g. TItem on RadzenDataGrid<TItem>) are
+    // legal attributes but are not [Parameter] properties.
+    var typeParameters = type.IsGenericTypeDefinition
+        ? type.GetGenericArguments().Select(a => a.Name).ToArray()
+        : Array.Empty<string>();
+
     components.Add(new
     {
         name = ComponentName(type),
         summary,
+        typeParameters,
         parameters,
         events,
     });

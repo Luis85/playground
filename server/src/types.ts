@@ -14,6 +14,7 @@ export interface EventInfo {
 export interface ComponentInfo {
   name: string;
   summary: string;
+  typeParameters: string[];
   parameters: ParameterInfo[];
   events: EventInfo[];
 }

@@ -16,6 +16,8 @@
   "scripts": {
     "test": "node --import tsx --test \"test/**/*.test.ts\"",
     "build": "tsc",
+    "bundle:kb": "node scripts/bundle-kb.mjs",
+    "prepack": "npm run build && npm run bundle:kb",
     "start": "tsx src/server.ts",
     "export:obsidian": "tsx src/exportObsidian.ts"
   },

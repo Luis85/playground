@@ -9,14 +9,29 @@ const kb: KnowledgeBase = {
     {
       name: "RadzenButton",
       summary: "",
+      typeParameters: [],
       parameters: [
         { name: "Text", type: "string", default: '""', description: "" },
         { name: "Disabled", type: "bool", default: "false", description: "" },
       ],
       events: [{ name: "Click", type: "EventCallback<MouseEventArgs>", description: "" }],
     },
+    {
+      name: "RadzenDropDown",
+      summary: "",
+      typeParameters: ["TValue"],
+      parameters: [{ name: "Data", type: "IEnumerable", default: null, description: "" }],
+      events: [],
+    },
   ],
 };
+
+test("accepts Razor generic type parameters", () => {
+  assert.equal(
+    scaffoldComponent(kb, "RadzenDropDown", { TValue: "int", Data: "@items" }),
+    `<RadzenDropDown TValue="int" Data="@items" />`,
+  );
+});
 
 test("accepts event callbacks as attributes", () => {
   assert.equal(

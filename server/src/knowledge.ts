@@ -18,6 +18,7 @@ const eventSchema = z.object({
 const componentSchema = z.object({
   name: z.string(),
   summary: z.string(),
+  typeParameters: z.array(z.string()).default([]),
   parameters: z.array(parameterSchema),
   events: z.array(eventSchema),
 });

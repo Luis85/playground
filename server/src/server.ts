@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import { fileURLToPath } from "node:url";
 import { dirname, resolve } from "node:path";
-import { realpathSync } from "node:fs";
+import { realpathSync, existsSync } from "node:fs";
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
 import { z } from "zod";
@@ -125,9 +125,14 @@ export function createServer(kb: KnowledgeBase): McpServer {
 
 async function main(): Promise<void> {
   const here = dirname(fileURLToPath(import.meta.url));
-  // `here` is server/src (tsx) or server/dist (built); the committed knowledge
-  // base lives at the repo root, two levels up.
-  const kbPath = process.env.RADZEN_KB_PATH ?? resolve(here, "..", "..", "component-knowledge.json");
+  // Prefer a knowledge base bundled next to the entrypoint (published npm
+  // package / built dist); fall back to the repo root during development.
+  const candidates = [
+    resolve(here, "component-knowledge.json"),
+    resolve(here, "..", "..", "component-knowledge.json"),
+  ];
+  const kbPath =
+    process.env.RADZEN_KB_PATH ?? candidates.find(existsSync) ?? candidates[candidates.length - 1];
   const kb = loadKnowledgeBase(kbPath);
   const server = createServer(kb);
   await server.connect(new StdioServerTransport());
