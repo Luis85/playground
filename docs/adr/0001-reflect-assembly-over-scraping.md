@@ -23,3 +23,10 @@ detail.
   the committed JSON and has no .NET dependency.
 - The knowledge base has no usage examples in v1 (reflection yields API shape,
   not examples). Revisit if scaffolding quality needs them.
+- The `Radzen.Blazor` package ships no XML documentation alongside the assembly,
+  so component/parameter `summary`/`description` fields are **empty** in the
+  generated knowledge base. The extractor does a best-effort probe for XML docs
+  and logs the populated-summary count. Tools and the README state that these
+  fields may be empty; search still matches component and parameter names.
+  Populating real summaries/examples (by sourcing `blazor.radzen.com` docs) is
+  tracked as the flagship follow-up in the research report.

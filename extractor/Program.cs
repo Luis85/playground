@@ -9,10 +9,18 @@ var outputPath = args.Length > 0 ? args[0] : Path.Combine("..", "component-knowl
 var assembly = typeof(Radzen.Blazor.RadzenButton).Assembly;
 var version = assembly.GetName().Version?.ToString() ?? "unknown";
 
-// Load XML doc summaries if the file sits next to the assembly.
-var xmlPath = Path.ChangeExtension(assembly.Location, ".xml");
+// Load XML doc summaries if the package ships them. Probe next to the assembly
+// (NuGet cache) and the app base dir (where CopyDocumentationFilesFromPackages
+// places them). Radzen.Blazor may ship no XML docs, in which case summaries stay
+// empty — see docs/adr/0001.
 var summaries = new Dictionary<string, string>();
-if (File.Exists(xmlPath))
+var xmlCandidates = new[]
+{
+    Path.ChangeExtension(assembly.Location, ".xml"),
+    Path.Combine(AppContext.BaseDirectory, "Radzen.Blazor.xml"),
+};
+var xmlPath = xmlCandidates.FirstOrDefault(File.Exists);
+if (xmlPath is not null)
 {
     foreach (var member in XDocument.Load(xmlPath).Descendants("member"))
     {
@@ -41,6 +49,7 @@ static bool IsComponent(Type t) =>
     t.Name.StartsWith("Radzen", StringComparison.Ordinal);
 
 var components = new List<object>();
+var summaryCount = 0;
 foreach (var type in assembly.GetExportedTypes().Where(IsComponent).OrderBy(t => t.Name))
 {
     object? instance = null;
@@ -78,10 +87,12 @@ foreach (var type in assembly.GetExportedTypes().Where(IsComponent).OrderBy(t =>
     }
 
     var typeKey = $"T:{type.FullName}";
+    var summary = summaries.TryGetValue(typeKey, out var ts) ? ts : "";
+    if (!string.IsNullOrEmpty(summary)) summaryCount++;
     components.Add(new
     {
         name = ComponentName(type),
-        summary = summaries.TryGetValue(typeKey, out var ts) ? ts : "",
+        summary,
         parameters,
         events,
     });
@@ -91,3 +102,5 @@ var doc = new { radzenVersion = version, components };
 var json = JsonSerializer.Serialize(doc, new JsonSerializerOptions { WriteIndented = true });
 File.WriteAllText(outputPath, json);
 Console.WriteLine($"Wrote {components.Count} components to {outputPath}");
+Console.WriteLine($"Summaries populated: {summaryCount}/{components.Count}"
+    + (summaryCount == 0 ? " (Radzen.Blazor ships no XML docs; summaries left empty — see docs/adr/0001)" : ""));
