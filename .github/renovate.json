@@ -1,0 +1,13 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["config:recommended"],
+  "nuget": { "enabled": true },
+  "packageRules": [
+    {
+      "matchManagers": ["nuget"],
+      "matchPackageNames": ["Radzen.Blazor"],
+      "commitMessageTopic": "Radzen.Blazor (regenerates the knowledge base)",
+      "labels": ["radzen-update"]
+    }
+  ]
+}
