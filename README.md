@@ -54,12 +54,20 @@ Re-run on a Radzen version bump and commit the updated `component-knowledge.json
 
 ## Register with an MCP client (example)
 
+Build once, then point the client at the compiled entrypoint. Node resolves
+dependencies and the knowledge base from the file's location, so this works
+regardless of the client's working directory:
+
+```sh
+cd server && npm install && npm run build
+```
+
 ```json
 {
   "mcpServers": {
     "radzen-blazor": {
       "command": "node",
-      "args": ["--import", "tsx", "server/src/server.ts"]
+      "args": ["/absolute/path/to/repo/server/dist/server.js"]
     }
   }
 }
