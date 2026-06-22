@@ -75,10 +75,24 @@ test("accepts event callbacks as attributes", () => {
   );
 });
 
-test("escapes attribute values", () => {
+test("escapes literal attribute values", () => {
   assert.equal(
     scaffoldComponent(kb, "RadzenButton", { Text: 'Save "draft"' }),
     `<RadzenButton Text="Save &quot;draft&quot;" />`,
+  );
+});
+
+test("leaves Razor expressions unescaped (lambda)", () => {
+  assert.equal(
+    scaffoldComponent(kb, "RadzenButton", { Click: "@(() => Save())" }),
+    `<RadzenButton Click="@(() => Save())" />`,
+  );
+});
+
+test("leaves Razor expressions unescaped (member access)", () => {
+  assert.equal(
+    scaffoldComponent(kb, "RadzenButton", { Click: "@OnClick" }),
+    `<RadzenButton Click="@OnClick" />`,
   );
 });
 

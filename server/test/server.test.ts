@@ -8,7 +8,7 @@ const kb: KnowledgeBase = {
   components: [{ name: "RadzenButton", summary: "A button.", parameters: [], events: [] }],
 };
 
-test("createServer registers the four tools", () => {
+test("createServer registers the nine tools", () => {
   const server = createServer(kb);
   const tools = (server as unknown as { _registeredTools: Record<string, unknown> })._registeredTools;
   assert.deepEqual(

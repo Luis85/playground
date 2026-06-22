@@ -6,6 +6,7 @@ import {
   renderUsageNote,
   relatedComponents,
   buildVault,
+  noteName,
 } from "../src/obsidian.ts";
 import type { KnowledgeBase } from "../src/types.ts";
 import type { UsageTopic } from "../src/usage/topics.ts";
@@ -26,7 +27,7 @@ const topics: UsageTopic[] = [
 test("component note has frontmatter, tables, and usage links", () => {
   const note = renderComponentNote(kb, kb.components[0], topics);
   assert.match(note, /^---\n/);
-  assert.match(note, /title: RadzenDataGrid/);
+  assert.match(note, /title: "RadzenDataGrid"/);
   assert.match(note, /radzenVersion: 5\.9\.9\.0/);
   assert.match(note, /\| Data \| IEnumerable \|/);
   assert.match(note, /\| RowSelect \|/);
@@ -43,7 +44,7 @@ test("relatedComponents links prefix families both ways", () => {
 
 test("usage note links related components and the index", () => {
   const note = renderUsageNote(topics[0]);
-  assert.match(note, /title: DataGrid binding/);
+  assert.match(note, /title: "DataGrid binding"/);
   assert.match(note, /Use LoadData\./);
   assert.match(note, /\[\[RadzenDataGrid\]\]/);
   assert.match(note, /\[\[Radzen Components\]\]/);
@@ -62,4 +63,63 @@ test("buildVault returns index + component notes + usage notes", () => {
   assert.ok(files.some((f) => f.path === "components/RadzenButton.md"));
   assert.ok(files.some((f) => f.path === "usage/DataGrid binding.md"));
   assert.equal(files.length, kb.components.length + topics.length + 1);
+});
+
+test("noteName strips path-unsafe chars and matches link/file", () => {
+  assert.equal(noteName("Radzen/Bad:Name"), "Radzen-Bad-Name");
+  assert.equal(noteName(".."), "-");
+  assert.equal(noteName("  spaced   out  "), "spaced out");
+});
+
+test("component named Radzen/Bad:Name yields a safe filename and matching link", () => {
+  const badKb: KnowledgeBase = {
+    radzenVersion: "5.9.9.0",
+    components: [
+      { name: "RadzenDataGrid", summary: "Grid.", typeParameters: [], parameters: [], events: [] },
+      { name: "RadzenDataGridBad:Name", summary: "Bad.", typeParameters: [], parameters: [], events: [] },
+    ],
+  };
+  const files = buildVault(badKb, []);
+  const safe = files.find((f) => f.path.includes("Bad"));
+  assert.ok(safe && /^components\/RadzenDataGridBad-Name\.md$/.test(safe.path));
+  // The related-components wikilink in RadzenDataGrid's note uses the same sanitized name.
+  const note = renderComponentNote(badKb, badKb.components[0], []);
+  assert.match(note, /\[\[RadzenDataGridBad-Name\]\]/);
+});
+
+test("YAML frontmatter quotes values containing a colon", () => {
+  const colonKb: KnowledgeBase = {
+    radzenVersion: "5.9.9.0",
+    components: [{ name: "RadzenButton", summary: "A: button", typeParameters: [], parameters: [], events: [] }],
+  };
+  const idx = renderIndexNote(colonKb, []);
+  assert.match(idx, /^title: "Radzen Components"$/m);
+  const usageNote = renderUsageNote({
+    id: "x:y",
+    title: "Topic: With Colon",
+    summary: "s",
+    components: [],
+    markdown: "## m",
+  });
+  assert.match(usageNote, /^title: "Topic: With Colon"$/m);
+  assert.match(usageNote, /^topicId: "x:y"$/m);
+});
+
+test("escapeCell escapes backslash and pipe and flattens newlines", () => {
+  const cellKb: KnowledgeBase = {
+    radzenVersion: "5.9.9.0",
+    components: [
+      {
+        name: "RadzenButton",
+        summary: "",
+        typeParameters: [],
+        parameters: [{ name: "P", type: "a|b", default: "x\\y", description: "line1\nline2" }],
+        events: [],
+      },
+    ],
+  };
+  const note = renderComponentNote(cellKb, cellKb.components[0], []);
+  assert.match(note, /a\\\|b/); // pipe escaped
+  assert.match(note, /x\\\\y/); // backslash escaped first
+  assert.doesNotMatch(note, /line1\nline2/); // newline flattened
 });
