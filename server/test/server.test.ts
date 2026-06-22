@@ -13,6 +13,6 @@ test("createServer registers the four tools", () => {
   const tools = (server as unknown as { _registeredTools: Record<string, unknown> })._registeredTools;
   assert.deepEqual(
     Object.keys(tools).sort(),
-    ["get_component", "list_components", "scaffold_component", "search_components"],
+    ["export_obsidian_library", "get_component", "list_components", "scaffold_component", "search_components"],
   );
 });

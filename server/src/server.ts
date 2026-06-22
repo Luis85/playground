@@ -11,6 +11,8 @@ import { listComponents } from "./tools/listComponents.ts";
 import { getComponent } from "./tools/getComponent.ts";
 import { searchComponents } from "./tools/searchComponents.ts";
 import { scaffoldComponent } from "./tools/scaffoldComponent.ts";
+import { formatComponent } from "./format.ts";
+import { writeVault } from "./exportObsidian.ts";
 
 function textResult(value: unknown) {
   return { content: [{ type: "text" as const, text: JSON.stringify(value, null, 2) }] };
@@ -27,8 +29,13 @@ export function createServer(kb: KnowledgeBase): McpServer {
     "list_components",
     {
       description:
-        "List Radzen Blazor components, optionally filtered by a substring of the name or summary.",
-      inputSchema: { filter: z.string().optional() },
+        "List Radzen Blazor component names with one-line summaries. Use to discover what components exist before drilling into one. Summaries come from Radzen's published docs and may be empty in the current build.",
+      inputSchema: {
+        filter: z
+          .string()
+          .optional()
+          .describe("Optional case-insensitive substring to filter by component name or summary."),
+      },
     },
     async ({ filter }) => textResult(listComponents(kb, filter)),
   );
@@ -37,12 +44,20 @@ export function createServer(kb: KnowledgeBase): McpServer {
     "get_component",
     {
       description:
-        "Get the full API (parameters, events, summary) of a Radzen Blazor component by name.",
-      inputSchema: { name: z.string() },
+        "Get a Radzen Blazor component's full API. Use before writing markup for a component to get exact parameter and event names instead of guessing. Returns parameters (name/type/default/description) and events.",
+      inputSchema: {
+        name: z.string().describe("Exact component class name, e.g. 'RadzenDataGrid'."),
+        response_format: z
+          .enum(["concise", "detailed"])
+          .optional()
+          .describe(
+            "'concise' returns names only (token-cheap); 'detailed' (default) returns full metadata.",
+          ),
+      },
     },
-    async ({ name }) => {
+    async ({ name, response_format }) => {
       try {
-        return textResult(getComponent(kb, name));
+        return textResult(formatComponent(getComponent(kb, name), response_format ?? "detailed"));
       } catch (err) {
         return errorResult(err);
       }
@@ -53,8 +68,10 @@ export function createServer(kb: KnowledgeBase): McpServer {
     "search_components",
     {
       description:
-        "Search Radzen Blazor components by a query matched against component names, parameter names, and descriptions.",
-      inputSchema: { query: z.string() },
+        "Fuzzy-search Radzen Blazor components by a query matched (typo-tolerant) against component names, parameter names, and descriptions. Use when you don't know the exact component name. Descriptions may be empty in the current build, but name/parameter matching still works.",
+      inputSchema: {
+        query: z.string().describe("Free-text query, e.g. 'grid', 'date picker', 'disabled'."),
+      },
     },
     async ({ query }) => textResult(searchComponents(kb, query)),
   );
@@ -63,13 +80,40 @@ export function createServer(kb: KnowledgeBase): McpServer {
     "scaffold_component",
     {
       description:
-        "Produce ready-to-paste Radzen Blazor markup for a component, with attributes filled from options (validated against the component's parameters).",
-      inputSchema: { name: z.string(), options: z.record(z.string()).optional() },
+        "Produce ready-to-paste Radzen Blazor markup for a component, with attributes filled from options (validated against the component's parameters and events).",
+      inputSchema: {
+        name: z.string().describe("Exact component class name, e.g. 'RadzenButton'."),
+        options: z
+          .record(z.string())
+          .optional()
+          .describe(
+            "Attribute name → value map. Keys must be valid parameters or events of the component, e.g. { \"Text\": \"Save\", \"Click\": \"@OnClick\" }.",
+          ),
+      },
     },
     async ({ name, options }) => {
       try {
         // Return the markup as raw text (not JSON-encoded) so it is paste-ready.
         return { content: [{ type: "text" as const, text: scaffoldComponent(kb, name, options) }] };
+      } catch (err) {
+        return errorResult(err);
+      }
+    },
+  );
+
+  server.registerTool(
+    "export_obsidian_library",
+    {
+      description:
+        "Generate an Obsidian-compatible markdown library of all Radzen components (one note per component with YAML frontmatter, parameter/event tables, and [[wikilinks]], plus an index note) into a directory.",
+      inputSchema: {
+        output_dir: z.string().describe("Absolute path to the directory to write the vault into."),
+      },
+    },
+    async ({ output_dir }) => {
+      try {
+        const written = writeVault(kb, output_dir);
+        return textResult({ notesWritten: written.length, outputDir: output_dir });
       } catch (err) {
         return errorResult(err);
       }
