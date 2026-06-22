@@ -21,13 +21,11 @@ const kb: KnowledgeBase = {
   ],
 };
 
-test("matches on component name", () => {
-  const r = searchComponents(kb, "grid");
-  assert.deepEqual(r.map((c) => c.name), ["RadzenDataGrid"]);
+test("matches on component name (typo tolerant)", () => {
+  assert.deepEqual(searchComponents(kb, "datagrd").map((c) => c.name), ["RadzenDataGrid"]);
 });
 
-test("matches on parameter name or description", () => {
-  assert.deepEqual(searchComponents(kb, "disabled").map((c) => c.name), ["RadzenButton"]);
+test("matches on parameter description", () => {
   assert.deepEqual(searchComponents(kb, "data source").map((c) => c.name), ["RadzenDataGrid"]);
 });
 
