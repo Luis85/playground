@@ -24,3 +24,7 @@ test("returns the full component record by name (case-insensitive)", () => {
 test("throws naming the unknown component", () => {
   assert.throws(() => getComponent(kb, "RadzenNope"), /RadzenNope/);
 });
+
+test("unknown component error suggests nearest names", () => {
+  assert.throws(() => getComponent(kb, "RadzenButtonn"), /Did you mean.*RadzenButton/s);
+});
