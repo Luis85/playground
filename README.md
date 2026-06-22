@@ -47,7 +47,8 @@ Before the knowledge base exists (or to use a different one), set `RADZEN_KB_PAT
 | Tool | Description |
 |---|---|
 | `list_components(filter?)` | Component names + one-line summaries; optional substring filter. |
-| `get_component(name, response_format?)` | Full API (parameters, events). `response_format: "concise"` returns names only; `"detailed"` (default) returns full metadata. Unknown names get "did you mean" suggestions. |
+| `get_component(name, response_format?)` | Full API (parameters, events) plus ids of related usage guides. `response_format: "concise"` returns names only; `"detailed"` (default) returns full metadata. Unknown names get "did you mean" suggestions. |
+| `list_usage_topics()` / `get_usage(topic_id)` | Curated Radzen usage guides (setup, data-binding, validation, datagrid, events, layout, theming, dialogs-notifications, icons) — the structural patterns reflection can't show. |
 | `search_components(query)` | Typo-tolerant fuzzy search over names, parameter names, and descriptions. |
 | `scaffold_component(name, options?)` | Ready-to-paste Razor markup; option keys validated against the component's parameters **and** events; values are HTML-escaped. |
 | `export_obsidian_library(output_dir)` | Generate an Obsidian vault of the whole component library (see below). |
@@ -61,7 +62,8 @@ Before the knowledge base exists (or to use a different one), set `RADZEN_KB_PAT
 Generate a browsable [Obsidian](https://obsidian.md) vault — one note per
 component with YAML frontmatter (title, aliases, version, parameter/event
 counts, tags), parameter/event tables, `[[wikilinks]]` between related
-components, and a `Radzen Components` index/MOC note.
+components and to relevant usage guides, a note per usage guide, and a
+`Radzen Components` index/MOC note.
 
 Via the MCP tool: `export_obsidian_library({ output_dir: "/path/to/vault" })`.
 

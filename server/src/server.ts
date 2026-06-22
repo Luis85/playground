@@ -13,7 +13,7 @@ import { searchComponents } from "./tools/searchComponents.ts";
 import { scaffoldComponent } from "./tools/scaffoldComponent.ts";
 import { formatComponent } from "./format.ts";
 import { writeVault } from "./exportObsidian.ts";
-import { listUsageTopics, getUsage } from "./tools/usage.ts";
+import { listUsageTopics, getUsage, usageTopicsForComponent } from "./tools/usage.ts";
 
 function textResult(value: unknown) {
   return { content: [{ type: "text" as const, text: JSON.stringify(value, null, 2) }] };
@@ -45,7 +45,7 @@ export function createServer(kb: KnowledgeBase): McpServer {
     "get_component",
     {
       description:
-        "Get a Radzen Blazor component's full API. Use before writing markup for a component to get exact parameter and event names instead of guessing. Returns parameters (name/type/default/description) and events.",
+        "Get a Radzen Blazor component's full API. Use before writing markup for a component to get exact parameter and event names instead of guessing. Returns parameters (name/type/default/description), events, and ids of related usage guides (see get_usage).",
       inputSchema: {
         name: z.string().describe("Exact component class name, e.g. 'RadzenDataGrid'."),
         response_format: z
@@ -58,7 +58,11 @@ export function createServer(kb: KnowledgeBase): McpServer {
     },
     async ({ name, response_format }) => {
       try {
-        return textResult(formatComponent(getComponent(kb, name), response_format ?? "detailed"));
+        const component = getComponent(kb, name);
+        const formatted = formatComponent(component, response_format ?? "detailed") as object;
+        // Point the agent at curated usage guides relevant to this component.
+        const usageTopics = usageTopicsForComponent(component.name);
+        return textResult({ ...formatted, usageTopics });
       } catch (err) {
         return errorResult(err);
       }

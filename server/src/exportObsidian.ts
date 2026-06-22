@@ -4,10 +4,11 @@ import { mkdirSync, writeFileSync, realpathSync } from "node:fs";
 import type { KnowledgeBase } from "./types.ts";
 import { loadKnowledgeBase } from "./knowledge.ts";
 import { buildVault } from "./obsidian.ts";
+import { usageTopics, type UsageTopic } from "./usage/topics.ts";
 
-export function writeVault(kb: KnowledgeBase, outDir: string): string[] {
+export function writeVault(kb: KnowledgeBase, outDir: string, topics: UsageTopic[] = usageTopics): string[] {
   const written: string[] = [];
-  for (const file of buildVault(kb)) {
+  for (const file of buildVault(kb, topics)) {
     const full = join(outDir, file.path);
     mkdirSync(dirname(full), { recursive: true });
     writeFileSync(full, file.content, "utf8");

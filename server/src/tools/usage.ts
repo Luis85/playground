@@ -25,3 +25,11 @@ export function getUsage(topicId: string): UsageTopic {
     : " Call list_usage_topics to see available topics.";
   throw new Error(`Unknown usage topic "${topicId}".${hint}`);
 }
+
+/** Ids of usage topics whose related components include the given component. */
+export function usageTopicsForComponent(componentName: string): string[] {
+  const needle = componentName.toLowerCase();
+  return usageTopics
+    .filter((t) => t.components.some((c) => c.toLowerCase() === needle))
+    .map((t) => t.id);
+}

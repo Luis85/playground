@@ -1,6 +1,6 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { listUsageTopics, getUsage } from "../src/tools/usage.ts";
+import { listUsageTopics, getUsage, usageTopicsForComponent } from "../src/tools/usage.ts";
 import { usageTopics } from "../src/usage/topics.ts";
 
 test("list_usage_topics returns the catalog without markdown bodies", () => {
@@ -18,6 +18,11 @@ test("get_usage returns the full topic by id", () => {
 
 test("get_usage suggests nearest topic on a miss", () => {
   assert.throws(() => getUsage("datagrd"), /Did you mean.*datagrid/s);
+});
+
+test("usageTopicsForComponent finds topics referencing a component", () => {
+  assert.ok(usageTopicsForComponent("RadzenDataGrid").includes("datagrid"));
+  assert.deepEqual(usageTopicsForComponent("RadzenNotAComponent"), []);
 });
 
 test("corpus integrity: unique non-empty ids and well-formed topics", () => {
