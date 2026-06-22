@@ -209,7 +209,7 @@
         {
           "name": "AlertStyle",
           "type": "AlertStyle",
-          "default": "3",
+          "default": "\u0022Base\u0022",
           "description": "Gets or sets the severity."
         },
         {
@@ -251,7 +251,7 @@
         {
           "name": "Shade",
           "type": "Shade",
-          "default": "2",
+          "default": "\u0022Default\u0022",
           "description": "Gets or sets the color shade of the alert."
         },
         {
@@ -263,7 +263,7 @@
         {
           "name": "Size",
           "type": "AlertSize",
-          "default": "2",
+          "default": "\u0022Medium\u0022",
           "description": "Gets or sets the size."
         },
         {
@@ -287,7 +287,7 @@
         {
           "name": "Variant",
           "type": "Variant",
-          "default": "0",
+          "default": "\u0022Filled\u0022",
           "description": "Gets or sets the design variant of the alert."
         },
         {
@@ -339,7 +339,7 @@
         {
           "name": "ButtonStyle",
           "type": "ButtonStyle",
-          "default": "3",
+          "default": "\u0022Base\u0022",
           "description": "Gets or sets the switch button style."
         },
         {
@@ -369,19 +369,19 @@
         {
           "name": "ToggleButtonStyle",
           "type": "ButtonStyle",
-          "default": "3",
+          "default": "\u0022Base\u0022",
           "description": "Gets or sets the switch button toggled style."
         },
         {
           "name": "ToggleShade",
           "type": "Shade",
-          "default": "2",
+          "default": "\u0022Default\u0022",
           "description": "Gets or sets the switch button toggled shade."
         },
         {
           "name": "Variant",
           "type": "Variant",
-          "default": "2",
+          "default": "\u0022Text\u0022",
           "description": "Gets or sets the switch button variant."
         },
         {
@@ -597,7 +597,7 @@
         {
           "name": "TickPosition",
           "type": "GaugeTickPosition",
-          "default": "2",
+          "default": "\u0022None\u0022",
           "description": "Gets or sets the tick position."
         },
         {
@@ -705,13 +705,13 @@
         {
           "name": "Interpolation",
           "type": "Interpolation",
-          "default": "0",
+          "default": "\u0022Line\u0022",
           "description": "Specifies how to render lines between data points. Set to by default"
         },
         {
           "name": "LineType",
           "type": "LineType",
-          "default": "0",
+          "default": "\u0022Solid\u0022",
           "description": "Specifies the line type."
         },
         {
@@ -797,7 +797,7 @@
         {
           "name": "FilterCaseSensitivity",
           "type": "FilterCaseSensitivity",
-          "default": "0",
+          "default": "\u0022Default\u0022",
           "description": ""
         },
         {
@@ -809,7 +809,7 @@
         {
           "name": "FilterOperator",
           "type": "StringFilterOperator",
-          "default": "0",
+          "default": "\u0022Contains\u0022",
           "description": ""
         },
         {
@@ -992,7 +992,7 @@
         {
           "name": "BadgeStyle",
           "type": "BadgeStyle",
-          "default": "0",
+          "default": "\u0022Primary\u0022",
           "description": "Gets or sets the badge style."
         },
         {
@@ -1016,7 +1016,7 @@
         {
           "name": "Shade",
           "type": "Shade",
-          "default": "2",
+          "default": "\u0022Default\u0022",
           "description": "Gets or sets the badge shade color."
         },
         {
@@ -1034,7 +1034,7 @@
         {
           "name": "Variant",
           "type": "Variant",
-          "default": "0",
+          "default": "\u0022Filled\u0022",
           "description": "Gets or sets the badge variant."
         },
         {
@@ -1140,7 +1140,7 @@
         {
           "name": "LineType",
           "type": "LineType",
-          "default": "0",
+          "default": "\u0022Solid\u0022",
           "description": "Gets or sets the type of the line used to render the bar border."
         },
         {
@@ -1423,13 +1423,13 @@
         {
           "name": "ButtonStyle",
           "type": "ButtonStyle",
-          "default": "0",
+          "default": "\u0022Primary\u0022",
           "description": "Gets or sets the button style."
         },
         {
           "name": "ButtonType",
           "type": "ButtonType",
-          "default": "0",
+          "default": "\u0022Button\u0022",
           "description": "Gets or sets the type of the button."
         },
         {
@@ -1483,13 +1483,13 @@
         {
           "name": "Shade",
           "type": "Shade",
-          "default": "2",
+          "default": "\u0022Default\u0022",
           "description": "Gets or sets the color shade of the button."
         },
         {
           "name": "Size",
           "type": "ButtonSize",
-          "default": "0",
+          "default": "\u0022Medium\u0022",
           "description": "Gets or sets the size."
         },
         {
@@ -1513,7 +1513,7 @@
         {
           "name": "Variant",
           "type": "Variant",
-          "default": "0",
+          "default": "\u0022Filled\u0022",
           "description": "Gets or sets the design variant of the button."
         },
         {
@@ -1578,7 +1578,7 @@
         {
           "name": "Variant",
           "type": "Variant",
-          "default": "0",
+          "default": "\u0022Filled\u0022",
           "description": "Gets or sets the card variant."
         },
         {
@@ -1698,25 +1698,25 @@
         {
           "name": "ButtonShade",
           "type": "Shade",
-          "default": "0",
+          "default": "\u0022Lighter\u0022",
           "description": "Gets or sets the color shade of the buttons."
         },
         {
           "name": "ButtonSize",
           "type": "ButtonSize",
-          "default": "1",
+          "default": "\u0022Large\u0022",
           "description": "Gets or sets the buttons size."
         },
         {
           "name": "ButtonStyle",
           "type": "ButtonStyle",
-          "default": "3",
+          "default": "\u0022Base\u0022",
           "description": "Gets or sets the buttons style"
         },
         {
           "name": "ButtonVariant",
           "type": "Variant",
-          "default": "2",
+          "default": "\u0022Text\u0022",
           "description": "Gets or sets the design variant of the buttons."
         },
         {
@@ -1758,7 +1758,7 @@
         {
           "name": "PagerPosition",
           "type": "PagerPosition",
-          "default": "2",
+          "default": "\u0022Bottom\u0022",
           "description": "Gets or sets the pager position. Set to PagerPosition.Bottom by default."
         },
         {
@@ -1878,7 +1878,7 @@
         {
           "name": "LineType",
           "type": "LineType",
-          "default": "0",
+          "default": "\u0022Solid\u0022",
           "description": "Gets or sets the type of the line used to display the axis."
         },
         {
@@ -1958,7 +1958,7 @@
         {
           "name": "ColorScheme",
           "type": "ColorScheme",
-          "default": "0",
+          "default": "\u0022Pastel\u0022",
           "description": "Gets or sets the color scheme used to render the series."
         },
         {
@@ -2219,7 +2219,7 @@
         {
           "name": "Orientation",
           "type": "Orientation",
-          "default": "0",
+          "default": "\u0022Horizontal\u0022",
           "description": "Gets or sets the orientation."
         },
         {
@@ -2483,7 +2483,7 @@
         {
           "name": "PopupRenderMode",
           "type": "PopupRenderMode",
-          "default": "1",
+          "default": "\u0022Initial\u0022",
           "description": "Gets or sets the render mode."
         },
         {
@@ -2863,7 +2863,7 @@
         {
           "name": "LineType",
           "type": "LineType",
-          "default": "0",
+          "default": "\u0022Solid\u0022",
           "description": "Gets or sets the type of the line used to render the column border."
         },
         {
@@ -2949,7 +2949,7 @@
         {
           "name": "Operator",
           "type": "CompareOperator",
-          "default": "0",
+          "default": "\u0022Equal\u0022",
           "description": "Specifies the comparison operator. Set to CompareOperator.Equal by default."
         },
         {
@@ -3500,7 +3500,7 @@
         {
           "name": "FilterCaseSensitivity",
           "type": "FilterCaseSensitivity",
-          "default": "0",
+          "default": "\u0022Default\u0022",
           "description": "Gets or sets the filter case sensitivity."
         },
         {
@@ -3572,7 +3572,7 @@
         {
           "name": "LogicalFilterOperator",
           "type": "LogicalFilterOperator",
-          "default": "0",
+          "default": "\u0022And\u0022",
           "description": "Gets or sets the logical filter operator."
         },
         {
@@ -3691,7 +3691,7 @@
         {
           "name": "FilterOperator",
           "type": "FilterOperator",
-          "default": "0",
+          "default": "\u0022Equals\u0022",
           "description": "Gets or sets the filter operator."
         },
         {
@@ -3953,7 +3953,7 @@
         {
           "name": "Density",
           "type": "Density",
-          "default": "0",
+          "default": "\u0022Default\u0022",
           "description": ""
         },
         {
@@ -3965,7 +3965,7 @@
         {
           "name": "EditMode",
           "type": "DataGridEditMode",
-          "default": "1",
+          "default": "\u0022Multiple\u0022",
           "description": "Gets or sets the edit mode."
         },
         {
@@ -4031,13 +4031,13 @@
         {
           "name": "ExpandMode",
           "type": "DataGridExpandMode",
-          "default": "1",
+          "default": "\u0022Multiple\u0022",
           "description": "Gets or sets the expand mode."
         },
         {
           "name": "FilterCaseSensitivity",
           "type": "FilterCaseSensitivity",
-          "default": "0",
+          "default": "\u0022Default\u0022",
           "description": "Gets or sets the filter case sensitivity."
         },
         {
@@ -4061,7 +4061,7 @@
         {
           "name": "FilterMode",
           "type": "FilterMode",
-          "default": "2",
+          "default": "\u0022Advanced\u0022",
           "description": "Gets or sets the filter mode."
         },
         {
@@ -4073,7 +4073,7 @@
         {
           "name": "FilterPopupRenderMode",
           "type": "PopupRenderMode",
-          "default": "1",
+          "default": "\u0022Initial\u0022",
           "description": "Gets or sets the render mode."
         },
         {
@@ -4139,7 +4139,7 @@
         {
           "name": "GridLines",
           "type": "DataGridGridLines",
-          "default": "0",
+          "default": "\u0022Default\u0022",
           "description": "Gets or sets the grid lines."
         },
         {
@@ -4271,7 +4271,7 @@
         {
           "name": "LogicalFilterOperator",
           "type": "LogicalFilterOperator",
-          "default": "0",
+          "default": "\u0022And\u0022",
           "description": "Gets or sets the logical filter operator."
         },
         {
@@ -4337,13 +4337,13 @@
         {
           "name": "PagerHorizontalAlign",
           "type": "HorizontalAlign",
-          "default": "3",
+          "default": "\u0022Justify\u0022",
           "description": ""
         },
         {
           "name": "PagerPosition",
           "type": "PagerPosition",
-          "default": "2",
+          "default": "\u0022Bottom\u0022",
           "description": ""
         },
         {
@@ -4439,7 +4439,7 @@
         {
           "name": "SelectionMode",
           "type": "DataGridSelectionMode",
-          "default": "0",
+          "default": "\u0022Single\u0022",
           "description": "Gets or sets the selection mode."
         },
         {
@@ -4776,7 +4776,7 @@
         {
           "name": "FilterOperator",
           "type": "FilterOperator",
-          "default": "0",
+          "default": "\u0022Equals\u0022",
           "description": "Gets or sets the filter operator."
         },
         {
@@ -4848,7 +4848,7 @@
         {
           "name": "FrozenPosition",
           "type": "FrozenColumnPosition",
-          "default": "0",
+          "default": "\u0022Left\u0022",
           "description": "Gets or sets the frozen position this"
         },
         {
@@ -4902,7 +4902,7 @@
         {
           "name": "LogicalFilterOperator",
           "type": "LogicalFilterOperator",
-          "default": "0",
+          "default": "\u0022And\u0022",
           "description": "Gets or sets the logical filter operator."
         },
         {
@@ -4944,7 +4944,7 @@
         {
           "name": "SecondFilterOperator",
           "type": "FilterOperator",
-          "default": "0",
+          "default": "\u0022Equals\u0022",
           "description": "Gets or sets the second filter operator."
         },
         {
@@ -4986,7 +4986,7 @@
         {
           "name": "TextAlign",
           "type": "TextAlign",
-          "default": "0",
+          "default": "\u0022Left\u0022",
           "description": "Gets or sets the text align."
         },
         {
@@ -5384,7 +5384,7 @@
         {
           "name": "Density",
           "type": "Density",
-          "default": "0",
+          "default": "\u0022Default\u0022",
           "description": ""
         },
         {
@@ -5474,13 +5474,13 @@
         {
           "name": "PagerHorizontalAlign",
           "type": "HorizontalAlign",
-          "default": "3",
+          "default": "\u0022Justify\u0022",
           "description": ""
         },
         {
           "name": "PagerPosition",
           "type": "PagerPosition",
-          "default": "2",
+          "default": "\u0022Bottom\u0022",
           "description": ""
         },
         {
@@ -5724,7 +5724,7 @@
         {
           "name": "Kind",
           "type": "DateTimeKind",
-          "default": "0",
+          "default": "\u0022Unspecified\u0022",
           "description": "Gets or sets the kind of DateTime bind to control"
         },
         {
@@ -5796,7 +5796,7 @@
         {
           "name": "PopupRenderMode",
           "type": "PopupRenderMode",
-          "default": "1",
+          "default": "\u0022Initial\u0022",
           "description": "Gets or sets the render mode."
         },
         {
@@ -6217,13 +6217,13 @@
         {
           "name": "FilterAutoCompleteType",
           "type": "AutoCompleteType",
-          "default": "0",
+          "default": "\u0022Off\u0022",
           "description": "Gets or Sets the filter autocomplete type."
         },
         {
           "name": "FilterCaseSensitivity",
           "type": "FilterCaseSensitivity",
-          "default": "0",
+          "default": "\u0022Default\u0022",
           "description": ""
         },
         {
@@ -6235,7 +6235,7 @@
         {
           "name": "FilterOperator",
           "type": "StringFilterOperator",
-          "default": "0",
+          "default": "\u0022Contains\u0022",
           "description": ""
         },
         {
@@ -6590,7 +6590,7 @@
         {
           "name": "Density",
           "type": "Density",
-          "default": "0",
+          "default": "\u0022Default\u0022",
           "description": "Gets or sets a value indicating DataGrid density."
         },
         {
@@ -6632,7 +6632,7 @@
         {
           "name": "FilterCaseSensitivity",
           "type": "FilterCaseSensitivity",
-          "default": "0",
+          "default": "\u0022Default\u0022",
           "description": ""
         },
         {
@@ -6644,7 +6644,7 @@
         {
           "name": "FilterOperator",
           "type": "StringFilterOperator",
-          "default": "0",
+          "default": "\u0022Contains\u0022",
           "description": ""
         },
         {
@@ -6764,7 +6764,7 @@
         {
           "name": "PagerHorizontalAlign",
           "type": "HorizontalAlign",
-          "default": "3",
+          "default": "\u0022Justify\u0022",
           "description": "Gets or sets the horizontal align."
         },
         {
@@ -7058,7 +7058,7 @@
         {
           "name": "FilterOperator",
           "type": "FilterOperator",
-          "default": "0",
+          "default": "\u0022Equals\u0022",
           "description": ""
         },
         {
@@ -7130,7 +7130,7 @@
         {
           "name": "FrozenPosition",
           "type": "FrozenColumnPosition",
-          "default": "0",
+          "default": "\u0022Left\u0022",
           "description": ""
         },
         {
@@ -7184,7 +7184,7 @@
         {
           "name": "LogicalFilterOperator",
           "type": "LogicalFilterOperator",
-          "default": "0",
+          "default": "\u0022And\u0022",
           "description": ""
         },
         {
@@ -7226,7 +7226,7 @@
         {
           "name": "SecondFilterOperator",
           "type": "FilterOperator",
-          "default": "0",
+          "default": "\u0022Equals\u0022",
           "description": ""
         },
         {
@@ -7268,7 +7268,7 @@
         {
           "name": "TextAlign",
           "type": "TextAlign",
-          "default": "0",
+          "default": "\u0022Left\u0022",
           "description": ""
         },
         {
@@ -7939,7 +7939,7 @@
         {
           "name": "AlignItems",
           "type": "AlignItems",
-          "default": "0",
+          "default": "\u0022Normal\u0022",
           "description": "Gets or sets the items alignment."
         },
         {
@@ -7963,7 +7963,7 @@
         {
           "name": "JustifyContent",
           "type": "JustifyContent",
-          "default": "0",
+          "default": "\u0022Normal\u0022",
           "description": "Gets or sets the content justify."
         },
         {
@@ -8119,7 +8119,7 @@
         {
           "name": "Variant",
           "type": "Variant",
-          "default": "3",
+          "default": "\u0022Outlined\u0022",
           "description": "Gets or sets the design variant of the form field."
         },
         {
@@ -8393,7 +8393,7 @@
         {
           "name": "LineType",
           "type": "LineType",
-          "default": "0",
+          "default": "\u0022Solid\u0022",
           "description": "Specifies the type of line used to render the grid lines."
         },
         {
@@ -8615,7 +8615,7 @@
         {
           "name": "Mode",
           "type": "HtmlEditorMode",
-          "default": "1",
+          "default": "\u0022Design\u0022",
           "description": "Gets or sets the mode of the editor."
         },
         {
@@ -9044,7 +9044,7 @@
         {
           "name": "EnabledModes",
           "type": "HtmlEditorMode",
-          "default": "1",
+          "default": "\u0022Design\u0022",
           "description": "Specifies the modes that this tool will be enabled in."
         },
         {
@@ -9928,7 +9928,7 @@
         {
           "name": "Position",
           "type": "LegendPosition",
-          "default": "0",
+          "default": "\u0022Right\u0022",
           "description": "Gets or sets the position."
         },
         {
@@ -10052,13 +10052,13 @@
         {
           "name": "Interpolation",
           "type": "Interpolation",
-          "default": "0",
+          "default": "\u0022Line\u0022",
           "description": "Specifies how to render lines between data points. Set to by default"
         },
         {
           "name": "LineType",
           "type": "LineType",
-          "default": "0",
+          "default": "\u0022Solid\u0022",
           "description": "Specifies the line type."
         },
         {
@@ -10162,7 +10162,7 @@
         {
           "name": "Match",
           "type": "NavLinkMatch",
-          "default": "0",
+          "default": "\u0022Prefix\u0022",
           "description": "Gets or sets the navigation link match."
         },
         {
@@ -10296,7 +10296,7 @@
         {
           "name": "FilterCaseSensitivity",
           "type": "FilterCaseSensitivity",
-          "default": "0",
+          "default": "\u0022Default\u0022",
           "description": ""
         },
         {
@@ -10308,7 +10308,7 @@
         {
           "name": "FilterOperator",
           "type": "StringFilterOperator",
-          "default": "0",
+          "default": "\u0022Contains\u0022",
           "description": ""
         },
         {
@@ -10595,7 +10595,7 @@
         {
           "name": "PasswordAutoCompleteType",
           "type": "AutoCompleteType",
-          "default": "12",
+          "default": "\u0022CurrentPassword\u0022",
           "description": "Gets or sets a value indicating the type of built-in autocomplete the browser should use."
         },
         {
@@ -10661,7 +10661,7 @@
         {
           "name": "UserNameAutoCompleteType",
           "type": "AutoCompleteType",
-          "default": "10",
+          "default": "\u0022Username\u0022",
           "description": "Gets or sets a value indicating the type of built-in autocomplete the browser should use."
         },
         {
@@ -10730,7 +10730,7 @@
         {
           "name": "MarkerType",
           "type": "MarkerType",
-          "default": "0",
+          "default": "\u0022None\u0022",
           "description": "Gets or sets the type of the marker."
         },
         {
@@ -10774,7 +10774,7 @@
         {
           "name": "AutoCompleteType",
           "type": "AutoCompleteType",
-          "default": "1",
+          "default": "\u0022On\u0022",
           "description": ""
         },
         {
@@ -11049,7 +11049,7 @@
         {
           "name": "Match",
           "type": "NavLinkMatch",
-          "default": "0",
+          "default": "\u0022Prefix\u0022",
           "description": "Gets or sets the navigation link match."
         },
         {
@@ -11310,7 +11310,7 @@
         {
           "name": "AutoCompleteType",
           "type": "AutoCompleteType",
-          "default": "1",
+          "default": "\u0022On\u0022",
           "description": ""
         },
         {
@@ -11406,7 +11406,7 @@
         {
           "name": "TextAlign",
           "type": "TextAlign",
-          "default": "0",
+          "default": "\u0022Left\u0022",
           "description": "Gets or sets the text align."
         },
         {
@@ -11578,7 +11578,7 @@
         {
           "name": "Density",
           "type": "Density",
-          "default": "0",
+          "default": "\u0022Default\u0022",
           "description": "Gets or sets a value indicating Pager density."
         },
         {
@@ -11596,7 +11596,7 @@
         {
           "name": "HorizontalAlign",
           "type": "HorizontalAlign",
-          "default": "3",
+          "default": "\u0022Justify\u0022",
           "description": "Gets or sets the horizontal align."
         },
         {
@@ -11898,13 +11898,13 @@
         {
           "name": "DisplayStyle",
           "type": "MenuItemDisplayStyle",
-          "default": "2",
+          "default": "\u0022IconAndText\u0022",
           "description": "Gets or sets the display style."
         },
         {
           "name": "Match",
           "type": "NavLinkMatch",
-          "default": "0",
+          "default": "\u0022Prefix\u0022",
           "description": "Gets or sets a value representing the URL matching behavior."
         },
         {
@@ -12011,7 +12011,7 @@
         {
           "name": "Match",
           "type": "NavLinkMatch",
-          "default": "0",
+          "default": "\u0022Prefix\u0022",
           "description": "Gets or sets the navigation link match."
         },
         {
@@ -12105,7 +12105,7 @@
         {
           "name": "AutoCompleteType",
           "type": "AutoCompleteType",
-          "default": "1",
+          "default": "\u0022On\u0022",
           "description": ""
         },
         {
@@ -12249,31 +12249,31 @@
         {
           "name": "ButtonJustifyContent",
           "type": "JustifyContent",
-          "default": "1",
+          "default": "\u0022Center\u0022",
           "description": "Gets or sets the buttons style"
         },
         {
           "name": "ButtonShade",
           "type": "Shade",
-          "default": "2",
+          "default": "\u0022Default\u0022",
           "description": "Gets or sets the color shade of the buttons."
         },
         {
           "name": "ButtonSize",
           "type": "ButtonSize",
-          "default": "0",
+          "default": "\u0022Medium\u0022",
           "description": "Gets or sets the buttons size."
         },
         {
           "name": "ButtonStyle",
           "type": "ButtonStyle",
-          "default": "0",
+          "default": "\u0022Primary\u0022",
           "description": "Gets or sets the buttons style"
         },
         {
           "name": "ButtonVariant",
           "type": "Variant",
-          "default": "2",
+          "default": "\u0022Text\u0022",
           "description": "Gets or sets the design variant of the buttons."
         },
         {
@@ -12309,7 +12309,7 @@
         {
           "name": "Orientation",
           "type": "Orientation",
-          "default": "0",
+          "default": "\u0022Horizontal\u0022",
           "description": "Gets or sets the orientation"
         },
         {
@@ -12694,7 +12694,7 @@
         {
           "name": "Match",
           "type": "NavLinkMatch",
-          "default": "0",
+          "default": "\u0022Prefix\u0022",
           "description": "Gets or sets the navigation link match."
         },
         {
@@ -12784,13 +12784,13 @@
         {
           "name": "Mode",
           "type": "ProgressBarMode",
-          "default": "0",
+          "default": "\u0022Determinate\u0022",
           "description": "Gets or sets the mode."
         },
         {
           "name": "ProgressBarStyle",
           "type": "ProgressBarStyle",
-          "default": "0",
+          "default": "\u0022Primary\u0022",
           "description": "Gets or sets the progress bar style."
         },
         {
@@ -12886,13 +12886,13 @@
         {
           "name": "Mode",
           "type": "ProgressBarMode",
-          "default": "0",
+          "default": "\u0022Determinate\u0022",
           "description": "Gets or sets the mode."
         },
         {
           "name": "ProgressBarStyle",
           "type": "ProgressBarStyle",
-          "default": "0",
+          "default": "\u0022Primary\u0022",
           "description": "Gets or sets the progress bar style."
         },
         {
@@ -12904,7 +12904,7 @@
         {
           "name": "Size",
           "type": "ProgressBarCircularSize",
-          "default": "0",
+          "default": "\u0022Medium\u0022",
           "description": "Gets or sets the size."
         },
         {
@@ -13138,7 +13138,7 @@
         {
           "name": "TickPosition",
           "type": "GaugeTickPosition",
-          "default": "1",
+          "default": "\u0022Outside\u0022",
           "description": "Gets or sets the tick position."
         },
         {
@@ -13320,7 +13320,7 @@
         {
           "name": "Orientation",
           "type": "Orientation",
-          "default": "0",
+          "default": "\u0022Horizontal\u0022",
           "description": "Gets or sets the orientation."
         },
         {
@@ -13756,7 +13756,7 @@
         {
           "name": "AlignItems",
           "type": "AlignItems",
-          "default": "0",
+          "default": "\u0022Normal\u0022",
           "description": "Gets or sets the items alignment."
         },
         {
@@ -13786,7 +13786,7 @@
         {
           "name": "JustifyContent",
           "type": "JustifyContent",
-          "default": "0",
+          "default": "\u0022Normal\u0022",
           "description": "Gets or sets the content justify."
         },
         {
@@ -14078,7 +14078,7 @@
         {
           "name": "Type",
           "type": "SecurityCodeType",
-          "default": "0",
+          "default": "\u0022String\u0022",
           "description": "Gets or sets the number of input."
         },
         {
@@ -14180,7 +14180,7 @@
         {
           "name": "Orientation",
           "type": "Orientation",
-          "default": "0",
+          "default": "\u0022Horizontal\u0022",
           "description": "Gets or sets the orientation. Set to Orientation.Horizontal by default."
         },
         {
@@ -14192,7 +14192,7 @@
         {
           "name": "Size",
           "type": "ButtonSize",
-          "default": "0",
+          "default": "\u0022Medium\u0022",
           "description": "Gets or sets the size. Set to ButtonSize.Medium by default."
         },
         {
@@ -14448,7 +14448,7 @@
         {
           "name": "LineType",
           "type": "LineType",
-          "default": "0",
+          "default": "\u0022Solid\u0022",
           "description": "Specifies the type of line used to render the grid lines."
         },
         {
@@ -14492,7 +14492,7 @@
         {
           "name": "LineType",
           "type": "LineType",
-          "default": "0",
+          "default": "\u0022Solid\u0022",
           "description": "Specifies the type of line used to render the grid lines."
         },
         {
@@ -14536,7 +14536,7 @@
         {
           "name": "LineType",
           "type": "LineType",
-          "default": "0",
+          "default": "\u0022Solid\u0022",
           "description": "Specifies the type of line used to render the grid lines."
         },
         {
@@ -14580,7 +14580,7 @@
         {
           "name": "LineType",
           "type": "LineType",
-          "default": "0",
+          "default": "\u0022Solid\u0022",
           "description": "Specifies the type of line used to render the grid lines."
         },
         {
@@ -14612,7 +14612,7 @@
         {
           "name": "LineType",
           "type": "LineType",
-          "default": "0",
+          "default": "\u0022Solid\u0022",
           "description": "Specifies the type of line used to render the grid lines."
         },
         {
@@ -14830,7 +14830,7 @@
         {
           "name": "Orientation",
           "type": "Orientation",
-          "default": "0",
+          "default": "\u0022Horizontal\u0022",
           "description": "Specifies the orientation. Set to Orientation.Horizontal by default."
         },
         {
@@ -14936,7 +14936,7 @@
         {
           "name": "ColorScheme",
           "type": "ColorScheme",
-          "default": "0",
+          "default": "\u0022Pastel\u0022",
           "description": "Gets or sets the color scheme used to render the series."
         },
         {
@@ -15006,7 +15006,7 @@
         {
           "name": "ButtonStyle",
           "type": "ButtonStyle",
-          "default": "3",
+          "default": "\u0022Base\u0022",
           "description": "Gets or sets the button style."
         },
         {
@@ -15125,7 +15125,7 @@
         {
           "name": "ButtonStyle",
           "type": "ButtonStyle",
-          "default": "0",
+          "default": "\u0022Primary\u0022",
           "description": "Gets or sets the button style."
         },
         {
@@ -15191,13 +15191,13 @@
         {
           "name": "Shade",
           "type": "Shade",
-          "default": "2",
+          "default": "\u0022Default\u0022",
           "description": "Gets or sets the color shade of the button."
         },
         {
           "name": "Size",
           "type": "ButtonSize",
-          "default": "0",
+          "default": "\u0022Medium\u0022",
           "description": "Gets or sets the size."
         },
         {
@@ -15221,7 +15221,7 @@
         {
           "name": "Variant",
           "type": "Variant",
-          "default": "0",
+          "default": "\u0022Filled\u0022",
           "description": "Gets or sets the design variant of the button."
         },
         {
@@ -15358,7 +15358,7 @@
         {
           "name": "Orientation",
           "type": "Orientation",
-          "default": "0",
+          "default": "\u0022Horizontal\u0022",
           "description": "Gets or sets the orientation."
         },
         {
@@ -15614,7 +15614,7 @@
         {
           "name": "AlignItems",
           "type": "AlignItems",
-          "default": "0",
+          "default": "\u0022Normal\u0022",
           "description": "Gets or sets the items alignment."
         },
         {
@@ -15644,13 +15644,13 @@
         {
           "name": "JustifyContent",
           "type": "JustifyContent",
-          "default": "0",
+          "default": "\u0022Normal\u0022",
           "description": "Gets or sets the content justify."
         },
         {
           "name": "Orientation",
           "type": "Orientation",
-          "default": "1",
+          "default": "\u0022Vertical\u0022",
           "description": "Gets or sets the orientation."
         },
         {
@@ -15674,7 +15674,7 @@
         {
           "name": "Wrap",
           "type": "FlexWrap",
-          "default": "0",
+          "default": "\u0022NoWrap\u0022",
           "description": "Gets or sets the wrap."
         }
       ],
@@ -15736,13 +15736,13 @@
         {
           "name": "Interpolation",
           "type": "Interpolation",
-          "default": "0",
+          "default": "\u0022Line\u0022",
           "description": "Specifies how to render lines between data points. Set to by default"
         },
         {
           "name": "LineType",
           "type": "LineType",
-          "default": "0",
+          "default": "\u0022Solid\u0022",
           "description": "Specifies the line type."
         },
         {
@@ -15848,7 +15848,7 @@
         {
           "name": "LineType",
           "type": "LineType",
-          "default": "0",
+          "default": "\u0022Solid\u0022",
           "description": "Gets or sets the type of the line used to render the bar border."
         },
         {
@@ -15960,7 +15960,7 @@
         {
           "name": "LineType",
           "type": "LineType",
-          "default": "0",
+          "default": "\u0022Solid\u0022",
           "description": "Gets or sets the type of the line used to render the column border."
         },
         {
@@ -16359,7 +16359,7 @@
         {
           "name": "GridLines",
           "type": "DataGridGridLines",
-          "default": "0",
+          "default": "\u0022Default\u0022",
           "description": "Gets or sets the grid lines."
         },
         {
@@ -16737,7 +16737,7 @@
         {
           "name": "RenderMode",
           "type": "TabRenderMode",
-          "default": "0",
+          "default": "\u0022Server\u0022",
           "description": "Gets or sets the render mode."
         },
         {
@@ -16755,7 +16755,7 @@
         {
           "name": "TabPosition",
           "type": "TabPosition",
-          "default": "0",
+          "default": "\u0022Top\u0022",
           "description": "Gets or sets the tab position."
         },
         {
@@ -17000,7 +17000,7 @@
         {
           "name": "TagName",
           "type": "TagName",
-          "default": "12",
+          "default": "\u0022Auto\u0022",
           "description": "The tag name of the element that will be rendered. Set to which uses a default tag name depending on the current ."
         },
         {
@@ -17012,13 +17012,13 @@
         {
           "name": "TextAlign",
           "type": "TextAlign",
-          "default": "0",
+          "default": "\u0022Left\u0022",
           "description": "The horozontal alignment of the text."
         },
         {
           "name": "TextStyle",
           "type": "TextStyle",
-          "default": "14",
+          "default": "\u0022Body1\u0022",
           "description": "The style of the text. Set to by default."
         },
         {
@@ -17178,7 +17178,7 @@
         {
           "name": "AutoCompleteType",
           "type": "AutoCompleteType",
-          "default": "1",
+          "default": "\u0022On\u0022",
           "description": ""
         },
         {
@@ -17310,7 +17310,7 @@
         {
           "name": "LineType",
           "type": "LineType",
-          "default": "0",
+          "default": "\u0022Solid\u0022",
           "description": "Specifies the type of line used to render the ticks."
         },
         {
@@ -17342,7 +17342,7 @@
         {
           "name": "AlignItems",
           "type": "AlignItems",
-          "default": "1",
+          "default": "\u0022Center\u0022",
           "description": "Specifies the alignment of LabelContent, PointContent and ChildContent inside TimelineItems. Set to AlignItems.Center by default."
         },
         {
@@ -17366,13 +17366,13 @@
         {
           "name": "LinePosition",
           "type": "LinePosition",
-          "default": "0",
+          "default": "\u0022Center\u0022",
           "description": "Specifies the line position. Set to LinePosition.Center by default."
         },
         {
           "name": "Orientation",
           "type": "Orientation",
-          "default": "1",
+          "default": "\u0022Vertical\u0022",
           "description": "Specifies the orientation - whether items flow in horizontal or vertical direction. Set to Orientation.Vertical by default."
         },
         {
@@ -17462,19 +17462,19 @@
         {
           "name": "PointSize",
           "type": "PointSize",
-          "default": "2",
+          "default": "\u0022Medium\u0022",
           "description": "Specifies the Point size from ExtraSmall to Large. Set to PointSize.Medium by default."
         },
         {
           "name": "PointStyle",
           "type": "PointStyle",
-          "default": "3",
+          "default": "\u0022Base\u0022",
           "description": "Gets or sets the Point style. Set to PointStyle.Base by default."
         },
         {
           "name": "PointVariant",
           "type": "Variant",
-          "default": "0",
+          "default": "\u0022Filled\u0022",
           "description": "Specifies if the Point variant is filled, flat, outlined or text only. Set to Variant.Filled by default."
         },
         {
@@ -17534,13 +17534,13 @@
         {
           "name": "ButtonStyle",
           "type": "ButtonStyle",
-          "default": "0",
+          "default": "\u0022Primary\u0022",
           "description": "Gets or sets the button style."
         },
         {
           "name": "ButtonType",
           "type": "ButtonType",
-          "default": "0",
+          "default": "\u0022Button\u0022",
           "description": "Gets or sets the type of the button."
         },
         {
@@ -17612,13 +17612,13 @@
         {
           "name": "Shade",
           "type": "Shade",
-          "default": "2",
+          "default": "\u0022Default\u0022",
           "description": "Gets or sets the color shade of the button."
         },
         {
           "name": "Size",
           "type": "ButtonSize",
-          "default": "0",
+          "default": "\u0022Medium\u0022",
           "description": "Gets or sets the size."
         },
         {
@@ -17642,7 +17642,7 @@
         {
           "name": "ToggleButtonStyle",
           "type": "ButtonStyle",
-          "default": "0",
+          "default": "\u0022Primary\u0022",
           "description": "Gets or sets the ToggleButton style."
         },
         {
@@ -17654,7 +17654,7 @@
         {
           "name": "ToggleShade",
           "type": "Shade",
-          "default": "4",
+          "default": "\u0022Darker\u0022",
           "description": "Gets or sets the ToggleButton shade."
         },
         {
@@ -17672,7 +17672,7 @@
         {
           "name": "Variant",
           "type": "Variant",
-          "default": "0",
+          "default": "\u0022Filled\u0022",
           "description": "Gets or sets the design variant of the button."
         },
         {
@@ -18242,7 +18242,7 @@
         {
           "name": "LineType",
           "type": "LineType",
-          "default": "0",
+          "default": "\u0022Solid\u0022",
           "description": "Gets or sets the type of the line used to display the axis."
         },
         {
@@ -18354,7 +18354,7 @@
         {
           "name": "StartMonth",
           "type": "Month",
-          "default": "0",
+          "default": "\u0022January\u0022",
           "description": "Gets or sets the start month for the year views /\u003E."
         },
         {
@@ -18386,7 +18386,7 @@
         {
           "name": "StartMonth",
           "type": "Month",
-          "default": "0",
+          "default": "\u0022January\u0022",
           "description": "Gets or sets the start month for the year views /\u003E."
         },
         {
@@ -18418,7 +18418,7 @@
         {
           "name": "StartMonth",
           "type": "Month",
-          "default": "0",
+          "default": "\u0022January\u0022",
           "description": "Gets or sets the start month for the year views /\u003E."
         },
         {
