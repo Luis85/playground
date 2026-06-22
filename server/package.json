@@ -8,7 +8,8 @@
   "scripts": {
     "test": "node --import tsx --test \"test/**/*.test.ts\"",
     "build": "tsc",
-    "start": "tsx src/server.ts"
+    "start": "tsx src/server.ts",
+    "export:obsidian": "tsx src/exportObsidian.ts"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.0.0",
