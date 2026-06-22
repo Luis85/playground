@@ -6,8 +6,6 @@ name: Generate knowledge base
 on:
   workflow_dispatch:
   push:
-    branches:
-      - claude/radzen-local-mcp-wypnsa
     paths:
       - "extractor/**"
       - ".github/workflows/generate-knowledge-base.yml"
