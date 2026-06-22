@@ -1,0 +1,24 @@
+{
+  "radzenVersion": "5.0.0-test",
+  "components": [
+    {
+      "name": "RadzenButton",
+      "summary": "A button component that raises a Click event.",
+      "parameters": [
+        { "name": "Text", "type": "string", "default": "\"\"", "description": "The button text." },
+        { "name": "Disabled", "type": "bool", "default": "false", "description": "Whether the button is disabled." }
+      ],
+      "events": [
+        { "name": "Click", "type": "EventCallback<MouseEventArgs>", "description": "Raised when clicked." }
+      ]
+    },
+    {
+      "name": "RadzenLabel",
+      "summary": "A label that displays text for an input.",
+      "parameters": [
+        { "name": "Text", "type": "string", "default": "\"\"", "description": "The label text." }
+      ],
+      "events": []
+    }
+  ]
+}
