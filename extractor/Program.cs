@@ -63,8 +63,8 @@ static bool IsComponent(Type t) =>
 // FullName carries type-argument suffixes that never match the XML key, so fall
 // back to the open generic definition's clean backtick name
 // (e.g. "Radzen.FormComponent`1").
-static string? XmlDeclaringName(Type t) =>
-    t.IsConstructedGenericType ? t.GetGenericTypeDefinition().FullName : t.FullName;
+static string XmlDeclaringName(Type t) =>
+    (t.IsConstructedGenericType ? t.GetGenericTypeDefinition() : t).FullName ?? t.Name;
 
 // Distance of a type from object, used to choose the most-derived property when
 // a name is redeclared with `new` (which would otherwise be ambiguous).

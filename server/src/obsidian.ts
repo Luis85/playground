@@ -22,7 +22,11 @@ export function noteName(s: string): string {
 
 /** Quote a YAML scalar so values containing ":" or other specials are safe. */
 function yamlQuote(value: string): string {
-  return `"${value.replace(/\\/g, "\\\\").replace(/"/g, '\\"')}"`;
+  const escaped = value
+    .replace(/\\/g, "\\\\")
+    .replace(/"/g, '\\"')
+    .replace(/\r\n|\r|\n/g, " ");
+  return `"${escaped}"`;
 }
 
 export function relatedComponents(kb: KnowledgeBase, component: ComponentInfo): string[] {

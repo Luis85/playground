@@ -42,3 +42,22 @@ test("a component named Radzen/Bad:Name writes a safe filename under outDir", ()
   // And it is actually readable (proves it was written somewhere valid).
   assert.match(readFileSync(componentFile!, "utf8"), /title: "Radzen\/Bad:Name"/);
 });
+
+test("components sanitizing to the same basename get de-duped filenames", () => {
+  const dir = mkdtempSync(join(tmpdir(), "vault-"));
+  const dupKb: KnowledgeBase = {
+    radzenVersion: "5.9.9.0",
+    components: [
+      { name: "Radzen:Foo", summary: "A.", typeParameters: [], parameters: [], events: [] },
+      { name: "Radzen/Foo", summary: "B.", typeParameters: [], parameters: [], events: [] },
+    ],
+  };
+  const written = writeVault(dupKb, dir, []);
+  const names = written
+    .filter((p) => p.includes("components"))
+    .map((p) => p.split(sep).pop());
+  assert.equal(names.length, 2);
+  // Both collapse to "Radzen-Foo"; the second gets a "-2" suffix, no overwrite.
+  assert.ok(names.includes("Radzen-Foo.md"));
+  assert.ok(names.includes("Radzen-Foo-2.md"));
+});
