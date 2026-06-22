@@ -49,7 +49,9 @@ git clone --depth 1 https://github.com/obra/Superpowers.git /tmp/Superpowers
 # Refresh only the vendored skills; keep local additions:
 for d in /tmp/Superpowers/skills/*/; do
   name=$(basename "$d")
-  cp -R "$d" ".claude/skills/$name"
+  # Replace the dir outright; cp -R into an existing dir would nest it
+  # as .claude/skills/$name/$name/...
+  rm -rf ".claude/skills/$name" && cp -RT "$d" ".claude/skills/$name"
 done
 # Re-apply the "Integrated Pipeline" section to using-superpowers/SKILL.md
 # (it gets overwritten above), then bump the version/commit recorded above.

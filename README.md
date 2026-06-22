@@ -17,9 +17,14 @@ for the design, `docs/adr/` for key decisions, and `CONTEXT.md` for the glossary
 cd server && npm install && npm run build && cd ..
 ```
 
+`npm run build` is a prerequisite: the MCP server starts from `server/dist`, so
+it must be built before any client can launch it.
+
 Register the server with an MCP client. This repo ships a project-scoped
 [`.mcp.json`](./.mcp.json) (picked up by Claude Code and other clients when you
-open the repo). To register manually with Claude Code (run from the repo root):
+open the repo). Its `args` path is relative to the repo root
+(`server/dist/server.js`), so clients must be started with the repo root as the
+working directory. To register manually with Claude Code (run from the repo root):
 
 ```sh
 claude mcp add radzen-blazor -- node "$PWD/server/dist/server.js"
@@ -55,8 +60,8 @@ Before the knowledge base exists (or to use a different one), set `RADZEN_KB_PAT
 | `export_obsidian_library(output_dir)` | Generate an Obsidian vault of the whole component library (see below). |
 
 > Note: `summary`/`description` fields are sourced from Radzen's published docs
-> and may be empty in the current build (reflection yields API shape; see
-> `docs/adr/0001`). Search still matches component and parameter names.
+> and are populated for most components (a minority may be blank). Search still
+> matches component and parameter names. See `docs/adr/0001`.
 
 ## Obsidian component library
 
@@ -94,3 +99,7 @@ cd extractor && dotnet run -- ../component-knowledge.json
 ```
 
 Commit the updated `component-knowledge.json`.
+
+> Publishing note: publishing the npm package must run `prepack` (it builds and
+> bundles the knowledge base into `dist`). A manual `npm publish --ignore-scripts`
+> would skip `prepack` and ship a package with no knowledge base.

@@ -20,9 +20,9 @@ the **`grill-with-docs`** workflow in this repo.
 
 ## Repo preparation
 
-- `docs/adr/` is scaffolded (with `.gitkeep`) as the home for Architecture Decision
-  Records. `domain-modeling` creates `CONTEXT.md` (the glossary) lazily at the repo
-  root the first time a term is resolved — it is intentionally not pre-created.
+- `docs/adr/` holds the Architecture Decision Records. `domain-modeling` creates
+  `CONTEXT.md` (the glossary) lazily at the repo root the first time a term is
+  resolved — it is intentionally not pre-created.
 
 ## Usage
 
@@ -33,8 +33,8 @@ plan before building — for example, the upcoming Radzen local-MCP design.
 
 ```sh
 git clone --depth 1 https://github.com/mattpocock/skills.git /tmp/mp
-cp -R /tmp/mp/skills/engineering/grill-with-docs .claude/skills/grill-with-docs
-cp -R /tmp/mp/skills/productivity/grilling        .claude/skills/grilling
-cp -R /tmp/mp/skills/engineering/domain-modeling  .claude/skills/domain-modeling
+cp -RT /tmp/mp/skills/engineering/grill-with-docs .claude/skills/grill-with-docs
+cp -RT /tmp/mp/skills/productivity/grilling        .claude/skills/grilling
+cp -RT /tmp/mp/skills/engineering/domain-modeling  .claude/skills/domain-modeling
 # then bump the commit recorded above
 ```

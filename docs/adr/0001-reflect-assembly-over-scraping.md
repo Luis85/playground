@@ -30,3 +30,12 @@ detail.
   fields may be empty; search still matches component and parameter names.
   Populating real summaries/examples (by sourcing `blazor.radzen.com` docs) is
   tracked as the flagship follow-up in the research report.
+
+> **Update (2026-06-22):** The premise above is no longer accurate. The
+> `Radzen.Blazor` package *does* ship XML documentation alongside the assembly,
+> and the extractor's XML-docs probe now populates `summary`/`description` for
+> **most** components and parameters (roughly 190/215 component summaries and
+> 1843/2318 parameter descriptions in the committed knowledge base). A minority
+> of fields remain blank. The original record above is preserved as the state at
+> decision time; the README and tool notes have been updated to reflect that most
+> fields are now populated.
