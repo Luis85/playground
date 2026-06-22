@@ -2,6 +2,14 @@
   "name": "radzen-blazor-mcp",
   "version": "0.1.0",
   "type": "module",
+  "mcpName": "io.github.luis85/radzen-blazor-mcp",
+  "engines": {
+    "node": ">=20"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "bin": {
     "radzen-blazor-mcp": "dist/server.js"
   },
