@@ -43,6 +43,19 @@ If CLAUDE.md, GEMINI.md, or AGENTS.md says "don't use TDD" and a skill says "alw
 
 Skills speak in actions ("dispatch a subagent", "create a todo", "read a file") rather than naming any one runtime's tools. For per-platform tool equivalents and instructions-file conventions, see [claude-code-tools.md](references/claude-code-tools.md), [codex-tools.md](references/codex-tools.md), [copilot-tools.md](references/copilot-tools.md), [gemini-tools.md](references/gemini-tools.md), [pi-tools.md](references/pi-tools.md), and [antigravity-tools.md](references/antigravity-tools.md). Gemini CLI users get the tool mapping loaded automatically via GEMINI.md.
 
+## Integrated Pipeline
+
+This repo combines the Superpowers skills with the `grilling` and
+`domain-modeling` skills into one lifecycle that auto-chains:
+design → plan → execute → debug → verify → review → finish.
+
+When you start any feature, design, planning, or bugfix work, **invoke the
+`integrated-workflow` skill** — it is the map. It tells you which phase you are
+in, which skill owns it, and which skill to auto-invoke next (e.g. `brainstorming`
+delegates interrogation to `grilling` and captures terms/decisions via
+`domain-modeling` into `CONTEXT.md` and `docs/adr/`). The skills are meant to
+invoke each other along this path.
+
 # Using Skills
 
 ## The Rule
