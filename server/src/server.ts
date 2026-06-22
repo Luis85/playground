@@ -78,7 +78,9 @@ export function createServer(kb: KnowledgeBase): McpServer {
 
 async function main(): Promise<void> {
   const here = dirname(fileURLToPath(import.meta.url));
-  const kbPath = process.env.RADZEN_KB_PATH ?? resolve(here, "..", "component-knowledge.json");
+  // `here` is server/src (tsx) or server/dist (built); the committed knowledge
+  // base lives at the repo root, two levels up.
+  const kbPath = process.env.RADZEN_KB_PATH ?? resolve(here, "..", "..", "component-knowledge.json");
   const kb = loadKnowledgeBase(kbPath);
   const server = createServer(kb);
   await server.connect(new StdioServerTransport());

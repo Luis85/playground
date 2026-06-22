@@ -30,6 +30,11 @@ static string TypeName(Type t)
     return $"{t.Name[..t.Name.IndexOf('`')]}<{args}>";
 }
 
+// The Razor component name without the CLR generic-arity suffix
+// (e.g. "RadzenDataGrid`1" -> "RadzenDataGrid").
+static string ComponentName(Type t) =>
+    t.Name.Contains('`') ? t.Name[..t.Name.IndexOf('`')] : t.Name;
+
 static bool IsComponent(Type t) =>
     t.IsClass && !t.IsAbstract && t.IsPublic &&
     typeof(ComponentBase).IsAssignableFrom(t) &&
@@ -75,7 +80,7 @@ foreach (var type in assembly.GetExportedTypes().Where(IsComponent).OrderBy(t =>
     var typeKey = $"T:{type.FullName}";
     components.Add(new
     {
-        name = type.Name,
+        name = ComponentName(type),
         summary = summaries.TryGetValue(typeKey, out var ts) ? ts : "",
         parameters,
         events,
