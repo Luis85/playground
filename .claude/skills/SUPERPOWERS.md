@@ -6,7 +6,7 @@ brainstorming, planning, code review, git worktrees, etc.).
 
 - **Source:** https://github.com/obra/Superpowers
 - **Version:** 6.0.3 (commit `896224c`)
-- **License:** MIT (Jesse Vincent)
+- **License:** MIT (Jesse Vincent) — full notice in [SUPERPOWERS.LICENSE](./SUPERPOWERS.LICENSE)
 
 ## Why vendored instead of `/plugin install`
 

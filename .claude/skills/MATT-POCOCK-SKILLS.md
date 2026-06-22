@@ -5,7 +5,7 @@ the **`grill-with-docs`** workflow in this repo.
 
 - **Source:** https://github.com/mattpocock/skills
 - **Commit:** `6eeb81b`
-- **License:** MIT (Matt Pocock)
+- **License:** MIT (Matt Pocock) — full notice in [MATT-POCOCK-SKILLS.LICENSE](./MATT-POCOCK-SKILLS.LICENSE)
 
 ## What's installed and why
 
