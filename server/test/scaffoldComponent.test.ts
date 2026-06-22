@@ -13,10 +13,24 @@ const kb: KnowledgeBase = {
         { name: "Text", type: "string", default: '""', description: "" },
         { name: "Disabled", type: "bool", default: "false", description: "" },
       ],
-      events: [],
+      events: [{ name: "Click", type: "EventCallback<MouseEventArgs>", description: "" }],
     },
   ],
 };
+
+test("accepts event callbacks as attributes", () => {
+  assert.equal(
+    scaffoldComponent(kb, "RadzenButton", { Text: "Save", Click: "@OnClick" }),
+    `<RadzenButton Text="Save" Click="@OnClick" />`,
+  );
+});
+
+test("escapes attribute values", () => {
+  assert.equal(
+    scaffoldComponent(kb, "RadzenButton", { Text: 'Save "draft"' }),
+    `<RadzenButton Text="Save &quot;draft&quot;" />`,
+  );
+});
 
 test("scaffolds a self-closing tag with given attributes", () => {
   assert.equal(

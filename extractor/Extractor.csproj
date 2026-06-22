@@ -7,6 +7,8 @@
   </PropertyGroup>
   <ItemGroup>
     <FrameworkReference Include="Microsoft.AspNetCore.App" />
-    <PackageReference Include="Radzen.Blazor" Version="5.*" />
+    <!-- Pinned so regeneration reproduces the committed component-knowledge.json
+         (radzenVersion 5.9.9.0). Bump deliberately to refresh the knowledge base. -->
+    <PackageReference Include="Radzen.Blazor" Version="5.9.9" />
   </ItemGroup>
 </Project>
